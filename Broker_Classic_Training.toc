@@ -1,0 +1,42 @@
+## Title: Broker_Classic_Training
+## Notes: LDB data source for classic class training
+## Version: v1.0.0
+## Interface: 80000
+## Author: PrivateSniper
+## SavedVariables: Broker_Classic_Training_DB
+## OptionalDeps: Ace3, LibQTip-1.0, LibDataBroker-1.1
+## DefaultState: Enabled
+
+# embeds
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\LibQTip-1.0\LibQTip-1.0.lua
+#@end-no-lib-strip@
+
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Libs\LibSniperWoW.lua
+
+Locales\locales.xml
+
+# Classes
+# Data\druid.lua
+hunter.lua
+mage.lua
+# Data\paladin.lua
+# Data\priest.lua
+# Data\rogue.lua
+# Data\shaman.lua
+# Data\warlock.lua
+# Data\warrior.lua
+
+main.lua
