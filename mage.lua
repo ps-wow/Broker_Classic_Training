@@ -34,7 +34,15 @@ local MageClassSpells = {
       id = 143,
       level = 6
     }
+  },
+  [8] = {
+    ['polymorph:1'] = {
+      name = 'Polymorph',
+      rank = 1,
+      id = 118,
+      level = 8
+    }
   }
 }
 
-_G['Broker_Classic_Training_Mage'] = MageClassSpells
+_G['Broker_Classic_Training_MAGE'] = MageClassSpells

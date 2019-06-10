@@ -29,14 +29,14 @@ Libs\LibSniperWoW.lua
 Locales\locales.xml
 
 # Classes
-# Data\druid.lua
+druid.lua
 hunter.lua
 mage.lua
-# Data\paladin.lua
-# Data\priest.lua
-# Data\rogue.lua
-# Data\shaman.lua
-# Data\warlock.lua
-# Data\warrior.lua
+paladin.lua
+priest.lua
+rogue.lua
+shaman.lua
+warlock.lua
+warrior.lua
 
 main.lua

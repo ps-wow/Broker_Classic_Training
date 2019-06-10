@@ -40,18 +40,12 @@ end
 function BrokerClassicTraining:BuildTrainingData(self)
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
-  BrokerClassicTraining:Dump('class', englishClass)
 
-  local spells = nil
+  -- Get the spells for the class
+  local classKey = 'Broker_Classic_Training_'..englishClass
+  local spells = _G[classKey]
 
-  if (englishClass == 'HUNTER') then
-    spells = _G['Broker_Classic_Training_Hunter']
-    BrokerClassicTraining:Dump('spells', spells)
-  elseif (englishClass == 'MAGE') then
-    spells = _G['Broker_Classic_Training_Mage']
-    BrokerClassicTraining:Dump('spells', spells)
-  end
-
+  -- Filter and format spells
   if (spells ~= nil) then
     local filtered = BrokerClassicTraining:FilterSpells(spells)
     BrokerClassicTraining:FormatSpells(self, filtered)
@@ -72,7 +66,6 @@ function BrokerClassicTraining:FilterSpells(spells)
         if (isKnown == false) then
           table.insert(spellsLearnable, spell)
         end
-        BrokerClassicTraining:Dump('isKnown', isKnown)
       end
     end
   end
@@ -84,7 +77,15 @@ function BrokerClassicTraining:FormatSpells(self, spells)
   if (self.AddLine ~= nil) then
     --BrokerClassicTraining:Dump('recipes', recipes)
     for _,spell in pairs(spells) do
-      self:AddLine(spell.level .. ' ' .. spell.name)
+      -- self:AddLine(spell.level .. ' ' .. spell.name)
+      local cost = ''
+      if (spell.cost == 'free') then
+        cost = 'free'
+      else
+        cost = GetCoinTextureString(spell.cost);
+      end
+
+      self:AddDoubleLine(spell.level .. ' ' .. spell.name, cost)
     end
   end
 end

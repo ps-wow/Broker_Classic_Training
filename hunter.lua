@@ -18,4 +18,4 @@ local HunterClassSpells = {
   }
 }
 
-_G['Broker_Classic_Training_Hunter'] = HunterClassSpells
+_G['Broker_Classic_Training_HUNTER'] = HunterClassSpells
