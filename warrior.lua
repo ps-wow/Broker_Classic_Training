@@ -1,40 +1,18 @@
 
 -- @see: https://classic.wowhead.com/mage-abilities
 local WarriorClassSpells = {
-  [1] = {
-    ['frostbolt:1'] = {
-      name = 'Test Spell',
+  [4] = {
+    ['charge:1'] = {
+      name = 'Charge',
       rank = 1,
-      id = 116,
-      level = 1
+      id = 100,
+      level = 4
     },
-  },
-  [6] = {
-    ['conjure_food:1'] = {
-      name = 'Conjure Food',
+    ['rend:1'] = {
+      name = 'Rend',
       rank = 1,
-      id = 587,
-      level = 6
-    },
-    ['fire_blast:1'] = {
-      name = 'Fire Blast',
-      rank = 1,
-      id = 2136,
-      level = 6
-    },
-    ['fire_ball:2'] = {
-      name = 'Fire Ball',
-      rank = 2,
-      id = 143,
-      level = 6
-    }
-  },
-  [8] = {
-    ['polymorph:1'] = {
-      name = 'Polymorph',
-      rank = 1,
-      id = 118,
-      level = 8
+      id = 772,
+      level = 4
     }
   }
 }
