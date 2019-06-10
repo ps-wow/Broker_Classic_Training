@@ -6,8 +6,7 @@ local WarriorClassSpells = {
       name = 'Test Spell',
       rank = 1,
       id = 116,
-      level = 1,
-      cost = 299
+      level = 1
     },
   },
   [6] = {

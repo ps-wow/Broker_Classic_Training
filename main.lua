@@ -79,7 +79,10 @@ function BrokerClassicTraining:FormatSpells(self, spells)
     for _,spell in pairs(spells) do
       -- self:AddLine(spell.level .. ' ' .. spell.name)
       local cost = ''
-      if (spell.cost == 'free') then
+
+      if (spell.cost == 'quest') then
+        cost = 'Quest'
+      elseif (spell.cost == 'free' or spell.cost == nil) then
         cost = 'free'
       else
         cost = GetCoinTextureString(spell.cost);
