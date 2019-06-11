@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/hunter-abilities
+
 local HunterClassSpells = {
   [6] = {
     ['arcane_shot:1'] = {

@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/rogue-abilities
+
 local RogueClassSpells = {
   -- [6] = {
   --   ['arcane_shot:1'] = {

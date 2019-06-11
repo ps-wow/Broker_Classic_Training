@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/paladin-abilities
+
 local PaladinClassSpells = {
   -- [6] = {
   --   ['arcane_shot:1'] = {

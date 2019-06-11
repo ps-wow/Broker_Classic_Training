@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/mage-abilities
+
 local MageClassSpells = {
   [4] = {
     ['frostbolt:1'] = {

@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/shaman-abilities
+
 local ShamanClassSpells = {
   -- [6] = {
   --   ['arcane_shot:1'] = {

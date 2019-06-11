@@ -59,10 +59,12 @@ function BrokerClassicTraining:FilterSpells(spells)
 
   for i=1,level do
     local levelSpells = spells[i]
+    BrokerClassicTraining:Dump('spells', spells)
     if (levelSpells ~= nil) then
       for key,spell in pairs(levelSpells) do
         -- Spell = v
-        isKnown = IsSpellKnown(spell.id)
+        BrokerClassicTraining:Dump('spell', spell)
+        local isKnown = IsSpellKnown(spell.id)
         if (isKnown == false) then
           table.insert(spellsLearnable, spell)
         end
@@ -76,6 +78,7 @@ end
 function BrokerClassicTraining:FormatSpells(self, spells)
   if (self.AddLine ~= nil) then
     --BrokerClassicTraining:Dump('recipes', recipes)
+    local totalCost = 0
     for _,spell in pairs(spells) do
       -- self:AddLine(spell.level .. ' ' .. spell.name)
       local cost = ''
@@ -85,11 +88,14 @@ function BrokerClassicTraining:FormatSpells(self, spells)
       elseif (spell.cost == 'free' or spell.cost == nil) then
         cost = 'free'
       else
-        cost = GetCoinTextureString(spell.cost);
+        totalCost = totalCost + spell.cost
+        cost = GetCoinTextureString(spell.cost)
       end
 
       self:AddDoubleLine(spell.level .. ' ' .. spell.name, cost)
     end
+    -- Add total
+    self:AddDoubleLine('Total: ', GetCoinTextureString(totalCost))
   end
 end
 

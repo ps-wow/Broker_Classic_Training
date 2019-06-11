@@ -1,5 +1,5 @@
+-- @see: https://classic.wowhead.com/warrior-abilities
 
--- @see: https://classic.wowhead.com/mage-abilities
 local WarriorClassSpells = {
   [4] = {
     ['charge:1'] = {

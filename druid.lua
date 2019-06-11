@@ -1,5 +1,5 @@
-
 -- @see: https://classic.wowhead.com/druid-abilities
+
 local DruidClassSpells = {
   -- [6] = {
   --   ['arcane_shot:1'] = {
