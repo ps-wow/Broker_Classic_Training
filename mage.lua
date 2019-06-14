@@ -87,7 +87,7 @@ local MageClassSpells = {
     ['frost_armor:2'] = {
       name = 'Frost Armor',
       rank = 2,
-      id = 0,
+      id = 5505,
       level = 10,
       cost = 400
     },
@@ -103,7 +103,7 @@ local MageClassSpells = {
     ['conjure_food:2'] = {
       name = 'Conjure Food',
       rank = 2,
-      id = 0,
+      id = 597,
       level = 12,
       cost = 600
     },
@@ -147,7 +147,7 @@ local MageClassSpells = {
     ['fire_blast:2'] = {
       name = 'Fire Blast',
       rank = 2,
-      id = 0,
+      id = 2137,
       level = 14,
       cost = 900
     },
@@ -216,7 +216,7 @@ local MageClassSpells = {
     ['conjure_water:3'] = {
       name = 'Conjure Water',
       rank = 3,
-      id = 0,
+      id = 5506,
       level = 20,
       cost = 2000
     },
@@ -279,16 +279,16 @@ local MageClassSpells = {
       cost = 3000
     },
     ['conjure_food:3'] = {
-      name = 'Arcane Explosion',
-      rank = 2,
-      id = 0,
+      name = 'Conjure Food',
+      rank = 3,
+      id = 990,
       level = 22,
       cost = 3000
     },
     ['fire_blast:3'] = {
       name = 'Fire Blast',
       rank = 3,
-      id = 0,
+      id = 2138,
       level = 22,
       cost = 3000
     },
@@ -429,14 +429,14 @@ local MageClassSpells = {
     ['conjure_water:4'] = {
       name = 'Conjure Water',
       rank = 4,
-      id = 0,
+      id = 6127,
       level = 30,
       cost = 8000
     },
     ['fire_blast:4'] = {
       name = 'Fire Blast',
       rank = 4,
-      id = 0,
+      id = 8412,
       level = 30,
       cost = 8000
     },
@@ -480,7 +480,7 @@ local MageClassSpells = {
     ['conjure_food:4'] = {
       name = 'Conjure Food',
       rank = 4,
-      id = 0,
+      id = 6129,
       level = 32,
       cost = 10000
     },
@@ -591,7 +591,7 @@ local MageClassSpells = {
     ['fire_blast:5'] = {
       name = 'Fire Blast',
       rank = 5,
-      id = 0,
+      id = 8413,
       level = 38,
       cost = 14000
     },
@@ -621,7 +621,7 @@ local MageClassSpells = {
     ['conjure_water:5'] = {
       name = 'Conjure Water',
       rank = 5,
-      id = 0,
+      id = 10138,
       level = 40,
       cost = 15000
     },
@@ -686,7 +686,7 @@ local MageClassSpells = {
     ['conjure_food:5'] = {
       name = 'Conjure Food',
       rank = 5,
-      id = 0,
+      id = 10144,
       level = 42,
       cost = 18000
     },
@@ -767,7 +767,7 @@ local MageClassSpells = {
     ['fire_blast:6'] = {
       name = 'Fire Blast',
       rank = 6,
-      id = 0,
+      id = 10197,
       level = 46,
       cost = 26000
     },
@@ -834,7 +834,7 @@ local MageClassSpells = {
     ['conjure_water:6'] = {
       name = 'Conjure Water',
       rank = 6,
-      id = 0,
+      id = 10139,
       level = 50,
       cost = 32000
     },
@@ -871,7 +871,7 @@ local MageClassSpells = {
     ['conjure_food:6'] = {
       name = 'Conjure Food',
       rank = 6,
-      id = 0,
+      id = 10145,
       level = 52,
       cost = 35000
     },
@@ -936,7 +936,7 @@ local MageClassSpells = {
     ['fire_blast:7'] = {
       name = 'Fire Blast',
       rank = 7,
-      id = 0,
+      id = 10199,
       level = 54,
       cost = 36000
     },
@@ -1092,6 +1092,15 @@ local MageClassSpells = {
       id = 0,
       level = 60,
       cost = 42000
+    },
+    ['conjure_water:7'] = {
+      name = 'Conjure Water',
+      rank = 7,
+      id = 10140,
+      level = 60,
+      cost = 'quest',
+      quest_name = 'Arcane Refreshment',
+      quest_id = 7463
     }
   }
 }
@@ -1106,6 +1115,16 @@ local MageClassTomes = {
     source = 'drop',
     source_drop = 'raid',
     source_drop_raid = 'AQ20'
+  },
+  ['conjure_food_vii'] = {
+    itemId = 22897,
+    name = 'Tome of Conjure Food VII',
+    spell = 'Conjure Food',
+    spellId = 28612,
+    rank = 7,
+    source = 'drop',
+    source_drop = 'dungeon',
+    source_drop_dungeon = 'Stratholme'
   }
 }
 
