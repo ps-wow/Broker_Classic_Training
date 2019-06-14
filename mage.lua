@@ -7,9 +7,9 @@
 local MageClassSpells = {
   [1] = {
     ['arcane_intellect:1'] = {
-      name = 'arcane_intellect',
+      name = 'Arcane Intellect',
       rank = 1,
-      id = 0,
+      id = 1459,
       level = 4,
       cost = 10
     }
@@ -71,7 +71,7 @@ local MageClassSpells = {
     ['frostbolt:2'] = {
       name = 'Frostbolt',
       rank = 2,
-      id = 0,
+      id = 205,
       level = 8,
       cost = 200
     }
@@ -140,7 +140,7 @@ local MageClassSpells = {
     ['arcane_intellect:2'] = {
       name = 'Arcane Intellect',
       rank = 2,
-      id = 0,
+      id = 1460,
       level = 14,
       cost = 900
     },
@@ -154,7 +154,7 @@ local MageClassSpells = {
     ['frostbolt:3'] = {
       name = 'Frostbolt',
       rank = 3,
-      id = 0,
+      id = 837,
       level = 14,
       cost = 900
     }
@@ -265,7 +265,7 @@ local MageClassSpells = {
     ['frostbolt:4'] = {
       name = 'Frostbolt',
       rank = 4,
-      id = 0,
+      id = 7322,
       level = 20,
       cost = 2000
     }
@@ -369,7 +369,7 @@ local MageClassSpells = {
     ['frostbolt:5'] = {
       name = 'Frostbolt',
       rank = 5,
-      id = 0,
+      id = 8406,
       level = 26,
       cost = 5000
     }
@@ -378,7 +378,7 @@ local MageClassSpells = {
     ['arcane_intellect:3'] = {
       name = 'Arcane Intellect',
       rank = 3,
-      id = 0,
+      id = 1461,
       level = 28,
       cost = 7000
     },
@@ -501,7 +501,7 @@ local MageClassSpells = {
     ['frostbolt:6'] = {
       name = 'Frostbolt',
       rank = 6,
-      id = 0,
+      id = 8407,
       level = 32,
       cost = 10000
     }
@@ -598,7 +598,7 @@ local MageClassSpells = {
     ['frostbolt:7'] = {
       name = 'Frostbolt',
       rank = 7,
-      id = 0,
+      id = 8408,
       level = 38,
       cost = 14000
     }
@@ -679,7 +679,7 @@ local MageClassSpells = {
     ['arcane_intellect:4'] = {
       name = 'Arcane Intellect',
       rank = 4,
-      id = 0,
+      id = 10156,
       level = 42,
       cost = 18000
     },
@@ -744,7 +744,7 @@ local MageClassSpells = {
     ['frostbolt:8'] = {
       name = 'Frostbolt',
       rank = 8,
-      id = 0,
+      id = 10179,
       level = 44,
       cost = 23000
     }
@@ -855,7 +855,7 @@ local MageClassSpells = {
     ['frostbolt:9'] = {
       name = 'Frostbolt',
       rank = 9,
-      id = 0,
+      id = 10180,
       level = 50,
       cost = 32000
     },
@@ -966,7 +966,7 @@ local MageClassSpells = {
     ['arcane_intellect:5'] = {
       name = 'Arcane Intellect',
       rank = 5,
-      id = 0,
+      id = 10157,
       level = 56,
       cost = 38000
     },
@@ -987,7 +987,7 @@ local MageClassSpells = {
     ['frostbolt:10'] = {
       name = 'Frostbolt',
       rank = 10,
-      id = 0,
+      id = 10181,
       level = 56,
       cost = 38000
     }
@@ -1096,4 +1096,18 @@ local MageClassSpells = {
   }
 }
 
+local MageClassTomes = {
+  ['frostbolt_xi'] = {
+    itemId = 21214,
+    name = 'Tome of Frostbolt XI',
+    spell = 'Frostbolt',
+    spellId = 25304,
+    rank = 11,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20'
+  }
+}
+
 _G['Broker_Classic_Training_MAGE'] = MageClassSpells
+_G['Broker_Classic_Training_MAGE_Tomes'] = MageClassTomes
