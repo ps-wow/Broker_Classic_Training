@@ -1,7 +1,7 @@
 -- @see: https://classic.wowhead.com/mage-abilities
 
 --- Automatic Spells
--- Fireball (Rank 1)
+-- Fireball (Rank 1) [133]
 -- Frost Armor (Rank 1)
 
 local MageClassSpells = {
@@ -55,10 +55,10 @@ local MageClassSpells = {
   },
   [8] = {
     ['arcane_missiles:1'] = {
-      name = 'Fire Ball',
-      rank = 2,
-      id = 0,
-      level = 6,
+      name = 'Arcane Missiles',
+      rank = 1,
+      id = 5143,
+      level = 8,
       cost = 200
     },
     ['polymorph:1'] = {
@@ -124,7 +124,7 @@ local MageClassSpells = {
     ['fireball:3'] = {
       name = 'Fireball',
       rank = 3,
-      id = 0,
+      id = 145,
       level = 12,
       cost = 600
     }
@@ -163,7 +163,7 @@ local MageClassSpells = {
     ['arcane_missiles:2'] = {
       name = 'Arcane Missiles',
       rank = 2,
-      id = 0,
+      id = 5144,
       level = 16,
       cost = 1500
     },
@@ -200,7 +200,7 @@ local MageClassSpells = {
     ['fireball:4'] = {
       name = 'Fireball',
       rank = 4,
-      id = 0,
+      id = 3140,
       level = 18,
       cost = 1800
     }
@@ -311,7 +311,7 @@ local MageClassSpells = {
     ['arcane_missiles:3'] = {
       name = 'Arcane Missiles',
       rank = 3,
-      id = 0,
+      id = 5145,
       level = 24,
       cost = 4000
     },
@@ -332,7 +332,7 @@ local MageClassSpells = {
     ['fireball:5'] = {
       name = 'Fireball',
       rank = 5,
-      id = 0,
+      id = 8400,
       level = 24,
       cost = 4000
     },
@@ -450,7 +450,7 @@ local MageClassSpells = {
     ['fireball:6'] = {
       name = 'Fireball',
       rank = 6,
-      id = 0,
+      id = 8401,
       level = 30,
       cost = 8000
     },
@@ -473,7 +473,7 @@ local MageClassSpells = {
     ['arcane_missiles:4'] = {
       name = 'Arcane Missiles',
       rank = 4,
-      id = 0,
+      id = 8416,
       level = 32,
       cost = 10000
     },
@@ -554,7 +554,7 @@ local MageClassSpells = {
     ['fireball:7'] = {
       name = 'Fireball',
       rank = 7,
-      id = 0,
+      id = 8402,
       level = 36,
       cost = 13000
     },
@@ -614,7 +614,7 @@ local MageClassSpells = {
     ['arcane_missiles:5'] = {
       name = 'Arcane Missiles',
       rank = 5,
-      id = 0,
+      id = 8417,
       level = 340,
       cost = 15000
     },
@@ -693,7 +693,7 @@ local MageClassSpells = {
     ['fireball:8'] = {
       name = 'Fireball',
       rank = 8,
-      id = 0,
+      id = 10148,
       level = 42,
       cost = 18000
     },
@@ -790,7 +790,7 @@ local MageClassSpells = {
     ['arcane_missiles:6'] = {
       name = 'Arcane Missiles',
       rank = 6,
-      id = 0,
+      id = 10211,
       level = 48,
       cost = 28000
     },
@@ -811,7 +811,7 @@ local MageClassSpells = {
     ['fireball:9'] = {
       name = 'Fireball',
       rank = 9,
-      id = 0,
+      id = 10149,
       level = 48,
       cost = 28000
     },
@@ -943,7 +943,7 @@ local MageClassSpells = {
     ['fireball:10'] = {
       name = 'Fireball',
       rank = 10,
-      id = 0,
+      id = 10150,
       level = 54,
       cost = 36000
     },
@@ -973,7 +973,7 @@ local MageClassSpells = {
     ['arcane_missiles:7'] = {
       name = 'Arcane Missiles',
       rank = 7,
-      id = 0,
+      id = 10212,
       level = 56,
       cost = 38000
     },
@@ -1068,7 +1068,7 @@ local MageClassSpells = {
     ['fireball:11'] = {
       name = 'Fireball',
       rank = 11,
-      id = 0,
+      id = 10151,
       level = 60,
       cost = 42000
     },
@@ -1125,7 +1125,27 @@ local MageClassTomes = {
     source = 'drop',
     source_drop = 'dungeon',
     source_drop_dungeon = 'Stratholme'
-  }
+  },
+  ['fireball_xii'] = {
+    itemId = 21279,
+    name = 'Tome of Fireball XII',
+    spell = 'Fireball',
+    spellId = 25306,
+    rank = 12,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20'
+  },
+  ['arcane_missiles_viii'] = {
+    itemId = 21280,
+    name = 'Tome of Arcane Missiles VIII',
+    spell = 'Arcane Missiles',
+    spellId = 25345,
+    rank = 8,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20'
+  },
 }
 
 _G['Broker_Classic_Training_MAGE'] = MageClassSpells
