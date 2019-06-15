@@ -80,7 +80,7 @@ local MageClassSpells = {
     ['conjure_water:2'] = {
       name = 'Conjure Water',
       rank = 2,
-      id = 0,
+      id = 5505,
       level = 10,
       cost = 400
     },
@@ -237,7 +237,7 @@ local MageClassSpells = {
     ['polymorph:2'] = {
       name = 'Polymorph',
       rank = 2,
-      id = 0,
+      id = 12824,
       level = 20,
       cost = 2000
     },
@@ -302,7 +302,7 @@ local MageClassSpells = {
     ['frost_ward:1'] = {
       name = 'Frost Ward',
       rank = 1,
-      id = 0,
+      id = 6143,
       level = 22,
       cost = 3000
     }
@@ -494,7 +494,7 @@ local MageClassSpells = {
     ['frost_ward:2'] = {
       name = 'Frost Ward',
       rank = 2,
-      id = 0,
+      id = 8461,
       level = 32,
       cost = 10000
     },
@@ -628,7 +628,7 @@ local MageClassSpells = {
     ['polymorph:3'] = {
       name = 'Polymorph',
       rank = 3,
-      id = 0,
+      id = 12825,
       level = 40,
       cost = 15000
     },
@@ -714,7 +714,7 @@ local MageClassSpells = {
     ['frost_ward:3'] = {
       name = 'Frost Ward',
       rank = 3,
-      id = 0,
+      id = 8462,
       level = 42,
       cost = 18000
     }
@@ -906,7 +906,7 @@ local MageClassSpells = {
     ['frost_ward:4'] = {
       name = 'Frost Ward',
       rank = 4,
-      id = 0,
+      id = 10177,
       level = 52,
       cost = 35000
     },
@@ -1047,7 +1047,7 @@ local MageClassSpells = {
     ['polymorph:4'] = {
       name = 'Polymorph',
       rank = 4,
-      id = 0,
+      id = 12826,
       level = 60,
       cost = 42000
     },
@@ -1145,6 +1145,43 @@ local MageClassTomes = {
     source = 'drop',
     source_drop = 'raid',
     source_drop_raid = 'AQ20'
+  },
+  ['polymorph_turtle'] = {
+    itemId = 22739,
+    name = 'Tome of Polymorph: Turtle',
+    spell = 'Polymorph: Turtle',
+    spellId = 28271,
+    rank = 0,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'ZG'
+  },
+  ['polymorph_pig'] = {
+    itemId = 4142,
+    name = 'Tome of Polymorph: Pig',
+    spell = 'Polymorph: Turtle',
+    spellId = 28272,
+    rank = 0,
+    source = 'quest',
+    source_quest = 'Fragmented Magic'
+  },
+  ['polymorph_cow'] = {
+    itemId = 4144,
+    name = 'Tome of Polymorph: Cow',
+    spell = 'Polymorph: Cow',
+    spellId = 28270,
+    rank = 0,
+    source = 'quest',
+    source_quest = 'Fragmented Magic'
+  },
+  ['frost_ward_v'] = {
+    itemId = 22890,
+    name = 'Tome of Frost Ward V',
+    spell = 'Frost Ward V',
+    spellId = 28609,
+    rank = 5,
+    source = 'drop',
+    source_drop = 'world'
   },
 }
 
