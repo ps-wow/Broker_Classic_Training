@@ -94,7 +94,7 @@ local MageClassSpells = {
     ['frost_nova:1'] = {
       name = 'Frost Nova',
       rank = 1,
-      id = 0,
+      id = 122,
       level = 10,
       cost = 400
     }
@@ -362,7 +362,7 @@ local MageClassSpells = {
     ['frost_nova:2'] = {
       name = 'Frost Nova',
       rank = 2,
-      id = 0,
+      id = 865,
       level = 26,
       cost = 5000
     },
@@ -656,7 +656,7 @@ local MageClassSpells = {
     ['frost_nova:3'] = {
       name = 'Frost Nova',
       rank = 3,
-      id = 0,
+      id = 6131,
       level = 40,
       cost = 15000
     },
@@ -957,7 +957,7 @@ local MageClassSpells = {
     ['frost_nova:4'] = {
       name = 'Frost Nova',
       rank = 4,
-      id = 0,
+      id = 10230,
       level = 54,
       cost = 36000
     }
