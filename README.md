@@ -6,6 +6,14 @@ This is an LDB (Lib Data Broker) plugin that provides a list of learnable spells
 
 Additionally the addon also has a database of the various Tomes for a given class and will list these also.
 
+# Screenshots
+
+
+
+| *Tooltip on a level 4 mage* with 2 spells available |
+|:--:| 
+| ![Level 4 Mage](https://raw.githubusercontent.com/ps-wow/Broker_Classic_Training/master/screenshots/Level_4_Mage.png) |
+
 # Feedback / Issues
 
 Currently spell listing might not be 100% accurate, if you find a spell thats missing or mis-categorised etc please raise an issue [here](https://github.com/ps-wow/Broker_Classic_Training/issues)
