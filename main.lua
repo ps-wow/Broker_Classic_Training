@@ -73,11 +73,9 @@ function BrokerClassicTraining:FilterSpells(spells, level)
   BrokerClassicTraining.Feed.newSkills = 0
   for i=1,level do
     local levelSpells = spells[i]
-    BrokerClassicTraining:Dump('spells', spells)
     if (levelSpells ~= nil) then
       for key,spell in pairs(levelSpells) do
         -- Spell = v
-        BrokerClassicTraining:Dump('spell', spell)
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
           local isKnown = IsSpellKnown(spell.id)
           if (isKnown == false) then
