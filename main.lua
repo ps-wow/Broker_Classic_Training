@@ -1,19 +1,20 @@
 local LDB = LibStub("LibDataBroker-1.1")
 local BrokerClassicTraining = LibStub("AceAddon-3.0"):NewAddon('Broker_Classic_Training', "AceEvent-3.0");
-local UPDATEPERIOD, elapsed = 0.5, 0
+local UPDATEPERIOD, elapsed = 2, 0
 BrokerClassicTraining.kbDEBUG = true
 
-local constants = {
+BrokerClassicTraining.constants = {
   newTrainingAlert = 'badge',
 }
 
 -- The data feed
-BrokerClassicTraining.Feed = { newSkills = 0, spells = {} }
+BrokerClassicTraining.Feed = { level = 0, newSpells = 0, spells = {} }
 
 local f = CreateFrame("frame")
 f:SetScript("OnUpdate", function(self, elap)
   elapsed = elapsed + elap
   if elapsed < UPDATEPERIOD then return end
+  BrokerClassicTraining:UpdateLabel()
   elapsed = 0
 end)
 
@@ -24,26 +25,18 @@ function BrokerClassicTraining:Dump(str, obj)
   end
 end
 
-function BrokerClassicTraining:PLAYER_ENTERING_WORLD()
-  BrokerClassicTraining:BuildTrainingData(self)
-end
-BrokerClassicTraining:RegisterMessage('PLAYER_ENTERING_WORLD')
-
-function BrokerClassicTraining:PLAYER_LEVEL_UP(newLevel, ...)
-
-end
-BrokerClassicTraining:RegisterMessage('PLAYER_LEVEL_UP')
-
+-- Update the label
 function BrokerClassicTraining:UpdateLabel()
   return BrokerClassicTraining:GetLabels()
 end
 
+-- Get the labels
 function BrokerClassicTraining:GetLabels()
   local label = 'Training'
 
-  if (constants.newTrainingAlert == 'badge') then
-    if (BrokerClassicTraining.Feed.newSkills > 0) then
-      return label .. ' (' .. BrokerClassicTraining.Feed.newSkills .. ')'
+  if (BrokerClassicTraining.constants.newTrainingAlert == 'badge') then
+    if (BrokerClassicTraining.Feed.newSpells > 0) then
+      return label .. ' (' .. BrokerClassicTraining.Feed.newSpells .. ')'
     end
   end
   return label
@@ -51,6 +44,7 @@ end
 
 function BrokerClassicTraining:BuildTrainingData(self, level)
   level = level or nil
+
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
 
@@ -68,9 +62,10 @@ end
 function BrokerClassicTraining:FilterSpells(spells, level)
   -- new table to hold learnable spells
   local spellsLearnable = {}
+  local new = 0
   level = level or UnitLevel("player")
 
-  BrokerClassicTraining.Feed.newSkills = 0
+  BrokerClassicTraining.Feed.newSpells = 0
   for i=1,level do
     local levelSpells = spells[i]
     if (levelSpells ~= nil) then
@@ -79,8 +74,9 @@ function BrokerClassicTraining:FilterSpells(spells, level)
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
           local isKnown = IsSpellKnown(spell.id)
           if (isKnown == false) then
-            BrokerClassicTraining.Feed.newSkills = BrokerClassicTraining.Feed.newSkills + 1
+            BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
             table.insert(spellsLearnable, spell)
+            new = new + 1
           end
         end
       end
@@ -88,11 +84,11 @@ function BrokerClassicTraining:FilterSpells(spells, level)
   end
 
   BrokerClassicTraining.Feed.spells = spellsLearnable
+  BrokerClassicTraining.Feed.newSpells = new
 end
 
 function BrokerClassicTraining:FormatSpells(self)
   if (self.AddLine ~= nil) then
-    --BrokerClassicTraining:Dump('recipes', recipes)
     local totalCost = 0
     for _,spell in pairs(BrokerClassicTraining.Feed.spells) do
       -- self:AddLine(spell.level .. ' ' .. spell.name)
@@ -120,15 +116,15 @@ end
 local dataObj = LDB:NewDataObject( 'Training', {
   type = "data source",
   text = BrokerClassicTraining:GetLabels(),
-  --label = ,
-  icon = "Interface\\Minimap\\Tracking\\Auctioneer",
+
+  icon = "Interface\\AddOns\\Broker_Classic_Training\\Icons\\" .. select(2, UnitClass('player')),
 
   OnClick = function(clickedframe, button)
     --
   end,
 } )
 
--- Tooltip Events
+-- TOOLTIP EVENTS
 
 function dataObj:OnTooltipShow()
   BrokerClassicTraining:BuildTrainingData(self)
@@ -145,3 +141,19 @@ end
 function dataObj:OnLeave()
   GameTooltip:Hide()
 end
+
+-- Game Events
+function BrokerClassicTraining:PLAYER_ENTERING_WORLD()
+  BrokerClassicTraining:BuildTrainingData(self)
+  dataObj.text = BrokerClassicTraining:UpdateLabel()
+end
+
+function BrokerClassicTraining:PLAYER_LEVEL_UP(newLevel, ...)
+  BrokerClassicTraining:BuildTrainingData(self, newLevel)
+  dataObj.text = BrokerClassicTraining:UpdateLabel()
+end
+
+BrokerClassicTraining:RegisterEvent('PLAYER_ENTERING_WORLD')
+BrokerClassicTraining:RegisterEvent('PLAYER_LEVEL_UP')
+
+_G['BrokerClassicTraining'] = BrokerClassicTraining
