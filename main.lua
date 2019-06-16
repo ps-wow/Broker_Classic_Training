@@ -67,7 +67,7 @@ end
 
 function BrokerClassicTraining:FilterSpells(spells, level)
   -- new table to hold learnable spells
-  spellsLearnable = {}
+  local spellsLearnable = {}
   level = level or UnitLevel("player")
 
   BrokerClassicTraining.Feed.newSkills = 0
@@ -78,10 +78,12 @@ function BrokerClassicTraining:FilterSpells(spells, level)
       for key,spell in pairs(levelSpells) do
         -- Spell = v
         BrokerClassicTraining:Dump('spell', spell)
-        local isKnown = IsSpellKnown(spell.id)
-        if (isKnown == false) then
-          BrokerClassicTraining.Feed.newSkills = BrokerClassicTraining.Feed.newSkills + 1
-          table.insert(spellsLearnable, spell)
+        if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
+          local isKnown = IsSpellKnown(spell.id)
+          if (isKnown == false) then
+            BrokerClassicTraining.Feed.newSkills = BrokerClassicTraining.Feed.newSkills + 1
+            table.insert(spellsLearnable, spell)
+          end
         end
       end
     end
