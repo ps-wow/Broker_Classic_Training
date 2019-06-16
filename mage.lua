@@ -110,14 +110,14 @@ local MageClassSpells = {
     ['dampen_magic:1'] = {
       name = 'Dampen Magic',
       rank = 1,
-      id = 0,
+      id = 604,
       level = 12,
       cost = 600
     },
     ['slow_fall'] = {
       name = 'Slow Fall',
       rank = 0,
-      id = 0,
+      id = 130,
       level = 12,
       cost = 600
     },
@@ -133,7 +133,7 @@ local MageClassSpells = {
     ['arcane_explosion'] = {
       name = 'Arcane Explosion',
       rank = 1,
-      id = 0,
+      id = 1449,
       level = 14,
       cost = 900
     },
@@ -170,14 +170,14 @@ local MageClassSpells = {
     ['detect_magic'] = {
       name = 'Detect Magic',
       rank = 0,
-      id = 0,
+      id = 2855,
       level = 16,
       cost = 1500
     },
     ['flamestrike:1'] = {
       name = 'Flamestrike',
       rank = 1,
-      id = 0,
+      id = 2120,
       level = 16,
       cost = 1500
     }
@@ -186,14 +186,14 @@ local MageClassSpells = {
     ['amplify_magic:1'] = {
       name = 'Amplify Magic',
       rank = 1,
-      id = 0,
+      id = 1008,
       level = 18,
       cost = 1800
     },
     ['remove_lesser_curse'] = {
       name = 'Remove Lesser Curse',
       rank = 0,
-      id = 0,
+      id = 475,
       level = 18,
       cost = 1800
     },
@@ -209,7 +209,7 @@ local MageClassSpells = {
     ['blink'] = {
       name = 'Blink',
       rank = 0,
-      id = 0,
+      id = 1953,
       level = 20,
       cost = 2000
     },
@@ -223,14 +223,14 @@ local MageClassSpells = {
     ['evocation'] = {
       name = 'Evocation',
       rank = 0,
-      id = 0,
+      id = 12051,
       level = 20,
       cost = 2000
     },
-    ['mana_shield'] = {
+    ['mana_shield:1'] = {
       name = 'Mana Shield',
       rank = 1,
-      id = 0,
+      id = 1463,
       level = 20,
       cost = 2000
     },
@@ -244,21 +244,21 @@ local MageClassSpells = {
     ['fire_ward:1'] = {
       name = 'Fire Ward',
       rank = 1,
-      id = 0,
+      id = 543,
       level = 20,
       cost = 2000
     },
     ['blizzard:1'] = {
       name = 'Blizzard',
       rank = 1,
-      id = 0,
+      id = 10,
       level = 20,
       cost = 2000
     },
     ['frost_armor:3'] = {
       name = 'Frost Armor',
       rank = 3,
-      id = 0,
+      id = 7301,
       level = 20,
       cost = 2000
     },
@@ -274,7 +274,7 @@ local MageClassSpells = {
     ['arcane_explosion:2'] = {
       name = 'Arcane Explosion',
       rank = 2,
-      id = 0,
+      id = 8437,
       level = 22,
       cost = 3000
     },
@@ -295,7 +295,7 @@ local MageClassSpells = {
     ['scorch:1'] = {
       name = 'Scorch',
       rank = 1,
-      id = 0,
+      id = 2948,
       level = 22,
       cost = 3000
     },
@@ -318,14 +318,14 @@ local MageClassSpells = {
     ['counterspell'] = {
       name = 'Counterspell',
       rank = 0,
-      id = 0,
+      id = 2139,
       level = 24,
       cost = 4000
     },
     ['dampen_magic:2'] = {
       name = 'Dampen Magic',
       rank = 2,
-      id = 0,
+      id = 8450,
       level = 24,
       cost = 4000
     },
@@ -339,23 +339,24 @@ local MageClassSpells = {
     ['flamestrike:2'] = {
       name = 'Flamestrike',
       rank = 2,
-      id = 0,
+      id = 2121,
       level = 24,
       cost = 4000
     },
     ['pyroblast:2'] = {
       name = 'Pyroblast',
       rank = 2,
-      id = 0,
+      id = 12505,
       level = 24,
-      cost = 200
+      cost = 200,
+      talent = 'pyroblast:1'
     }
   },
   [26] = {
     ['cone_of_cold:1'] = {
       name = 'Cone of Cold',
       rank = 1,
-      id = 0,
+      id = 120,
       level = 26,
       cost = 5000
     },
@@ -382,31 +383,31 @@ local MageClassSpells = {
       level = 28,
       cost = 7000
     },
-    ['mana agate'] = {
-      name = 'Mana Agate',
+    ['conjure_mana_agate'] = {
+      name = 'Conjure Mana Agate',
       rank = 0,
-      id = 0,
+      id = 759,
       level = 28,
       cost = 7000
     },
     ['mana_shield:2'] = {
       name = 'Mana Shield',
       rank = 2,
-      id = 0,
+      id = 8494,
       level = 28,
       cost = 7000
     },
     ['scorch:2'] = {
       name = 'Scorch',
       rank = 2,
-      id = 0,
+      id = 8444,
       level = 28,
       cost = 7000
     },
     ['blizzard:2'] = {
       name = 'Blizzard',
       rank = 2,
-      id = 0,
+      id = 6141,
       level = 28,
       cost = 7000
     }
@@ -415,14 +416,14 @@ local MageClassSpells = {
     ['amplify_magic:2'] = {
       name = 'Amplify Magic',
       rank = 2,
-      id = 0,
+      id = 8455,
       level = 30,
       cost = 8000
     },
-    ['arcane_explosion:2'] = {
+    ['arcane_explosion:3'] = {
       name = 'Arcane Explosion',
-      rank = 2,
-      id = 0,
+      rank = 3,
+      id = 8438,
       level = 30,
       cost = 8000
     },
@@ -443,7 +444,7 @@ local MageClassSpells = {
     ['fire_ward:2'] = {
       name = 'Fire Ward',
       rank = 2,
-      id = 0,
+      id = 8457,
       level = 30,
       cost = 8000
     },
@@ -457,14 +458,15 @@ local MageClassSpells = {
     ['pyroblast:3'] = {
       name = 'Pyroblast',
       rank = 3,
-      id = 0,
+      id = 12522,
       level = 30,
-      cost = 400
+      cost = 400,
+      talent = 'pyroblast:1'
     },
     ['ice_armor:1'] = {
       name = 'Ice Armor',
       rank = 1,
-      id = 0,
+      id = 7302,
       level = 30,
       cost = 8000
     }
@@ -487,7 +489,7 @@ local MageClassSpells = {
     ['flamestrike:3'] = {
       name = 'Flamestrike',
       rank = 3,
-      id = 0,
+      id = 8422,
       level = 32,
       cost = 10000
     },
@@ -510,21 +512,21 @@ local MageClassSpells = {
     ['mage_armor:1'] = {
       name = 'Mage Armor',
       rank = 1,
-      id = 0,
+      id = 6117,
       level = 34,
       cost = 13000
     },
     ['scorch:3'] = {
       name = 'Scorch',
       rank = 3,
-      id = 0,
+      id = 8445,
       level = 34,
       cost = 12000
     },
     ['cone_of_cold:2'] = {
       name = 'Cone of Cold',
       rank = 2,
-      id = 0,
+      id = 8492,
       level = 34,
       cost = 12000
     }
@@ -533,23 +535,24 @@ local MageClassSpells = {
     ['dampen_magic:3'] = {
       name = 'Dampen Magic',
       rank = 3,
-      id = 0,
+      id = 8451,
       level = 36,
       cost = 13000
     },
     ['mana_shield:3'] = {
       name = 'Mana Shield',
       rank = 3,
-      id = 0,
+      id = 8495,
       level = 36,
       cost = 13000
     },
     ['blast_wave:2'] = {
       name = 'Blast Wave',
       rank = 2,
-      id = 0,
+      id = 13018,
       level = 36,
-      cost = 650
+      cost = 650,
+      talent = 'blast_wave:1'
     },
     ['fireball:7'] = {
       name = 'Fireball',
@@ -561,14 +564,15 @@ local MageClassSpells = {
     ['pyroblast:4'] = {
       name = 'Pyroblast',
       rank = 4,
-      id = 0,
+      id = 12523,
       level = 36,
-      cost = 650
+      cost = 650,
+      talent = 'pyroblast:1'
     },
     ['blizzard:3'] = {
       name = 'Blizzard',
       rank = 3,
-      id = 0,
+      id = 8427,
       level = 36,
       cost = 13000
     }
@@ -577,14 +581,14 @@ local MageClassSpells = {
     ['arcane_explosion:4'] = {
       name = 'Arcane Explosion',
       rank = 4,
-      id = 0,
+      id = 8439,
       level = 38,
       cost = 14000
     },
     ['conjure_mana_jade'] = {
       name = 'Conjure Mana Jade',
       rank = 0,
-      id = 0,
+      id = 3552,
       level = 38,
       cost = 14000
     },
@@ -607,7 +611,7 @@ local MageClassSpells = {
     ['conjure_mana_jade'] = {
       name = 'Conjure Mana Jade',
       rank = 0,
-      id = 0,
+      id = 3552,
       level = 38,
       cost = 14000
     },
@@ -635,21 +639,21 @@ local MageClassSpells = {
     ['fire_ward:3'] = {
       name = 'Fire Ward',
       rank = 3,
-      id = 0,
+      id = 8458,
       level = 40,
       cost = 15000
     },
     ['flamestrike:4'] = {
       name = 'Flamestrike',
       rank = 4,
-      id = 0,
+      id = 8423,
       level = 40,
       cost = 15000
     },
     ['scorch:4'] = {
       name = 'Scorch',
       rank = 4,
-      id = 0,
+      id = 8446,
       level = 40,
       cost = 15000
     },
@@ -663,7 +667,7 @@ local MageClassSpells = {
     ['ice_armor:2'] = {
       name = 'Ice Armor',
       rank = 2,
-      id = 0,
+      id = 7320,
       level = 40,
       cost = 15000
     }
@@ -672,7 +676,7 @@ local MageClassSpells = {
     ['amplify_magic:3'] = {
       name = 'Amplify Magic',
       rank = 3,
-      id = 0,
+      id = 10169,
       level = 42,
       cost = 18000
     },
@@ -700,14 +704,15 @@ local MageClassSpells = {
     ['pyroblast:5'] = {
       name = 'Pyroblast',
       rank = 5,
-      id = 0,
+      id = 12524,
       level = 42,
-      cost = 900
+      cost = 900,
+      talent = 'pyroblast:1'
     },
     ['cone_of_cold:3'] = {
       name = 'Cone of Cold',
       rank = 3,
-      id = 0,
+      id = 10159,
       level = 42,
       cost = 18000
     },
@@ -723,21 +728,22 @@ local MageClassSpells = {
     ['mana_shield:4'] = {
       name = 'Mana Shield',
       rank = 4,
-      id = 0,
+      id = 10191,
       level = 44,
       cost = 23000
     },
     ['blast_wave:3'] = {
       name = 'Blast Wave',
       rank = 3,
-      id = 0,
+      id = 13019,
       level = 44,
-      cost = 1150
+      cost = 1150,
+      talent = 'blast_wave:1'
     },
     ['blizzard:4'] = {
       name = 'Blizzard',
       rank = 4,
-      id = 0,
+      id = 10185,
       level = 44,
       cost = 23000
     },
@@ -753,14 +759,14 @@ local MageClassSpells = {
     ['arcane_explosion:5'] = {
       name = 'Arcane Explosion',
       rank = 5,
-      id = 0,
+      id = 10201,
       level = 46,
       cost = 26000
     },
     ['mage_armor:2'] = {
       name = 'Mage Armor',
       rank = 2,
-      id = 0,
+      id = 22782,
       level = 46,
       cost = 28000
     },
@@ -774,16 +780,17 @@ local MageClassSpells = {
     ['scorch:5'] = {
       name = 'Scorch',
       rank = 5,
-      id = 0,
+      id = 10205,
       level = 46,
       cost = 26000
     },
     ['ice_barrier:2'] = {
       name = 'Ice Barrier',
       rank = 2,
-      id = 0,
+      id = 13031,
       level = 46,
-      cost = 1170
+      cost = 1170,
+      talent = 'ice_barrier:1'
     }
   },
   [48] = {
@@ -797,14 +804,14 @@ local MageClassSpells = {
     ['conjure_mana_citrine'] = {
       name = 'Conjure Mana Citrine',
       rank = 0,
-      id = 0,
+      id = 10053,
       level = 48,
       cost = 28000
     },
     ['dampen_magic:4'] = {
       name = 'Dampen Magic',
       rank = 4,
-      id = 0,
+      id = 10173,
       level = 48,
       cost = 28000
     },
@@ -818,16 +825,17 @@ local MageClassSpells = {
     ['flamestrike:5'] = {
       name = 'Flamestrike',
       rank = 5,
-      id = 0,
+      id = 10215,
       level = 48,
       cost = 28000
     },
     ['pyroblast:6'] = {
       name = 'Pyroblast',
       rank = 6,
-      id = 0,
+      id = 12525,
       level = 48,
-      cost = 14000
+      cost = 14000,
+      talent = 'pyroblast:1'
     }
   },
   [50] = {
@@ -838,17 +846,17 @@ local MageClassSpells = {
       level = 50,
       cost = 32000
     },
-    ['fire_ward:3'] = {
+    ['fire_ward:4'] = {
       name = 'Fire Ward',
-      rank = 3,
-      id = 0,
+      rank = 4,
+      id = 10223,
       level = 50,
       cost = 32000
     },
     ['cone_of_cold:4'] = {
       name = 'Cone of Cold',
       rank = 4,
-      id = 0,
+      id = 10160,
       level = 50,
       cost = 32000
     },
@@ -862,7 +870,7 @@ local MageClassSpells = {
     ['ice_armor:3'] = {
       name = 'Ice Armor',
       rank = 3,
-      id = 0,
+      id = 10219,
       level = 50,
       cost = 32000
     }
@@ -878,28 +886,29 @@ local MageClassSpells = {
     ['mana_shield:5'] = {
       name = 'Mana Shield',
       rank = 5,
-      id = 0,
+      id = 10192,
       level = 52,
       cost = 35000
     },
     ['blast_wave:4'] = {
       name = 'Blast Wave',
       rank = 4,
-      id = 0,
+      id = 13020,
       level = 52,
-      cost = 1750
+      cost = 1750,
+      talent = 'blast_wave:1'
     },
     ['scorch:6'] = {
       name = 'Scorch',
       rank = 6,
-      id = 0,
+      id = 10206,
       level = 52,
       cost = 35000
     },
     ['blizzard:5'] = {
       name = 'Blizzard',
       rank = 5,
-      id = 0,
+      id = 10186,
       level = 52,
       cost = 35000
     },
@@ -913,23 +922,24 @@ local MageClassSpells = {
     ['ice_barrier:3'] = {
       name = 'Ice Barrier',
       rank = 3,
-      id = 0,
+      id = 13032,
       level = 52,
-      cost = 1750
+      cost = 1750,
+      talent = 'ice_barrier:1'
     }
   },
   [54] = {
     ['amplify_magic:3'] = {
       name = 'Amplify Magic',
       rank = 3,
-      id = 0,
+      id = 10170,
       level = 54,
       cost = 36000
     },
     ['arcane_explosion:6'] = {
       name = 'Arcane Explosion',
       rank = 6,
-      id = 0,
+      id = 10202,
       level = 54,
       cost = 36000
     },
@@ -950,9 +960,10 @@ local MageClassSpells = {
     ['pyroblast:7'] = {
       name = 'Pyroblast',
       rank = 7,
-      id = 0,
+      id = 12526,
       level = 54,
-      cost = 1800
+      cost = 1800,
+      talent = 'pyroblast:1'
     },
     ['frost_nova:4'] = {
       name = 'Frost Nova',
@@ -980,7 +991,7 @@ local MageClassSpells = {
     ['flamestrike:6'] = {
       name = 'Flamestrike',
       rank = 6,
-      id = 0,
+      id = 10216,
       level = 56,
       cost = 38000
     },
@@ -996,51 +1007,52 @@ local MageClassSpells = {
     ['conjure_mana_ruby'] = {
       name = 'Conjure Mana Ruby',
       rank = 0,
-      id = 0,
+      id = 10054,
       level = 58,
       cost = 40000
     },
     ['mage_armor:3'] = {
       name = 'Mage Armor',
       rank = 3,
-      id = 0,
+      id = 22783,
       level = 58,
       cost = 40000
     },
     ['scorch:7'] = {
       name = 'Scorch',
       rank = 7,
-      id = 0,
+      id = 10207,
       level = 58,
       cost = 40000
     },
     ['cone_of_cold:5'] = {
       name = 'Cone of Cold',
       rank = 5,
-      id = 0,
+      id = 10161,
       level = 58,
       cost = 40000
     },
     ['ice_barrier:4'] = {
       name = 'Ice Barrier',
       rank = 4,
-      id = 0,
+      id = 13033,
       level = 58,
-      cost = 2000
+      cost = 2000,
+      talent = 'ice_barrier:1'
     }
   },
   [60] = {
     ['dampen_magic:5'] = {
       name = 'Dampen Magic',
       rank = 5,
-      id = 0,
+      id = 10174,
       level = 60,
       cost = 42000
     },
     ['mana_shield:6'] = {
       name = 'Mana Shield',
       rank = 6,
-      id = 0,
+      id = 10193,
       level = 60,
       cost = 42000
     },
@@ -1054,14 +1066,15 @@ local MageClassSpells = {
     ['blast_wave:5'] = {
       name = 'Blast Wave',
       rank = 5,
-      id = 0,
+      id = 13021,
       level = 60,
-      cost = 2100
+      cost = 2100,
+      talent = 'blast_wave:1'
     },
     ['fire_ward:5'] = {
       name = 'Fire Ward',
       rank = 5,
-      id = 0,
+      id = 10225,
       level = 60,
       cost = 42000
     },
@@ -1075,21 +1088,22 @@ local MageClassSpells = {
     ['pyroblast:8'] = {
       name = 'Pyroblast',
       rank = 8,
-      id = 0,
+      id = 18809,
       level = 60,
-      cost = 1890
+      cost = 1890,
+      talent = 'pyroblast:1'
     },
     ['blizzard:6'] = {
       name = 'Blizzard',
       rank = 6,
-      id = 0,
+      id = 10187,
       level = 60,
       cost = 42000
     },
     ['ice_armor:4'] = {
       name = 'Ice Armor',
       rank = 4,
-      id = 0,
+      id = 10220,
       level = 60,
       cost = 42000
     },
@@ -1102,6 +1116,33 @@ local MageClassSpells = {
       quest_name = 'Arcane Refreshment',
       quest_id = 7463
     }
+  }
+}
+
+local MageTalentSpells = {
+  ['pyroblast:1'] = {
+    tree = 'Fire',
+    points = 1,
+    points_prereq = 10,
+    name = 'Pyroblast',
+    spellId = 28612,
+    rank = 1,
+  },
+  ['blast_wave:1'] = {
+    tree = 'Fire',
+    points = 1,
+    points_prereq = 29,
+    name = 'Blast Wave',
+    spellId = 11113,
+    rank = 1,
+  },
+  ['ice_barrier:1'] = {
+    tree = 'Frost',
+    points = 1,
+    points_prereq = 29,
+    name = 'Ice Barrier',
+    spellId = 11426,
+    rank = 1,
   }
 }
 
@@ -1186,4 +1227,5 @@ local MageClassTomes = {
 }
 
 _G['Broker_Classic_Training_MAGE'] = MageClassSpells
+_G['Broker_Classic_Training_MAGE_Talents'] = MageTalentSpells
 _G['Broker_Classic_Training_MAGE_Tomes'] = MageClassTomes
