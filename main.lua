@@ -8,7 +8,14 @@ BrokerClassicTraining.constants = {
 }
 
 -- The data feed
-BrokerClassicTraining.Feed = { level = 0, newSpells = 0, spells = {} }
+BrokerClassicTraining.Feed = {
+  level = 0,
+  newSpells = 0,
+  spells = {},
+  newTomes = 0,
+  tomes = {},
+  newTalents = 0
+}
 
 local f = CreateFrame("frame")
 f:SetScript("OnUpdate", function(self, elap)
@@ -57,13 +64,16 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
     BrokerClassicTraining:FilterSpells(spells, level)
     BrokerClassicTraining:FormatSpells(self)
   end
+
+  -- Get the spell books for the class
 end
 
 function BrokerClassicTraining:FilterSpells(spells, level)
   -- new table to hold learnable spells
   local spellsLearnable = {}
   local new = 0
-  level = level or UnitLevel("player")
+  --level = level or UnitLevel("player")
+  level = 20 --debug
 
   BrokerClassicTraining.Feed.newSpells = 0
   for i=1,level do
@@ -72,7 +82,8 @@ function BrokerClassicTraining:FilterSpells(spells, level)
       for key,spell in pairs(levelSpells) do
         -- Spell = v
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
-          local isKnown = IsSpellKnown(spell.id)
+          --local isKnown = IsSpellKnown(spell.id)
+          local isKnown = false -- Debug remove once done
           if (isKnown == false) then
             BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
             table.insert(spellsLearnable, spell)

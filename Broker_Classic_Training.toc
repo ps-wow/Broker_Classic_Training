@@ -29,14 +29,6 @@ Libs\LibSniperWoW.lua
 Locales\locales.xml
 
 # Classes
-druid.lua
-hunter.lua
-mage.lua
-paladin.lua
-priest.lua
-rogue.lua
-shaman.lua
-warlock.lua
-warrior.lua
+Libs\ClassSpells-1.0\ClassSpells.xml
 
 main.lua

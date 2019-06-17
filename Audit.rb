@@ -53,11 +53,10 @@ classes.each do |c|
 end
 
 # Build arrays for final output
-spell_type = 'spell'
-
 classes.each do |c|
+  spell_type = 'spell'
   # Parse the file and check for spellId = 0
-  File.open("#{Dir.pwd}/#{c}.lua").each do |line|
+  File.open("#{Dir.pwd}/Libs/ClassSpells-1.0/#{c}.lua").each do |line|
     # id = 0
 
     if spell_type == 'spell'
@@ -78,10 +77,10 @@ classes.each do |c|
     spell_type = 'tome' if line.include?('Tomes')
 
     # Talents
-    class_audit[c][:talent_count] = class_audit[c][:talent_count] + 1 if line.include?('spellId') and spell_type == 'talent'
+    class_audit[c][:talent_count] = class_audit[c][:talent_count] + 1 if line.include?('spell_id') and spell_type == 'talent'
 
     # Tomes
-    class_audit[c][:tome_count] = class_audit[c][:tome_count] + 1 if line.include?('spellId') and spell_type == 'tome'
+    class_audit[c][:tome_count] = class_audit[c][:tome_count] + 1 if line.include?('spell_id') and spell_type == 'tome'
   end
 end
 
