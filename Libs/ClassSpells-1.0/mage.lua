@@ -1148,7 +1148,7 @@ local MageTalentSpells = {
 
 local MageClassTomes = {
   ['frostbolt_xi'] = {
-    itemId = 21214,
+    item_id = 21214,
     name = 'Tome of Frostbolt XI',
     spell = 'Frostbolt',
     spell_id = 25304,
@@ -1158,7 +1158,7 @@ local MageClassTomes = {
     source_drop_raid = 'AQ20'
   },
   ['conjure_food_vii'] = {
-    itemId = 22897,
+    item_id = 22897,
     name = 'Tome of Conjure Food VII',
     spell = 'Conjure Food',
     spell_id = 28612,
@@ -1168,7 +1168,7 @@ local MageClassTomes = {
     source_drop_dungeon = 'Stratholme'
   },
   ['fireball_xii'] = {
-    itemId = 21279,
+    item_id = 21279,
     name = 'Tome of Fireball XII',
     spell = 'Fireball',
     spell_id = 25306,
@@ -1188,7 +1188,7 @@ local MageClassTomes = {
     source_drop_raid = 'AQ20'
   },
   ['polymorph_turtle'] = {
-    itemId = 22739,
+    item_id = 22739,
     name = 'Tome of Polymorph: Turtle',
     spell = 'Polymorph: Turtle',
     spell_id = 28271,
@@ -1198,7 +1198,7 @@ local MageClassTomes = {
     source_drop_raid = 'ZG'
   },
   ['polymorph_pig'] = {
-    itemId = 4142,
+    item_id = 4142,
     name = 'Tome of Polymorph: Pig',
     spell = 'Polymorph: Turtle',
     spell_id = 28272,
@@ -1207,7 +1207,7 @@ local MageClassTomes = {
     source_quest = 'Fragmented Magic'
   },
   ['polymorph_cow'] = {
-    itemId = 4144,
+    item_id = 4144,
     name = 'Tome of Polymorph: Cow',
     spell = 'Polymorph: Cow',
     spell_id = 28270,
@@ -1216,7 +1216,7 @@ local MageClassTomes = {
     source_quest = 'Fragmented Magic'
   },
   ['frost_ward_v'] = {
-    itemId = 22890,
+    item_id = 22890,
     name = 'Tome of Frost Ward V',
     spell = 'Frost Ward V',
     spell_id = 28609,

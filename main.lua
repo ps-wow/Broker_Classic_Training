@@ -12,8 +12,8 @@ BrokerClassicTraining.Feed = {
   level = 0,
   newSpells = 0,
   spells = {},
-  newTomes = 0,
-  tomes = {},
+  newBooks = 0,
+  books = {},
   newTalents = 0
 }
 
@@ -55,25 +55,48 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
 
-  -- Get the spells for the class
-  local classKey = 'Broker_Classic_Training_'..englishClass
-  local spells = _G[classKey]
+  ------------
+  -- SPELLS --
+  ------------
 
-  -- Filter and format spells
-  if (spells ~= nil) then
-    BrokerClassicTraining:FilterSpells(spells, level)
-    BrokerClassicTraining:FormatSpells(self)
+  if (self.AddLine ~= nil) then
+    self:AddLine('Spells')
+  end
+
+  -- -- Get the spells for the class
+  -- local classKey = 'Broker_Classic_Training_'..englishClass
+  -- local spells = _G[classKey]
+
+  -- -- Filter and format spells
+  -- if (spells ~= nil) then
+  --   BrokerClassicTraining:FilterSpells(spells, level)
+  --   BrokerClassicTraining:FormatSpells(self)
+  -- end
+
+  -----------------
+  -- SPELL BOOKS --
+  -----------------
+
+  if (self.AddLine ~= nil) then
+    self:AddLine('Class Books')
   end
 
   -- Get the spell books for the class
+  local classBooksKey = 'Broker_Classic_Training_'..englishClass..'_Tomes'
+  local books = _G[classBooksKey]
+
+  -- Filter and format spells
+  if (books ~= nil) then
+    BrokerClassicTraining:FilterSpellBooks(books, level)
+    BrokerClassicTraining:FormatSpellBooks(self)
+  end
 end
 
 function BrokerClassicTraining:FilterSpells(spells, level)
   -- new table to hold learnable spells
   local spellsLearnable = {}
   local new = 0
-  --level = level or UnitLevel("player")
-  level = 20 --debug
+  level = level or UnitLevel("player")
 
   BrokerClassicTraining.Feed.newSpells = 0
   for i=1,level do
@@ -120,6 +143,45 @@ function BrokerClassicTraining:FormatSpells(self)
     self:AddDoubleLine('Total: ', GetCoinTextureString(totalCost))
   end
 end
+
+
+-----------------
+-- Spell Books --
+-----------------
+
+function BrokerClassicTraining:FilterSpellBooks(books, level)
+  -- new table to hold learnable spells
+  local booksLearnable = {}
+  local new = 0
+  level = level or UnitLevel("player")
+
+  BrokerClassicTraining.Feed.newBooks = 0
+
+  if (level == 60) then
+    for _,book in pairs(books) do
+      if book.spell_id ~= nil and book.spell_id ~= 0 then -- Abort if spell id is zero or nil
+        local isKnown = IsSpellKnown(book.spell_id)
+        if (isKnown == false) then
+          BrokerClassicTraining.Feed.newBooks = BrokerClassicTraining.Feed.newBooks + 1
+          table.insert(booksLearnable, book)
+          new = new + 1
+        end
+      end
+    end
+  end
+
+  BrokerClassicTraining.Feed.books = booksLearnable
+  BrokerClassicTraining.Feed.newBooks = new
+end
+
+function BrokerClassicTraining:FormatSpellBooks(self)
+  if (self.AddLine ~= nil) then
+    for _,book in pairs(BrokerClassicTraining.Feed.books) do
+      self:AddDoubleLine(book.name, book.source)
+    end
+  end
+end
+
 
 --------------------------------------
 -- Register the LDB plugin launcher --
