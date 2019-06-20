@@ -37,6 +37,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 6,
       cost = 100
+    },
+    ['divine_protection:1'] = {
+      name = 'Divine Protection',
+      rank = 1,
+      id = 0,
+      level = 6,
+      cost = 100
     }
   },
   [8] = {
@@ -50,6 +57,13 @@ local PaladinClassSpells = {
     ['purify'] = {
       name = 'Purify',
       rank = 0,
+      id = 0,
+      level = 8,
+      cost = 100
+    },
+    ['hammer_of_justice:1'] = {
+      name = 'Hammer of Justice',
+      rank = 1,
       id = 0,
       level = 8,
       cost = 100
@@ -76,6 +90,20 @@ local PaladinClassSpells = {
       id = 0,
       level = 10,
       cost = 300
+    },
+    ['blessing_of_protection:1'] = {
+      name = 'Blessing of Protection',
+      rank = 1,
+      id = 0,
+      level = 10,
+      cost = 300
+    },
+    ['devotion_aura:2'] = {
+      name = 'Devotion Aura',
+      rank = 2,
+      id = 0,
+      level = 10,
+      cost = 300
     }
   },
   [14] = {
@@ -94,10 +122,33 @@ local PaladinClassSpells = {
       cost = 2000
     }
   },
+  [16] = {
+    ['righteous_fury'] = {
+      name = 'Righteous Fury',
+      rank = 0,
+      id = 0,
+      level = 16,
+      cost = 3000
+    }
+  },
   [18] = {
     ['seal_of_righteousness:3'] = {
       name = 'Seal of Righteousness',
       rank = 3,
+      id = 0,
+      level = 18,
+      cost = 3500
+    },
+    ['blessing_of_freedom'] = {
+      name = 'Blessing of Freedom',
+      rank = 0,
+      id = 0,
+      level = 18,
+      cost = 3500
+    },
+    ['divine_protection:2'] = {
+      name = 'Divine Protection',
+      rank = 2,
       id = 0,
       level = 18,
       cost = 3500
@@ -117,12 +168,33 @@ local PaladinClassSpells = {
       id = 0,
       level = 20,
       cost = 4000
+    },
+    ['devotion_aura:3'] = {
+      name = 'Devotion Aura',
+      rank = 3,
+      id = 0,
+      level = 20,
+      cost = 4000
     }
   },
   [22] = {
     ['holy_light:4'] = {
       name = 'Holy Light',
       rank = 4,
+      id = 0,
+      level = 22,
+      cost = 4000
+    },
+    ['concentration_aura'] = {
+      name = 'Concentration Aura',
+      rank = 0,
+      id = 0,
+      level = 22,
+      cost = 4000
+    },
+    ['seal_of_justice'] = {
+      name = 'Seal of Justice',
+      rank = 0,
       id = 0,
       level = 22,
       cost = 4000
@@ -149,6 +221,20 @@ local PaladinClassSpells = {
       id = 0,
       level = 24,
       cost = 5000
+    },
+    ['blessing_of_protection:2'] = {
+      name = 'Blessing of Protection',
+      rank = 2,
+      id = 0,
+      level = 24,
+      cost = 5000
+    },
+    ['hammer_of_justice:2'] = {
+      name = 'Hammer of Justice',
+      rank = 2,
+      id = 0,
+      level = 24,
+      cost = 5000
     }
   },
   [26] = {
@@ -165,12 +251,26 @@ local PaladinClassSpells = {
       id = 0,
       level = 26,
       cost = 6000
+    },
+    ['blessing_of_salvation'] = {
+      name = 'Blessing of Salvation',
+      rank = 0,
+      id = 0,
+      level = 26,
+      cost = 6000
     }
   },
   [28] = {
     ['exorcism:2'] = {
       name = 'Exorcism',
       rank = 2,
+      id = 0,
+      level = 28,
+      cost = 9000
+    },
+    ['shadow_resistance_aura:1'] = {
+      name = 'Shadow Resistance Aura',
+      rank = 1,
       id = 0,
       level = 28,
       cost = 9000
@@ -204,6 +304,29 @@ local PaladinClassSpells = {
       id = 0,
       level = 30,
       cost = 11000
+    },
+    ['devotion_aura:4'] = {
+      name = 'Devotion Aura',
+      rank = 4,
+      id = 0,
+      level = 30,
+      cost = 11000
+    },
+    ['divine_intervention'] = {
+      name = 'Divine Intervention',
+      rank = 0,
+      id = 0,
+      level = 30,
+      cost = 11000
+    }
+  },
+  [32] = {
+    ['frost_resistance_aura:1'] = {
+      name = 'Frost Resistance Aura',
+      rank = 1,
+      id = 0,
+      level = 32,
+      cost = 12000
     }
   },
   [34] = {
@@ -227,6 +350,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 34,
       cost = 13000
+    },
+    ['divine_shield:1'] = {
+      name = 'Divine Shield',
+      rank = 1,
+      id = 0,
+      level = 34,
+      cost = 13000
     }
   },
   [36] = {
@@ -240,6 +370,13 @@ local PaladinClassSpells = {
     ['redemption:3'] = {
       name = 'Redemption',
       rank = 3,
+      id = 0,
+      level = 36,
+      cost = 14000
+    },
+    ['fire_resistance_aura:1'] = {
+      name = 'Fire Resistance Aura',
+      rank = 1,
       id = 0,
       level = 36,
       cost = 14000
@@ -266,6 +403,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 38,
       cost = 16000
+    },
+    ['blessing_of_protection:3'] = {
+      name = 'Blessing of Protection',
+      rank = 3,
+      id = 0,
+      level = 38,
+      cost = 16000
     }
   },
   [40] = {
@@ -285,6 +429,34 @@ local PaladinClassSpells = {
     },
     ['seal_of_light:2'] = {
       name = 'Seal of Light',
+      rank = 2,
+      id = 0,
+      level = 40,
+      cost = 20000
+    },
+    ['blessing_of_sanctuary:2'] = {
+      name = 'Blessing of Sanctuary',
+      rank = 2,
+      id = 0,
+      level = 40,
+      cost = 900
+    },
+    ['devotion_aura:5'] = {
+      name = 'Devotion Aura',
+      rank = 5,
+      id = 0,
+      level = 40,
+      cost = 20000
+    },
+    ['hammer_of_justice:3'] = {
+      name = 'Hammer of Justice',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 20000
+    },
+    ['shadow_resistance_aura:2'] = {
+      name = 'Shadow Resistance Aura',
       rank = 2,
       id = 0,
       level = 40,
@@ -335,12 +507,26 @@ local PaladinClassSpells = {
       id = 0,
       level = 44,
       cost = 22000
+    },
+    ['frost_resistance_aura:2'] = {
+      name = 'Frost Resistance Aura',
+      rank = 2,
+      id = 0,
+      level = 44,
+      cost = 22000
     }
   },
   [46] = {
     ['holy_light:1'] = {
       name = 'Holy Light',
       rank = 7,
+      id = 0,
+      level = 46,
+      cost = 24000
+    },
+    ['blessing_of_sacrifice:1'] = {
+      name = 'Blessing of Sacrifice',
+      rank = 1,
       id = 0,
       level = 46,
       cost = 24000
@@ -363,6 +549,13 @@ local PaladinClassSpells = {
     },
     ['seal_of_wisdom:2'] = {
       name = 'Seal of Wisdom',
+      rank = 2,
+      id = 0,
+      level = 48,
+      cost = 26000
+    },
+    ['fire_resistance_aura:2'] = {
+      name = 'Fire Resistance Aura',
       rank = 2,
       id = 0,
       level = 48,
@@ -418,6 +611,34 @@ local PaladinClassSpells = {
       id = 0,
       level = 50,
       cost = 28000
+    },
+    ['blessing_of_sanctuary:3'] = {
+      name = 'Blessing of Sanctuary',
+      rank = 3,
+      id = 0,
+      level = 50,
+      cost = 1260
+    },
+    ['devotion_aura:6'] = {
+      name = 'Devotion Aura',
+      rank = 6,
+      id = 0,
+      level = 50,
+      cost = 28000
+    },
+    ['divine_shield:2'] = {
+      name = 'Divine Shield',
+      rank = 2,
+      id = 0,
+      level = 50,
+      cost = 28000
+    },
+    ['holy_shield:2'] = {
+      name = 'Holy Shield',
+      rank = 2,
+      id = 0,
+      level = 50,
+      cost = 1260
     }
   },
   [52] = {
@@ -437,6 +658,13 @@ local PaladinClassSpells = {
     },
     ['turn_undead:3'] = {
       name = 'Turn Undead',
+      rank = 3,
+      id = 0,
+      level = 52,
+      cost = 34000
+    },
+    ['shadow_resistance_aura:3'] = {
+      name = 'Shadow Resistance Aura',
       rank = 3,
       id = 0,
       level = 52,
@@ -464,6 +692,20 @@ local PaladinClassSpells = {
       id = 0,
       level = 54,
       cost = 40000
+    },
+    ['blessing_of_sacrifice:2'] = {
+      name = 'Blessing of Sacrifice',
+      rank = 2,
+      id = 0,
+      level = 54,
+      cost = 40000
+    },
+    ['hammer_of_justice:4'] = {
+      name = 'Hammer of Justice',
+      rank = 4,
+      id = 0,
+      level = 54,
+      cost = 40000
     }
   },
   [56] = {
@@ -473,6 +715,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 56,
       cost = 2100
+    },
+    ['frost_resistance_aura:3'] = {
+      name = 'Frost Resistance Aura',
+      rank = 3,
+      id = 0,
+      level = 56,
+      cost = 42000
     }
   },
   [58] = {
@@ -561,6 +810,55 @@ local PaladinClassSpells = {
       id = 0,
       level = 60,
       cost = 46000
+    },
+    ['blessing_of_sanctuary:4'] = {
+      name = 'Blessing of Sanctuary',
+      rank = 4,
+      id = 0,
+      level = 60,
+      cost = 2070
+    },
+    ['devotion_aura:7'] = {
+      name = 'Devotion Aura',
+      rank = 7,
+      id = 0,
+      level = 60,
+      cost = 46000
+    },
+    ['fire_resistance_aura:3'] = {
+      name = 'Fire Resistance Aura',
+      rank = 3,
+      id = 0,
+      level = 60,
+      cost = 46000
+    },
+    ['greater_blessing_of_kings'] = {
+      name = 'Greater Blessing of Kings',
+      rank = 3,
+      id = 0,
+      level = 60,
+      cost = 2070
+    },
+    ['greater_blessing_of_salvation'] = {
+      name = 'Greater Blessing of Salvation',
+      rank = 0,
+      id = 0,
+      level = 60,
+      cost = 46000
+    },
+    ['greater_blessing_of_sanctuary:1'] = {
+      name = 'Greater Blessing of Sanctuary',
+      rank = 1,
+      id = 0,
+      level = 60,
+      cost = 2070
+    },
+    ['holy_shield:3'] = {
+      name = 'Holy Shield',
+      rank = 3,
+      id = 0,
+      level = 60,
+      cost = 2070
     }
   }
 }
