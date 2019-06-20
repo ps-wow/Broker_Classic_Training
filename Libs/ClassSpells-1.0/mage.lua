@@ -1223,7 +1223,7 @@ local MageClassTomes = {
     rank = 5,
     source = 'drop',
     source_drop = 'world'
-  },
+  }
 }
 
 _G['Broker_Classic_Training_MAGE'] = MageClassSpells

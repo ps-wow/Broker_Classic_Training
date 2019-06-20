@@ -41,4 +41,4 @@ local ShamanClassSpells = {
   }
 }
 
-_G['Broker_Classic_Training_DRUID'] = ShamanClassSpells
+_G['Broker_Classic_Training_SHAMAN'] = ShamanClassSpells
