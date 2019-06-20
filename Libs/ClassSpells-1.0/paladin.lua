@@ -44,6 +44,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 6,
       cost = 100
+    },
+    ['seal_of_the_crusadeer:1'] = {
+      name = 'Seal of the Crusader',
+      rank = 1,
+      id = 0,
+      level = 6,
+      cost = 100
     }
   },
   [8] = {
@@ -106,6 +113,22 @@ local PaladinClassSpells = {
       cost = 300
     }
   },
+  [12] = {
+    ['blessing_of_might:2'] = {
+      name = 'Blessing of Might',
+      rank = 2,
+      id = 0,
+      level = 12,
+      cost = 1000
+    },
+    ['seal_of_the_crusader:2'] = {
+      name = 'Seal of the Crusader',
+      rank = 2,
+      id = 0,
+      level = 12,
+      cost = 1000
+    }
+  },
   [14] = {
     ['blessing_of_wisdom'] = {
       name = 'Blessing of Wisdom',
@@ -126,6 +149,13 @@ local PaladinClassSpells = {
     ['righteous_fury'] = {
       name = 'Righteous Fury',
       rank = 0,
+      id = 0,
+      level = 16,
+      cost = 3000
+    },
+    ['retribution_aura'] = {
+      name = 'Retribution Aura',
+      rank = 1,
       id = 0,
       level = 16,
       cost = 3000
@@ -198,6 +228,20 @@ local PaladinClassSpells = {
       id = 0,
       level = 22,
       cost = 4000
+    },
+    ['blessing_of_might:3'] = {
+      name = 'Blessing of Might',
+      rank = 3,
+      id = 0,
+      level = 22,
+      cost = 4000
+    },
+    ['seal_of_the_crusader:3'] = {
+      name = 'Seal of the Crusader',
+      rank = 3,
+      id = 0,
+      level = 22,
+      cost = 4000
     }
   },
   [24] = {
@@ -255,6 +299,13 @@ local PaladinClassSpells = {
     ['blessing_of_salvation'] = {
       name = 'Blessing of Salvation',
       rank = 0,
+      id = 0,
+      level = 26,
+      cost = 6000
+    },
+    ['retribution_aura'] = {
+      name = 'Retribution Aura',
+      rank = 2,
       id = 0,
       level = 26,
       cost = 6000
@@ -318,12 +369,33 @@ local PaladinClassSpells = {
       id = 0,
       level = 30,
       cost = 11000
+    },
+    ['seal_of_command'] = {
+      name = 'Seal of Command',
+      rank = 0,
+      id = 0,
+      level = 30,
+      cost = 200
     }
   },
   [32] = {
     ['frost_resistance_aura:1'] = {
       name = 'Frost Resistance Aura',
       rank = 1,
+      id = 0,
+      level = 32,
+      cost = 12000
+    },
+    ['blessing_of_might:4'] = {
+      name = 'Blessing of Might',
+      rank = 4,
+      id = 0,
+      level = 32,
+      cost = 12000
+    },
+    ['seal_of_the_crusader:4'] = {
+      name = 'Seal of the Crusader',
+      rank = 4,
       id = 0,
       level = 32,
       cost = 12000
@@ -377,6 +449,13 @@ local PaladinClassSpells = {
     ['fire_resistance_aura:1'] = {
       name = 'Fire Resistance Aura',
       rank = 1,
+      id = 0,
+      level = 36,
+      cost = 14000
+    },
+    ['retribution_aura:3'] = {
+      name = 'Retribution Aura',
+      rank = 3,
       id = 0,
       level = 36,
       cost = 14000
@@ -461,6 +540,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 40,
       cost = 20000
+    },
+    ['seal_of_command:3'] = {
+      name = 'Seal of Command',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 1000
     }
   },
   [42] = {
@@ -481,6 +567,20 @@ local PaladinClassSpells = {
     ['seal_of_righteousness:6'] = {
       name = 'Seal of Righteousness',
       rank = 2,
+      id = 0,
+      level = 42,
+      cost = 21000
+    },
+    ['blessing_of_might:5'] = {
+      name = 'Blessing of Might',
+      rank = 5,
+      id = 0,
+      level = 42,
+      cost = 21000
+    },
+    ['seal_of_the_crusader:5'] = {
+      name = 'Seal of the Crusader',
+      rank = 5,
       id = 0,
       level = 42,
       cost = 21000
@@ -527,6 +627,13 @@ local PaladinClassSpells = {
     ['blessing_of_sacrifice:1'] = {
       name = 'Blessing of Sacrifice',
       rank = 1,
+      id = 0,
+      level = 46,
+      cost = 24000
+    },
+    ['retribution_aura:4'] = {
+      name = 'Retribution Aura',
+      rank = 4,
       id = 0,
       level = 46,
       cost = 24000
@@ -639,6 +746,13 @@ local PaladinClassSpells = {
       id = 0,
       level = 50,
       cost = 1260
+    },
+    ['seal_of_command:4'] = {
+      name = 'Seal of Command',
+      rank = 4,
+      id = 0,
+      level = 50,
+      cost = 1260
     }
   },
   [52] = {
@@ -666,6 +780,27 @@ local PaladinClassSpells = {
     ['shadow_resistance_aura:3'] = {
       name = 'Shadow Resistance Aura',
       rank = 3,
+      id = 0,
+      level = 52,
+      cost = 34000
+    },
+    ['blessing_of_might:6'] = {
+      name = 'Blessing of Might',
+      rank = 6,
+      id = 0,
+      level = 52,
+      cost = 34000
+    },
+    ['greater_blessing_of_might:1'] = {
+      name = 'Greater Blessing of Might',
+      rank = 1,
+      id = 0,
+      level = 52,
+      cost = 46000
+    },
+    ['seal_of_the_crusader:6'] = {
+      name = 'Seal of the Crusader',
+      rank = 6,
       id = 0,
       level = 52,
       cost = 34000
@@ -719,6 +854,13 @@ local PaladinClassSpells = {
     ['frost_resistance_aura:3'] = {
       name = 'Frost Resistance Aura',
       rank = 3,
+      id = 0,
+      level = 56,
+      cost = 42000
+    },
+    ['retribution_aura:5'] = {
+      name = 'Retribution Aura',
+      rank = 5,
       id = 0,
       level = 56,
       cost = 42000
@@ -856,6 +998,20 @@ local PaladinClassSpells = {
     ['holy_shield:3'] = {
       name = 'Holy Shield',
       rank = 3,
+      id = 0,
+      level = 60,
+      cost = 2070
+    },
+    ['greater_blessing_of_might:2'] = {
+      name = 'Greater Blessing of Might',
+      rank = 2,
+      id = 0,
+      level = 60,
+      cost = 41400
+    },
+    ['seal_of_command:5'] = {
+      name = 'Seal of Command',
+      rank = 5,
       id = 0,
       level = 60,
       cost = 2070
