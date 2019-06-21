@@ -18,7 +18,7 @@ local HunterClassSpells = {
     ['aspect_of_the_monkey'] = {
       name = 'Aspect of the Monkey',
       rank = 0,
-      id = 0,
+      id = 13163,
       level = 4,
       cost = 100
     },
