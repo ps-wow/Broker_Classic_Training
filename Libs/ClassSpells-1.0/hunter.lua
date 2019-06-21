@@ -9,7 +9,7 @@ local HunterClassSpells = {
     ['track_beasts:1'] = {
       name = 'Track Beasts',
       rank = 0,
-      id = 0,
+      id = 1494,
       level = 1,
       cost = 10
     }
