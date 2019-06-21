@@ -18,9 +18,9 @@ Additionally the addon also has a database of the various Tomes for a given clas
 
 Currently spell listing might not be 100% accurate, if you find a spell thats missing or mis-categorised etc please raise an issue [here](https://github.com/ps-wow/Broker_Classic_Training/issues)
 
-# Buy me a coffee
+# Buy me a coffee?
 
-Coffee is the fuel of development, buying me a coffee gives me the energy I need to create, update and maintain addons, I do it for fun, but it's always nice to get a little something in return.  Use any of the sites below if you care to say thanks
+Coffee is the fuel of development, buying me a coffee gives me the energy I need to create, update and maintain addons, I make my addons because it's fun and I use them myself, but it's always nice to get a little something extra in return.  Use any of the sites below if you can donate to the cause
 
  - [Patreon](https://patreon.com/privatesniper)
  - [ko-fi](https://ko-fi.com/privatesniper)
