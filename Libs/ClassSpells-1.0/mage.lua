@@ -619,7 +619,7 @@ local MageClassSpells = {
       name = 'Arcane Missiles',
       rank = 5,
       id = 8417,
-      level = 340,
+      level = 40,
       cost = 15000
     },
     ['conjure_water:5'] = {
