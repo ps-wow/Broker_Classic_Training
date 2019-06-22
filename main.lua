@@ -9,6 +9,7 @@ BrokerClassicTraining.constants = {
 
 -- The data feed
 BrokerClassicTraining.Feed = {
+  ClassName = '',
   level = 0,
   newSpells = 0,
   spells = {},
@@ -32,6 +33,35 @@ function BrokerClassicTraining:Dump(str, obj)
   end
 end
 
+-- Class Colours
+function BrokerClassicTraining:GetClassColourHex(class)
+  if class ~= nil then
+    class = GetClass('player')
+  end
+
+  if class == 'PALADIN' then
+    return 'F58CBA'
+  elseif class == 'WARRIOR' then
+    return 'C79C6E'
+  elseif class == 'HUNTER' then
+    return 'ABD473'
+  elseif class == 'SHAMAN' then
+    return '0070DE'
+  elseif class == 'DRUID' then
+    return 'FF7D0A'
+  elseif class == 'ROGUE' then
+    return 'FFF569'
+  elseif class == 'MAGE' then
+    return '40C7EB'
+  elseif class == 'PRIEST' then
+    return 'FFFFFF'
+  elseif class == 'WARLOCK' then
+    return '8787ED'
+  end
+
+  return 'FFFFFF'
+end
+
 -- Update the label
 function BrokerClassicTraining:UpdateLabel()
   return BrokerClassicTraining:GetLabels()
@@ -41,9 +71,18 @@ end
 function BrokerClassicTraining:GetLabels()
   local label = 'Training'
 
+  local new = 0
+
+  if (BrokerClassicTraining.Feed.newSpells > 0) then
+    new = new + BrokerClassicTraining.Feed.newSpells
+  end
+  if (BrokerClassicTraining.Feed.newBooks > 0) then
+    new = new + BrokerClassicTraining.Feed.newBooks
+  end
+
   if (BrokerClassicTraining.constants.newTrainingAlert == 'badge') then
-    if (BrokerClassicTraining.Feed.newSpells > 0) then
-      return label .. ' (' .. BrokerClassicTraining.Feed.newSpells .. ')'
+    if (new > 0) then
+      return label .. ' (' .. new .. ')'
     end
   end
   return label
@@ -51,42 +90,46 @@ end
 
 function BrokerClassicTraining:BuildTrainingData(self, level)
   level = level or nil
+  local WhiteRGBA = '|cFFFFFFFF'
 
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
+  BrokerClassicTraining.Feed.ClassName = englishClass
+  local hex = BrokerClassicTraining:GetClassColourHex(class)
 
   ------------
   -- SPELLS --
   ------------
 
-  if (self.AddLine ~= nil) then
-    self:AddLine('Spells')
-  end
-
   -- -- Get the spells for the class
-  -- local classKey = 'Broker_Classic_Training_'..englishClass
-  -- local spells = _G[classKey]
+  local classKey = 'Broker_Classic_Training_'..englishClass
+  local spells = _G[classKey]
 
-  -- -- Filter and format spells
-  -- if (spells ~= nil) then
-  --   BrokerClassicTraining:FilterSpells(spells, level)
-  --   BrokerClassicTraining:FormatSpells(self)
-  -- end
+  -- Filter and format spells
+  if (spells ~= nil) then
+    if (self.AddLine ~= nil) then
+      local title = string.format("%sSpells", WhiteRGBA)
+    self:AddLine(title)
+    end
+    BrokerClassicTraining:FilterSpells(spells, level)
+    BrokerClassicTraining:FormatSpells(self)
+  end
 
   -----------------
   -- SPELL BOOKS --
   -----------------
 
-  if (self.AddLine ~= nil) then
-    self:AddLine('Class Books')
-  end
-
   -- Get the spell books for the class
   local classBooksKey = 'Broker_Classic_Training_'..englishClass..'_Tomes'
   local books = _G[classBooksKey]
 
+  local EscapeColour = '|cFF'..hex
+
   -- Filter and format spells
   if (books ~= nil) then
+    if (self.AddLine ~= nil) then
+      self:AddLine(EscapeColour..'Class Books')
+    end
     BrokerClassicTraining:FilterSpellBooks(books, level)
     BrokerClassicTraining:FormatSpellBooks(self)
   end
@@ -105,8 +148,8 @@ function BrokerClassicTraining:FilterSpells(spells, level)
       for key,spell in pairs(levelSpells) do
         -- Spell = v
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
-          --local isKnown = IsSpellKnown(spell.id)
-          local isKnown = false -- Debug remove once done
+          local isKnown = IsSpellKnown(spell.id)
+          --local isKnown = false -- Debug remove once done
           if (isKnown == false) then
             BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
             table.insert(spellsLearnable, spell)
@@ -137,7 +180,22 @@ function BrokerClassicTraining:FormatSpells(self)
         cost = GetCoinTextureString(spell.cost)
       end
 
-      self:AddDoubleLine(spell.level .. ' ' .. spell.name, cost)
+      if (spell.rank == nil) then
+        BrokerClassicTraining:Dump('spell without rank', spell)
+        return
+      end
+
+      local spellOutput = '' 
+      if spell.rank == 0 then
+        spellOutput = string.format('%d %s', spell.level, spell.name)
+      else
+        spellOutput = string.format('%d %s %s', spell.level, spell.name, 'Rank ' .. spell.rank)
+      end
+
+      self:AddDoubleLine(spellOutput, cost)
+      if (spell.cost == 'quest') then
+        self:AddLine('- ' ..spell.quest_name)
+      end
     end
     -- Add total
     self:AddDoubleLine('Total: ', GetCoinTextureString(totalCost))
@@ -157,15 +215,13 @@ function BrokerClassicTraining:FilterSpellBooks(books, level)
 
   BrokerClassicTraining.Feed.newBooks = 0
 
-  if (level == 60) then
-    for _,book in pairs(books) do
-      if book.spell_id ~= nil and book.spell_id ~= 0 then -- Abort if spell id is zero or nil
-        local isKnown = IsSpellKnown(book.spell_id)
-        if (isKnown == false) then
-          BrokerClassicTraining.Feed.newBooks = BrokerClassicTraining.Feed.newBooks + 1
-          table.insert(booksLearnable, book)
-          new = new + 1
-        end
+  for _,book in pairs(books) do
+    if book.spell_id ~= nil and book.spell_id ~= 0 then -- Abort if spell id is zero or nil
+      local isKnown = IsSpellKnown(book.spell_id)
+      if (isKnown == false) then
+        BrokerClassicTraining.Feed.newBooks = BrokerClassicTraining.Feed.newBooks + 1
+        table.insert(booksLearnable, book)
+        new = new + 1
       end
     end
   end
