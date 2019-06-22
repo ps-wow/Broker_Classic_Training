@@ -36,7 +36,7 @@ end
 -- Class Colours
 function BrokerClassicTraining:GetClassColourHex(class)
   if class ~= nil then
-    class = GetClass('player')
+    class = UnitClass('player')
   end
 
   if class == 'PALADIN' then
@@ -95,7 +95,7 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
   BrokerClassicTraining.Feed.ClassName = englishClass
-  local hex = BrokerClassicTraining:GetClassColourHex(class)
+  local hex = BrokerClassicTraining:GetClassColourHex(englishClass)
 
   ------------
   -- SPELLS --
@@ -115,9 +115,9 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
     BrokerClassicTraining:FormatSpells(self)
   end
 
-  -----------------
-  -- SPELL BOOKS --
-  -----------------
+  -----------------------
+  -- SPELL BOOKS/TOMES --
+  -----------------------
 
   -- Get the spell books for the class
   local classBooksKey = 'Broker_Classic_Training_'..englishClass..'_Tomes'
@@ -140,8 +140,8 @@ function BrokerClassicTraining:FilterSpells(spells, level)
   local spellsLearnable = {}
   local new = 0
   level = level or UnitLevel("player")
-
   BrokerClassicTraining.Feed.newSpells = 0
+
   for i=1,level do
     local levelSpells = spells[i]
     if (levelSpells ~= nil) then
@@ -198,7 +198,7 @@ function BrokerClassicTraining:FormatSpells(self)
       end
     end
     -- Add total
-    self:AddDoubleLine('Total: ', GetCoinTextureString(totalCost))
+    self:AddDoubleLine('|cFF808080Total: ', GetCoinTextureString(totalCost))
   end
 end
 
@@ -212,16 +212,17 @@ function BrokerClassicTraining:FilterSpellBooks(books, level)
   local booksLearnable = {}
   local new = 0
   level = level or UnitLevel("player")
-
   BrokerClassicTraining.Feed.newBooks = 0
 
   for _,book in pairs(books) do
     if book.spell_id ~= nil and book.spell_id ~= 0 then -- Abort if spell id is zero or nil
-      local isKnown = IsSpellKnown(book.spell_id)
-      if (isKnown == false) then
-        BrokerClassicTraining.Feed.newBooks = BrokerClassicTraining.Feed.newBooks + 1
-        table.insert(booksLearnable, book)
-        new = new + 1
+      if (book.level <= level) then
+        local isKnown = IsSpellKnown(book.spell_id)
+        if (isKnown == false) then
+          BrokerClassicTraining.Feed.newBooks = BrokerClassicTraining.Feed.newBooks + 1
+          table.insert(booksLearnable, book)
+          new = new + 1
+        end
       end
     end
   end

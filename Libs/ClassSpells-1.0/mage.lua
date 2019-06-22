@@ -1155,7 +1155,8 @@ local MageClassTomes = {
     rank = 11,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['conjure_food_vii'] = {
     item_id = 22897,
@@ -1165,7 +1166,8 @@ local MageClassTomes = {
     rank = 7,
     source = 'drop',
     source_drop = 'dungeon',
-    source_drop_dungeon = 'Stratholme'
+    source_drop_dungeon = 'Stratholme',
+    level = 60
   },
   ['fireball_xii'] = {
     item_id = 21279,
@@ -1175,7 +1177,8 @@ local MageClassTomes = {
     rank = 12,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['arcane_missiles_viii'] = {
     itemId = 21280,
@@ -1185,7 +1188,8 @@ local MageClassTomes = {
     rank = 8,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['polymorph_turtle'] = {
     item_id = 22739,
@@ -1195,7 +1199,8 @@ local MageClassTomes = {
     rank = 0,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'ZG'
+    source_drop_raid = 'ZG',
+    level = 60
   },
   ['polymorph_pig'] = {
     item_id = 4142,
@@ -1204,7 +1209,8 @@ local MageClassTomes = {
     spell_id = 28272,
     rank = 0,
     source = 'quest',
-    source_quest = 'Fragmented Magic'
+    source_quest = 'Fragmented Magic',
+    level = 60
   },
   ['polymorph_cow'] = {
     item_id = 4144,
@@ -1213,7 +1219,8 @@ local MageClassTomes = {
     spell_id = 28270,
     rank = 0,
     source = 'quest',
-    source_quest = 'Fragmented Magic'
+    source_quest = 'Fragmented Magic',
+    level = 60
   },
   ['frost_ward_v'] = {
     item_id = 22890,
@@ -1222,7 +1229,8 @@ local MageClassTomes = {
     spell_id = 28609,
     rank = 5,
     source = 'drop',
-    source_drop = 'world'
+    source_drop = 'world',
+    level = 60
   }
 }
 

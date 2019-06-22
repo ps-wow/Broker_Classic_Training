@@ -1017,7 +1017,8 @@ local HunterClassTomes = {
     spell_id = 25295,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['aspect_of_the_hawk_vii'] = {
     item_id = 21307,
@@ -1027,7 +1028,8 @@ local HunterClassTomes = {
     spell_id = 25296,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['multi_shot_v'] = {
     item_id = 21304,
@@ -1037,7 +1039,19 @@ local HunterClassTomes = {
     spell_id = 25294,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
+  },
+  ['tranquilizing_shot'] = {
+    item_id = 16665,
+    name = 'Tome of Tranquilizing Shot',
+    spell = 'Tranquilizing Shot',
+    rank = 0,
+    spell_id = 19801,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'MC',
+    level = 60
   }
 }
 
