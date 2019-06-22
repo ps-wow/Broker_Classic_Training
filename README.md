@@ -1,5 +1,8 @@
 # Broker Classic Training
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/ps-wow/Broker_Classic_Training.svg)
+
 Project Status: Development
 
 This is an LDB (Lib Data Broker) plugin that provides a list of learnable spells for your class, now you don't need to visit your trainer to actually see if you have a new spell to pick up or not!
