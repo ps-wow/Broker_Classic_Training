@@ -2,7 +2,7 @@
 Project                 : Broker_Classic_Training
 Description             : Chinese (Traditional) translation file (zhTW)
 Author                  : PrivateSniper
-Translator              : 
+Translator              : N/A
 Revision                : $Rev: 0 $
 ********************************************************************* ]]
 

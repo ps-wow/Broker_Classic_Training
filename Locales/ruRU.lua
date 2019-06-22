@@ -2,7 +2,7 @@
 Project                 : Broker_Classic_Training
 Description             : Rusian translation file (ruRU)
 Author                  : PrivateSniper
-Translator              : 
+Translator              : N/A
 Revision                : $Rev: 0 $
 ********************************************************************* ]]
 

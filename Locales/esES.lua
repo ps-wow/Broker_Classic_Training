@@ -2,7 +2,7 @@
 Project                 : Broker_Classic_Training
 Description             : Spanish translation file (esES)
 Author                  : PrivateSniper
-Translator              : 
+Translator              : N/A
 Revision                : $Rev: 0 $
 ********************************************************************* ]]
 

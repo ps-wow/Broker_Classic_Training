@@ -2,7 +2,7 @@
 Project                 : Broker_Classic_Training
 Description             : Chinese translation file (zhCN)
 Author                  : PrivateSniper
-Translator              : 
+Translator              : N/A
 Revision                : $Rev: 0 $
 ********************************************************************* ]]
 
