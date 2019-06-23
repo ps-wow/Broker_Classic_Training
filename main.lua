@@ -112,7 +112,7 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
     self:AddLine(title)
     end
     BrokerClassicTraining:FilterSpells(spells, level)
-    BrokerClassicTraining:FormatSpells(self)
+    BrokerClassicTraining:FormatSpells(self, hex)
   end
 
   -----------------------
@@ -127,11 +127,8 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
 
   -- Filter and format spells
   if (books ~= nil) then
-    if (self.AddLine ~= nil) then
-      self:AddLine(EscapeColour..'Class Books')
-    end
     BrokerClassicTraining:FilterSpellBooks(books, level)
-    BrokerClassicTraining:FormatSpellBooks(self)
+    BrokerClassicTraining:FormatSpellBooks(self, hex)
   end
 end
 
@@ -164,7 +161,7 @@ function BrokerClassicTraining:FilterSpells(spells, level)
   BrokerClassicTraining.Feed.newSpells = new
 end
 
-function BrokerClassicTraining:FormatSpells(self)
+function BrokerClassicTraining:FormatSpells(self, hex)
   if (self.AddLine ~= nil) then
     local totalCost = 0
     for _,spell in pairs(BrokerClassicTraining.Feed.spells) do
@@ -202,7 +199,6 @@ function BrokerClassicTraining:FormatSpells(self)
   end
 end
 
-
 -----------------
 -- Spell Books --
 -----------------
@@ -231,8 +227,12 @@ function BrokerClassicTraining:FilterSpellBooks(books, level)
   BrokerClassicTraining.Feed.newBooks = new
 end
 
-function BrokerClassicTraining:FormatSpellBooks(self)
-  if (self.AddLine ~= nil) then
+function BrokerClassicTraining:FormatSpellBooks(self, hex)
+  local EscapeColour = '|cFF'..hex
+  if (self.AddLine ~= nil and BrokerClassicTraining.Feed.newBooks > 0) then
+    if (self.AddLine ~= nil) then
+      self:AddLine(EscapeColour..'Class Books')
+    end
     for _,book in pairs(BrokerClassicTraining.Feed.books) do
       self:AddDoubleLine(book.name, book.source)
     end
