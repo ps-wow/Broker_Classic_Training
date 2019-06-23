@@ -1,7 +1,7 @@
 # Broker Classic Training
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/ps-wow/Broker_Classic_Training.svg)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/ps-wow/Broker_Classic_Training.svg) [![Curseforge Addon](https://img.shields.io/badge/Curseforge-Addon-orange.svg)](https://www.curseforge.com/wow/addons/broker_classic_training)
 
 Project Status: Development
 
