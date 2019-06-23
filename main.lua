@@ -107,10 +107,6 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
 
   -- Filter and format spells
   if (spells ~= nil) then
-    if (self.AddLine ~= nil) then
-      local title = string.format("%sSpells", WhiteRGBA)
-    self:AddLine(title)
-    end
     BrokerClassicTraining:FilterSpells(spells, level)
     BrokerClassicTraining:FormatSpells(self, hex)
   end
@@ -162,8 +158,13 @@ function BrokerClassicTraining:FilterSpells(spells, level)
 end
 
 function BrokerClassicTraining:FormatSpells(self, hex)
-  if (self.AddLine ~= nil) then
+  if (self.AddLine ~= nil and BrokerClassicTraining.Feed.newSpells > 0) then
     local totalCost = 0
+    local EscapeColour = '|cFF'..hex
+
+    local title = string.format("%sSpells", WhiteRGBA)
+    self:AddLine(title)
+
     for _,spell in pairs(BrokerClassicTraining.Feed.spells) do
       -- self:AddLine(spell.level .. ' ' .. spell.name)
       local cost = ''
@@ -235,6 +236,29 @@ function BrokerClassicTraining:FormatSpellBooks(self, hex)
     end
     for _,book in pairs(BrokerClassicTraining.Feed.books) do
       self:AddDoubleLine(book.name, book.source)
+
+      -- Add drop source
+
+      -- source = 'drop',
+      -- source_drop = 'dungeon',
+      -- source_drop_dungeon = 'ubrs',
+      local difficulty = ''
+      local leftText = ''
+      local rightText = ''
+
+      if (book.source == 'drop') then
+        if book.source_drop == 'dungeon' then
+          difficulty = '|cFFF0F000'
+          leftText = string.format('%s - Dungeon', difficulty)
+          rightText = string.format('%s%s', difficulty, book.source_drop_dungeon)
+          self:AddDoubleLine(leftText, rightText)
+        elseif book.source_drop == 'raid' then
+          difficulty = '|cFFF08000'
+          leftText = string.format('%s - Raid', difficulty)
+          rightText = string.format('%s%s', difficulty, book.source_drop_raid)
+          self:AddDoubleLine(leftText, rightText)
+        end
+      end
     end
   end
 end
