@@ -53,6 +53,13 @@ local DruidClassSpells = {
       id = 0,
       level = 8,
       cost = 200
+    },
+    ['healing_touch:2'] = {
+      name = 'Healing Touch',
+      rank = 2,
+      id = 0,
+      level = 8,
+      cost = 200
     }
   },
   [10] = {
@@ -62,10 +69,30 @@ local DruidClassSpells = {
       id = 0,
       level = 10,
       cost = 300
+    },
+    ['mark_of_the_wild:2'] = {
+      name = 'Mark of the Wild',
+      rank = 2,
+      id = 0,
+      level = 10,
+      cost = 300
+    },
+    ['rejuvenation:2'] = {
+      name = 'Rejuvenation',
+      rank = 2,
+      id = 0,
+      level = 10,
+      cost = 300
     }
   },
   [12] = {
-
+    ['regrowth:1'] = {
+      name = 'Regrowth',
+      rank = 1,
+      id = 0,
+      level = 12,
+      cost = 800
+    }
   },
   [14] = {
     ['thorns:2'] = {
@@ -81,11 +108,25 @@ local DruidClassSpells = {
       id = 0,
       level = 14,
       cost = 900
+    },
+    ['healing_touch:3'] = {
+      name = 'Healing Touch',
+      rank = 3,
+      id = 0,
+      level = 14,
+      cost = 900
     }
   },
   [16] = {
     ['moonfire:3'] = {
       name = 'Moonfire',
+      rank = 3,
+      id = 0,
+      level = 16,
+      cost = 1800
+    },
+    ['rejuvenation:3'] = {
+      name = 'Rejuvenation',
       rank = 3,
       id = 0,
       level = 16,
@@ -120,11 +161,39 @@ local DruidClassSpells = {
       id = 0,
       level = 18,
       cost = 100
+    },
+    ['regrowth:2'] = {
+      name = 'Regrowth',
+      rank = 2,
+      id = 0,
+      level = 18,
+      cost = 1900
     }
   },
   [20] = {
     ['starfire:1'] = {
       name = 'Starfire',
+      rank = 1,
+      id = 0,
+      level = 20,
+      cost = 2000
+    },
+    ['healing_touch:4'] = {
+      name = 'Healing Touch',
+      rank = 4,
+      id = 0,
+      level = 20,
+      cost = 2000
+    },
+    ['mark_of_the_wild:3'] = {
+      name = 'Mark of the Wild',
+      rank = 3,
+      id = 0,
+      level = 20,
+      cost = 2000
+    },
+    ['rebirth:1'] = {
+      name = 'Rebirth',
       rank = 1,
       id = 0,
       level = 20,
@@ -152,12 +221,33 @@ local DruidClassSpells = {
       id = 0,
       level = 22,
       cost = 3000
+    },
+    ['rejuvenation:4'] = {
+      name = 'Rejuvenation',
+      rank = 4,
+      id = 0,
+      level = 22,
+      cost = 3000
     }
   },
   [24] = {
     ['thorns:3'] = {
       name = 'Thorns',
       rank = 3,
+      id = 0,
+      level = 24,
+      cost = 4000
+    },
+    ['regrowth:3'] = {
+      name = 'Regrowth',
+      rank = 3,
+      id = 0,
+      level = 24,
+      cost = 4000
+    },
+    ['remove_curse'] = {
+      name = 'Remove Curse',
+      rank = 0,
       id = 0,
       level = 24,
       cost = 4000
@@ -169,7 +259,21 @@ local DruidClassSpells = {
       rank = 2,
       id = 0,
       level = 26,
-      cost = 5000
+      cost = 4500
+    },
+    ['abolish_poison:2'] = {
+      name = 'Abolish Poison',
+      rank = 0,
+      id = 0,
+      level = 26,
+      cost = 4500
+    },
+    ['healing_touch:5'] = {
+      name = 'Healing Touch',
+      rank = 5,
+      id = 0,
+      level = 26,
+      cost = 4500
     }
   },
   [28] = {
@@ -193,6 +297,13 @@ local DruidClassSpells = {
       id = 0,
       level = 28,
       cost = 250
+    },
+    ['rejuvenation:5'] = {
+      name = 'Rejuvenation',
+      rank = 5,
+      id = 0,
+      level = 28,
+      cost = 5000
     }
   },
   [30] = {
@@ -209,10 +320,51 @@ local DruidClassSpells = {
       id = 0,
       level = 30,
       cost = 6000
+    },
+    ['insect_swarm:2'] = {
+      name = 'Insect Swarm',
+      rank = 2,
+      id = 0,
+      level = 30,
+      cost = 300
+    },
+    ['mark_of_the_wild:4'] = {
+      name = 'Mark of the Wild',
+      rank = 4,
+      id = 0,
+      level = 30,
+      cost = 6000
+    },
+    ['rebirth:2'] = {
+      name = 'Rebirth',
+      rank = 2,
+      id = 0,
+      level = 30,
+      cost = 6000
+    },
+    ['regrowth:4'] = {
+      name = 'Regrowth',
+      rank = 4,
+      id = 0,
+      level = 30,
+      cost = 6000
+    },
+    ['tranquility:1'] = {
+      name = 'Tranquility',
+      rank = 1,
+      id = 0,
+      level = 30,
+      cost = 6000
     }
   },
   [32] = {
-
+    ['healing_touch:6'] = {
+      name = 'Healing Touch',
+      rank = 6,
+      id = 0,
+      level = 32,
+      cost = 8000
+    }
   },
   [34] = {
     ['moonfire:6'] = {
@@ -235,10 +387,23 @@ local DruidClassSpells = {
       id = 0,
       level = 34,
       cost = 10000
+    },
+    ['rejuvenation:6'] = {
+      name = 'Rejuvenation',
+      rank = 6,
+      id = 0,
+      level = 34,
+      cost = 10000
     }
   },
   [36] = {
-
+    ['regrowth:5'] = {
+      name = 'Regrowth',
+      rank = 5,
+      id = 0,
+      level = 36,
+      cost = 11000
+    }
   },
   [38] = {
     ['entangling_roots:4'] = {
@@ -275,6 +440,13 @@ local DruidClassSpells = {
       id = 0,
       level = 38,
       cost = 12000
+    },
+    ['healing_touch:6'] = {
+      name = 'Healing Touch',
+      rank = 6,
+      id = 0,
+      level = 38,
+      cost = 12000
     }
   },
   [40] = {
@@ -288,6 +460,48 @@ local DruidClassSpells = {
     ['moonfire:7'] = {
       name = 'Moonfire',
       rank = 7,
+      id = 0,
+      level = 40,
+      cost = 14000
+    },
+    ['innervate:1'] = {
+      name = 'Innervate',
+      rank = 1,
+      id = 0,
+      level = 40,
+      cost = 14000
+    },
+    ['insect_swarm:3'] = {
+      name = 'Insect Swarm',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 700
+    },
+    ['mark_of_the_wild:5'] = {
+      name = 'Mark of the Wild',
+      rank = 5,
+      id = 0,
+      level = 40,
+      cost = 14000
+    },
+    ['rebirth:3'] = {
+      name = 'Rebirth',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 14000
+    },
+    ['rejuvenation:7'] = {
+      name = 'Rejuvenation',
+      rank = 7,
+      id = 0,
+      level = 40,
+      cost = 14000
+    },
+    ['tranquility:2'] = {
+      name = 'Tranquility',
+      rank = 2,
       id = 0,
       level = 40,
       cost = 14000
@@ -307,6 +521,13 @@ local DruidClassSpells = {
       id = 0,
       level = 42,
       cost = 16000
+    },
+    ['regrowth:6'] = {
+      name = 'Regrowth',
+      rank = 6,
+      id = 0,
+      level = 42,
+      cost = 16000
     }
   },
   [44] = {
@@ -323,6 +544,13 @@ local DruidClassSpells = {
       id = 0,
       level = 44,
       cost = 18000
+    },
+    ['healing_touch:8'] = {
+      name = 'Healing Touch',
+      rank = 8,
+      id = 0,
+      level = 44,
+      cost = 18000
     }
   },
   [46] = {
@@ -335,6 +563,13 @@ local DruidClassSpells = {
     },
     ['wrath:7'] = {
       name = 'Wrath',
+      rank = 7,
+      id = 0,
+      level = 46,
+      cost = 20000
+    },
+    ['rejuvenation:7'] = {
+      name = 'Rejuvenation',
       rank = 7,
       id = 0,
       level = 46,
@@ -355,6 +590,13 @@ local DruidClassSpells = {
       id = 0,
       level = 48,
       cost = 1100
+    },
+    ['regrowth:7'] = {
+      name = 'Regrowth',
+      rank = 7,
+      id = 0,
+      level = 48,
+      cost = 22000
     }
   },
   [50] = {
@@ -371,11 +613,53 @@ local DruidClassSpells = {
       id = 0,
       level = 50,
       cost = 23000
+    },
+    ['healing_touch:9'] = {
+      name = 'Healing Touch',
+      rank = 9,
+      id = 0,
+      level = 50,
+      cost = 23000
+    },
+    ['insect_swarm:4'] = {
+      name = 'Insect Swarm',
+      rank = 4,
+      id = 0,
+      level = 50,
+      cost = 1150
+    },
+    ['mark_of_the_wild:6'] = {
+      name = 'Mark of the Wild',
+      rank = 6,
+      id = 0,
+      level = 50,
+      cost = 23000
+    },
+    ['rebirth:4'] = {
+      name = 'Rebirth',
+      rank = 4,
+      id = 0,
+      level = 50,
+      cost = 23000
+    },
+    ['tranquility:3'] = {
+      name = 'Tranquility',
+      rank = 3,
+      id = 0,
+      level = 50,
+      cost = 23000
     }
   },
   [52] = {
     ['moonfire:9'] = {
       name = 'Moonfire',
+      rank = 9,
+      id = 0,
+      level = 52,
+      cost = 26000
+    },
+    ['rejuvenation:9'] = {
+      name = 'Rejuvenation',
       rank = 9,
       id = 0,
       level = 52,
@@ -410,10 +694,23 @@ local DruidClassSpells = {
       id = 0,
       level = 54,
       cost = 28000
+    },
+    ['regrowth:8'] = {
+      name = 'Regrowth',
+      rank = 8,
+      id = 0,
+      level = 54,
+      cost = 28000
     }
   },
   [56] = {
-
+    ['healing_touch:10'] = {
+      name = 'Healing Touch',
+      rank = 10,
+      id = 0,
+      level = 56,
+      cost = 30000
+    }
   },
   [58] = {
     ['entangling_roots:6'] = {
@@ -450,12 +747,54 @@ local DruidClassSpells = {
       id = 0,
       level = 58,
       cost = 32000
+    },
+    ['rejuvenation:10'] = {
+      name = 'Rejuvenation',
+      rank = 10,
+      id = 0,
+      level = 58,
+      cost = 32000
     }
   },
   [60] = {
     ['hurricane:3'] = {
       name = 'Hurricane',
       rank = 3,
+      id = 0,
+      level = 60,
+      cost = 34000
+    },
+    ['insect_swarm:5'] = {
+      name = 'Insect Swarm',
+      rank = 5,
+      id = 0,
+      level = 60,
+      cost = 1700
+    },
+    ['mark_of_the_wild:7'] = {
+      name = 'Mark of the Wild',
+      rank = 7,
+      id = 0,
+      level = 60,
+      cost = 34000
+    },
+    ['rebirth:5'] = {
+      name = 'Rebirth',
+      rank = 5,
+      id = 0,
+      level = 60,
+      cost = 34000
+    },
+    ['regrowth:9'] = {
+      name = 'Regrowth',
+      rank = 9,
+      id = 0,
+      level = 60,
+      cost = 34000
+    },
+    ['tranquility:5'] = {
+      name = 'Tranquility',
+      rank = 5,
       id = 0,
       level = 60,
       cost = 34000
