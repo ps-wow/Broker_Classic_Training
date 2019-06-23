@@ -1146,6 +1146,7 @@ local MageTalentSpells = {
   }
 }
 
+-- @see https://classic.wowhead.com/items/min-req-level:60/max-req-level:60/class:8?filter=168;1;0
 local MageClassTomes = {
   ['frostbolt_xi'] = {
     item_id = 21214,
