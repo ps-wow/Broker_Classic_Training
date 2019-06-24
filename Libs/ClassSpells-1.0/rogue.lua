@@ -47,10 +47,25 @@ local RogueClassSpells = {
       cost = 100
     }
   },
-  [8] = {},
+  [8] = {
+    ['eviscerate:2'] = {
+      name = 'Eviscerate',
+      rank = 2,
+      id = 0,
+      level = 8,
+      cost = 200
+    }
+  },
   [10] = {
     ['sap:1'] = {
       name = 'Sap',
+      rank = 1,
+      id = 0,
+      level = 10,
+      cost = 300
+    },
+    ['slice_and_dice:1'] = {
+      name = 'Slice and Dice',
       rank = 1,
       id = 0,
       level = 10,
@@ -66,7 +81,22 @@ local RogueClassSpells = {
       cost = 800
     }
   },
-  [14] = {},
+  [14] = {
+    ['expose_armor:1'] = {
+      name = 'Expose Armor',
+      rank = 1,
+      id = 0,
+      level = 14,
+      cost = 1200
+    },
+    ['garrote:1'] = {
+      name = 'Garrote',
+      rank = 1,
+      id = 0,
+      level = 14,
+      cost = 1200
+    }
+  },
   [16] = {
     ['pick_lock'] = {
       name = 'Pick Lock',
@@ -74,9 +104,24 @@ local RogueClassSpells = {
       id = 0,
       level = 16,
       cost = 1800
+    },
+    ['eviscerate:3'] = {
+      name = 'Eviscerate',
+      rank = 3,
+      id = 0,
+      level = 16,
+      cost = 1800
     }
   },
-  [18] = {},
+  [18] = {
+    ['ambush:1'] = {
+      name = 'Ambush',
+      rank = 1,
+      id = 0,
+      level = 18,
+      cost = 2900
+    }
+  },
   [20] = {
     ['stealth:2'] = {
       name = 'Stealth',
@@ -87,6 +132,13 @@ local RogueClassSpells = {
     },
     ['crippling_poison:1'] = {
       name = 'Crippling Poison',
+      rank = 1,
+      id = 0,
+      level = 20,
+      cost = 3000
+    },
+    ['rupture:1'] = {
+      name = 'Rupture',
       rank = 1,
       id = 0,
       level = 20,
@@ -107,6 +159,13 @@ local RogueClassSpells = {
       id = 0,
       level = 22,
       cost = 4000
+    },
+    ['garrote:2'] = {
+      name = 'Garrote',
+      rank = 2,
+      id = 0,
+      level = 22,
+      cost = 4000
     }
   },
   [24] = {
@@ -123,9 +182,38 @@ local RogueClassSpells = {
       id = 0,
       level = 24,
       cost = 5000
+    },
+    ['eviscerate:4'] = {
+      name = 'Eviscerate',
+      rank = 4,
+      id = 0,
+      level = 24,
+      cost = 5000
     }
   },
-  [26] = {},
+  [26] = {
+    ['ambush:2'] = {
+      name = 'Ambush',
+      rank = 2,
+      id = 0,
+      level = 26,
+      cost = 6000
+    },
+    ['cheap_shot'] = {
+      name = 'Cheap Shot',
+      rank = 0,
+      id = 0,
+      level = 26,
+      cost = 6000
+    },
+    ['expose_armor:2'] = {
+      name = 'Expose Armor',
+      rank = 2,
+      id = 0,
+      level = 26,
+      cost = 6000
+    }
+  },
   [28] = {
     ['sap:2'] = {
       name = 'Sap',
@@ -136,6 +224,13 @@ local RogueClassSpells = {
     },
     ['instant_poison:1'] = {
       name = 'Instant Poison',
+      rank = 2,
+      id = 0,
+      level = 28,
+      cost = 8000
+    },
+    ['rupture:2'] = {
+      name = 'Rupture',
       rank = 2,
       id = 0,
       level = 28,
@@ -156,12 +251,33 @@ local RogueClassSpells = {
       id = 0,
       level = 30,
       cost = 10000
+    },
+    ['garrote:3'] = {
+      name = 'Garrote',
+      rank = 3,
+      id = 0,
+      level = 30,
+      cost = 10000
+    },
+    ['kidney_shot:1'] = {
+      name = 'Kidney Shot',
+      rank = 1,
+      id = 0,
+      level = 30,
+      cost = 10000
     }
   },
   [32] = {
     ['wound_poison:1'] = {
       name = 'Wound Poison',
       rank = 1,
+      id = 0,
+      level = 32,
+      cost = 12000
+    },
+    ['eviscerate:5'] = {
+      name = 'Eviscerate',
+      rank = 5,
       id = 0,
       level = 32,
       cost = 12000
@@ -181,11 +297,32 @@ local RogueClassSpells = {
       id = 0,
       level = 34,
       cost = 14000
+    },
+    ['ambush:3'] = {
+      name = 'Ambush',
+      rank = 3,
+      id = 0,
+      level = 34,
+      cost = 14000
     }
   },
   [36] = {
     ['instant_poison:3'] = {
       name = 'Instant Poison',
+      rank = 3,
+      id = 0,
+      level = 36,
+      cost = 16000
+    },
+    ['expose_armor:3'] = {
+      name = 'Expose Armor',
+      rank = 3,
+      id = 0,
+      level = 36,
+      cost = 16000
+    },
+    ['rupture:3'] = {
+      name = 'Rupture',
       rank = 3,
       id = 0,
       level = 36,
@@ -203,6 +340,13 @@ local RogueClassSpells = {
     ['deadly_poison:2'] = {
       name = 'Deadly Poison',
       rank = 2,
+      id = 0,
+      level = 38,
+      cost = 18000
+    },
+    ['garrote:4'] = {
+      name = 'Garrote',
+      rank = 4,
       id = 0,
       level = 38,
       cost = 18000
@@ -229,6 +373,13 @@ local RogueClassSpells = {
       id = 0,
       level = 40,
       cost = 20000
+    },
+    ['eviscerate:6'] = {
+      name = 'Eviscerate',
+      rank = 6,
+      id = 0,
+      level = 40,
+      cost = 20000
     }
   },
   [42] = {
@@ -238,11 +389,32 @@ local RogueClassSpells = {
       id = 0,
       level = 42,
       cost = 27000
+    },
+    ['ambush:4'] = {
+      name = 'Ambush',
+      rank = 4,
+      id = 0,
+      level = 42,
+      cost = 27000
+    },
+    ['slice_and_dice:2'] = {
+      name = 'Slice and Dice',
+      rank = 2,
+      id = 0,
+      level = 42,
+      cost = 27000
     }
   },
   [44] = {
     ['instant_poison:4'] = {
       name = 'Instant Poison',
+      rank = 4,
+      id = 0,
+      level = 44,
+      cost = 29000
+    },
+    ['rupture:4'] = {
+      name = 'Rupture',
       rank = 4,
       id = 0,
       level = 44,
@@ -263,6 +435,20 @@ local RogueClassSpells = {
       id = 0,
       level = 46,
       cost = 31000
+    },
+    ['expose_armor:4'] = {
+      name = 'Expose Armor',
+      rank = 4,
+      id = 0,
+      level = 46,
+      cost = 31000
+    },
+    ['garrote:5'] = {
+      name = 'Garrote',
+      rank = 5,
+      id = 0,
+      level = 46,
+      cost = 31000
     }
   },
   [48] = {
@@ -279,11 +465,32 @@ local RogueClassSpells = {
       id = 0,
       level = 48,
       cost = 33000
+    },
+    ['eviscerate:7'] = {
+      name = 'Eviscerate',
+      rank = 7,
+      id = 0,
+      level = 48,
+      cost = 33000
     }
   },
   [50] = {
     ['crippling_poison:2'] = {
       name = 'Crippling Poison',
+      rank = 2,
+      id = 0,
+      level = 50,
+      cost = 35000
+    },
+    ['ambush:5'] = {
+      name = 'Ambush',
+      rank = 5,
+      id = 0,
+      level = 50,
+      cost = 35000
+    },
+    ['kidney_shot:2'] = {
+      name = 'Kidney Shot',
       rank = 2,
       id = 0,
       level = 50,
@@ -304,12 +511,26 @@ local RogueClassSpells = {
       id = 0,
       level = 52,
       cost = 46000
+    },
+    ['rupture:5'] = {
+      name = 'Rupture',
+      rank = 5,
+      id = 0,
+      level = 52,
+      cost = 46000
     }
   },
   [54] = {
     ['deadly_poison:4'] = {
       name = 'Deadly Poison',
       rank = 4,
+      id = 0,
+      level = 54,
+      cost = 48000
+    },
+    ['garrote:6'] = {
+      name = 'Garrote',
+      rank = 6,
       id = 0,
       level = 54,
       cost = 48000
@@ -322,6 +543,20 @@ local RogueClassSpells = {
       id = 0,
       level = 56,
       cost = 50000
+    },
+    ['eviscerate:8'] = {
+      name = 'Eviscerate',
+      rank = 8,
+      id = 0,
+      level = 56,
+      cost = 50000
+    },
+    ['expose_armor:5'] = {
+      name = 'Expose Armor',
+      rank = 5,
+      id = 0,
+      level = 56,
+      cost = 50000
     }
   },
   [58] = {
@@ -331,6 +566,13 @@ local RogueClassSpells = {
       id = 0,
       level = 58,
       cost = 13000
+    },
+    ['ambush:6'] = {
+      name = 'Ambush',
+      rank = 6,
+      id = 0,
+      level = 58,
+      cost = 52000
     }
   },
   [60] = {
@@ -343,6 +585,13 @@ local RogueClassSpells = {
     },
     ['instant_poison:6'] = {
       name = 'Instant Poison',
+      rank = 6,
+      id = 0,
+      level = 60,
+      cost = 54000
+    },
+    ['rupture:6'] = {
+      name = 'Rupture',
       rank = 6,
       id = 0,
       level = 60,
