@@ -14,7 +14,6 @@ local RogueClassSpells = {
       cost = 10
     }
   },
-  [2] = {},
   [4] = {
     ['backstab:1'] = {
       name = 'Backstab',
@@ -54,6 +53,13 @@ local RogueClassSpells = {
       id = 0,
       level = 8,
       cost = 200
+    },
+    ['evasion'] = {
+      name = 'Evasion',
+      rank = 0,
+      id = 0,
+      level = 8,
+      cost = 200
     }
   },
   [10] = {
@@ -70,12 +76,33 @@ local RogueClassSpells = {
       id = 0,
       level = 10,
       cost = 300
+    },
+    ['sprint:1'] = {
+      name = 'Sprint',
+      rank = 1,
+      id = 0,
+      level = 10,
+      cost = 300
     }
   },
   [12] = {
     ['parry'] = {
       name = 'Parry',
       rank = 0,
+      id = 0,
+      level = 12,
+      cost = 800
+    },
+    ['backstab:2'] = {
+      name = 'Backstab',
+      rank = 2,
+      id = 0,
+      level = 12,
+      cost = 800
+    },
+    ['kick:1'] = {
+      name = 'Kick',
+      rank = 1,
       id = 0,
       level = 12,
       cost = 800
@@ -95,6 +122,13 @@ local RogueClassSpells = {
       id = 0,
       level = 14,
       cost = 1200
+    },
+    ['sinister_strike:3'] = {
+      name = 'Sinister Strike',
+      rank = 3,
+      id = 0,
+      level = 14,
+      cost = 1200
     }
   },
   [16] = {
@@ -111,12 +145,26 @@ local RogueClassSpells = {
       id = 0,
       level = 16,
       cost = 1800
+    },
+    ['feint'] = {
+      name = 'Feint',
+      rank = 0,
+      id = 0,
+      level = 16,
+      cost = 1800
     }
   },
   [18] = {
     ['ambush:1'] = {
       name = 'Ambush',
       rank = 1,
+      id = 0,
+      level = 18,
+      cost = 2900
+    },
+    ['gouge:2'] = {
+      name = 'Gouge',
+      rank = 2,
       id = 0,
       level = 18,
       cost = 2900
@@ -143,6 +191,13 @@ local RogueClassSpells = {
       id = 0,
       level = 20,
       cost = 3000
+    },
+    ['backstab:3'] = {
+      name = 'Backstab',
+      rank = 3,
+      id = 0,
+      level = 20,
+      cost = 3000
     }
   },
   [22] = {
@@ -163,6 +218,13 @@ local RogueClassSpells = {
     ['garrote:2'] = {
       name = 'Garrote',
       rank = 2,
+      id = 0,
+      level = 22,
+      cost = 4000
+    },
+    ['sinister_strike:4'] = {
+      name = 'Sinister Strike',
+      rank = 4,
       id = 0,
       level = 22,
       cost = 4000
@@ -212,6 +274,13 @@ local RogueClassSpells = {
       id = 0,
       level = 26,
       cost = 6000
+    },
+    ['kick:2'] = {
+      name = 'Kick',
+      rank = 2,
+      id = 0,
+      level = 26,
+      cost = 6000
     }
   },
   [28] = {
@@ -231,6 +300,20 @@ local RogueClassSpells = {
     },
     ['rupture:2'] = {
       name = 'Rupture',
+      rank = 2,
+      id = 0,
+      level = 28,
+      cost = 8000
+    },
+    ['backstab:4'] = {
+      name = 'Backstab',
+      rank = 4,
+      id = 0,
+      level = 28,
+      cost = 8000
+    },
+    ['feint:2'] = {
+      name = 'Feint',
       rank = 2,
       id = 0,
       level = 28,
@@ -265,6 +348,13 @@ local RogueClassSpells = {
       id = 0,
       level = 30,
       cost = 10000
+    },
+    ['sinister_strike:5'] = {
+      name = 'Sinister Strike',
+      rank = 5,
+      id = 0,
+      level = 30,
+      cost = 10000
     }
   },
   [32] = {
@@ -278,6 +368,13 @@ local RogueClassSpells = {
     ['eviscerate:5'] = {
       name = 'Eviscerate',
       rank = 5,
+      id = 0,
+      level = 32,
+      cost = 12000
+    },
+    ['gouge:3'] = {
+      name = 'Gouge',
+      rank = 3,
       id = 0,
       level = 32,
       cost = 12000
@@ -304,6 +401,13 @@ local RogueClassSpells = {
       id = 0,
       level = 34,
       cost = 14000
+    },
+    ['sprint:2'] = {
+      name = 'Sprint',
+      rank = 2,
+      id = 0,
+      level = 34,
+      cost = 14000
     }
   },
   [36] = {
@@ -327,6 +431,13 @@ local RogueClassSpells = {
       id = 0,
       level = 36,
       cost = 16000
+    },
+    ['backstab:5'] = {
+      name = 'Backstab',
+      rank = 5,
+      id = 0,
+      level = 36,
+      cost = 16000
     }
   },
   [38] = {
@@ -347,6 +458,13 @@ local RogueClassSpells = {
     ['garrote:4'] = {
       name = 'Garrote',
       rank = 4,
+      id = 0,
+      level = 38,
+      cost = 18000
+    },
+    ['sinister_strike:6'] = {
+      name = 'Sinister Strike',
+      rank = 6,
       id = 0,
       level = 38,
       cost = 18000
@@ -380,6 +498,13 @@ local RogueClassSpells = {
       id = 0,
       level = 40,
       cost = 20000
+    },
+    ['feint:3'] = {
+      name = 'Feint',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 20000
     }
   },
   [42] = {
@@ -403,6 +528,13 @@ local RogueClassSpells = {
       id = 0,
       level = 42,
       cost = 27000
+    },
+    ['kick:3'] = {
+      name = 'Kick',
+      rank = 3,
+      id = 0,
+      level = 42,
+      cost = 27000
     }
   },
   [44] = {
@@ -416,6 +548,13 @@ local RogueClassSpells = {
     ['rupture:4'] = {
       name = 'Rupture',
       rank = 4,
+      id = 0,
+      level = 44,
+      cost = 29000
+    },
+    ['backstab:6'] = {
+      name = 'Backstab',
+      rank = 6,
       id = 0,
       level = 44,
       cost = 29000
@@ -446,6 +585,20 @@ local RogueClassSpells = {
     ['garrote:5'] = {
       name = 'Garrote',
       rank = 5,
+      id = 0,
+      level = 46,
+      cost = 31000
+    },
+    ['gouge:4'] = {
+      name = 'Gouge',
+      rank = 4,
+      id = 0,
+      level = 46,
+      cost = 31000
+    },
+    ['sinister_strike:7'] = {
+      name = 'Sinister Strike',
+      rank = 7,
       id = 0,
       level = 46,
       cost = 31000
@@ -518,6 +671,20 @@ local RogueClassSpells = {
       id = 0,
       level = 52,
       cost = 46000
+    },
+    ['backstab:7'] = {
+      name = 'Backstab',
+      rank = 7,
+      id = 0,
+      level = 52,
+      cost = 46000
+    },
+    ['feint:4'] = {
+      name = 'Feint',
+      rank = 4,
+      id = 0,
+      level = 52,
+      cost = 46000
     }
   },
   [54] = {
@@ -531,6 +698,13 @@ local RogueClassSpells = {
     ['garrote:6'] = {
       name = 'Garrote',
       rank = 6,
+      id = 0,
+      level = 54,
+      cost = 48000
+    },
+    ['sinister_strike:8'] = {
+      name = 'Sinister Strike',
+      rank = 8,
       id = 0,
       level = 54,
       cost = 48000
@@ -573,6 +747,20 @@ local RogueClassSpells = {
       id = 0,
       level = 58,
       cost = 52000
+    },
+    ['kick:4'] = {
+      name = 'Kick',
+      rank = 4,
+      id = 0,
+      level = 58,
+      cost = 52000
+    },
+    ['sprint:3'] = {
+      name = 'Sprint',
+      rank = 3,
+      id = 0,
+      level = 58,
+      cost = 52000
     }
   },
   [60] = {
@@ -593,6 +781,20 @@ local RogueClassSpells = {
     ['rupture:6'] = {
       name = 'Rupture',
       rank = 6,
+      id = 0,
+      level = 60,
+      cost = 54000
+    },
+    ['backstab:8'] = {
+      name = 'Backstab',
+      rank = 8,
+      id = 0,
+      level = 60,
+      cost = 54000
+    },
+    ['gouge:5'] = {
+      name = 'Gouge',
+      rank = 5,
       id = 0,
       level = 60,
       cost = 54000
