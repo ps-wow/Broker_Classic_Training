@@ -74,10 +74,23 @@ local WarriorClassSpells = {
       id = 0,
       level = 12,
       cost = 1000
+    },
+    ['battle_shout:2'] = {
+      name = 'Battle Shout',
+      rank = 2,
+      id = 0,
+      level = 12,
+      cost = 1000
     }
   },
   [14] = {
-
+    ['demoralizing_shout:1'] = {
+      name = 'Demoralizing Shout',
+      rank = 1,
+      id = 0,
+      level = 14,
+      cost = 1500
+    }
   },
   [16] = {
     ['heroic_strike:3'] = {
@@ -118,15 +131,49 @@ local WarriorClassSpells = {
       id = 0,
       level = 20,
       cost = 4000
+    },
+    ['cleave:1'] = {
+      name = 'Cleave',
+      rank = 1,
+      id = 0,
+      level = 20,
+      cost = 4000
+    },
+    ['intimidating_shout'] = {
+      name = 'Intimidating Shout',
+      rank = 0,
+      id = 0,
+      level = 20,
+      cost = 6000
     }
   },
   [22] = {
-
+    ['battle_shout:3'] = {
+      name = 'Battle Shout',
+      rank = 3,
+      id = 0,
+      level = 22,
+      cost = 6000
+    }
   },
   [24] = {
     ['heroic_strike:4'] = {
       name = 'Heroic Strike',
       rank = 4,
+      id = 0,
+      level = 24,
+      cost = 8000
+    },
+    ['demoralizing_shout:2'] = {
+      name = 'Demoralizing Shout',
+      rank = 2,
+      id = 0,
+      level = 24,
+      cost = 8000
+    },
+    ['execute:1'] = {
+      name = 'Execute',
+      rank = 1,
       id = 0,
       level = 24,
       cost = 8000
@@ -143,6 +190,13 @@ local WarriorClassSpells = {
     ['mocking_blow:2'] = {
       name = 'Mocking Blow',
       rank = 2,
+      id = 0,
+      level = 26,
+      cost = 10000
+    },
+    ['challenging_shout'] = {
+      name = 'Challenging Shout',
+      rank = 0,
       id = 0,
       level = 26,
       cost = 10000
@@ -171,6 +225,20 @@ local WarriorClassSpells = {
       id = 0,
       level = 30,
       cost = 12000
+    },
+    ['cleave:2'] = {
+      name = 'Cleave',
+      rank = 2,
+      id = 0,
+      level = 30,
+      cost = 12000
+    },
+    ['slam:1'] = {
+      name = 'Slam',
+      rank = 1,
+      id = 0,
+      level = 30,
+      cost = 12000
     }
   },
   [32] = {
@@ -187,15 +255,49 @@ local WarriorClassSpells = {
       id = 0,
       level = 32,
       cost = 14000
+    },
+    ['battle_shout:4'] = {
+      name = 'Battle Shout',
+      rank = 4,
+      id = 0,
+      level = 32,
+      cost = 14000
+    },
+    ['berserker_rage'] = {
+      name = 'Berserker Rage',
+      rank = 0,
+      id = 0,
+      level = 32,
+      cost = 14000
+    },
+    ['execute:2'] = {
+      name = 'Execute',
+      rank = 2,
+      id = 0,
+      level = 32,
+      cost = 14000
     }
   },
   [34] = {
-
+    ['demoralizing_shout:3'] = {
+      name = 'Demoralizing Shout',
+      rank = 3,
+      id = 0,
+      level = 34,
+      cost = 16000
+    }
   },
   [36] = {
     ['mocking_blow:3'] = {
       name = 'Mocking Blow',
       rank = 3,
+      id = 0,
+      level = 36,
+      cost = 18000
+    },
+    ['whirlwind'] = {
+      name = 'Whirlwind',
+      rank = 0,
       id = 0,
       level = 36,
       cost = 18000
@@ -205,6 +307,20 @@ local WarriorClassSpells = {
     ['thunder_clap:4'] = {
       name = 'Thunder Clap',
       rank = 4,
+      id = 0,
+      level = 38,
+      cost = 20000
+    },
+    ['pummel:1'] = {
+      name = 'Pummel',
+      rank = 1,
+      id = 0,
+      level = 38,
+      cost = 20000
+    },
+    ['slam:2'] = {
+      name = 'Slam',
+      rank = 2,
       id = 0,
       level = 38,
       cost = 20000
@@ -224,15 +340,49 @@ local WarriorClassSpells = {
       id = 0,
       level = 40,
       cost = 22000
+    },
+    ['cleave:3'] = {
+      name = 'Cleave',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 22000
+    },
+    ['execute:3'] = {
+      name = 'Execute',
+      rank = 3,
+      id = 0,
+      level = 40,
+      cost = 22000
     }
   },
   [42] = {
-
+    ['battle_shout:5'] = {
+      name = 'Battle Shout',
+      rank = 5,
+      id = 0,
+      level = 42,
+      cost = 32000
+    },
+    ['intercept:2'] = {
+      name = 'Intercept',
+      rank = 2,
+      id = 0,
+      level = 42,
+      cost = 32000
+    }
   },
   [44] = {
     ['overpower:3'] = {
       name = 'Overpower',
       rank = 3,
+      id = 0,
+      level = 44,
+      cost = 34000
+    },
+    ['demoralizing_shout:4'] = {
+      name = 'Demoralizing Shout',
+      rank = 4,
       id = 0,
       level = 44,
       cost = 34000
@@ -249,6 +399,13 @@ local WarriorClassSpells = {
     ['mocking_blow:4'] = {
       name = 'Mocking Blow',
       rank = 4,
+      id = 0,
+      level = 46,
+      cost = 36000
+    },
+    ['slam:3'] = {
+      name = 'Slam',
+      rank = 3,
       id = 0,
       level = 46,
       cost = 36000
@@ -275,6 +432,20 @@ local WarriorClassSpells = {
       id = 0,
       level = 48,
       cost = 40000
+    },
+    ['bloodthirst:2'] = {
+      name = 'Bloodthirst',
+      rank = 2,
+      id = 0,
+      level = 48,
+      cost = 2000
+    },
+    ['execute:4'] = {
+      name = 'Execute',
+      rank = 4,
+      id = 0,
+      level = 48,
+      cost = 40000
     }
   },
   [50] = {
@@ -284,10 +455,37 @@ local WarriorClassSpells = {
       id = 0,
       level = 50,
       cost = 42000
+    },
+    ['cleave:4'] = {
+      name = 'Cleave',
+      rank = 4,
+      id = 0,
+      level = 50,
+      cost = 42000
+    },
+    ['recklessness'] = {
+      name = 'Recklessness',
+      rank = 0,
+      id = 0,
+      level = 50,
+      cost = 42000
     }
   },
   [52] = {
-
+    ['battle_shout:6'] = {
+      name = 'Battle Shout',
+      rank = 6,
+      id = 0,
+      level = 52,
+      cost = 54000
+    },
+    ['intercept:3'] = {
+      name = 'Intercept',
+      rank = 3,
+      id = 0,
+      level = 52,
+      cost = 54000
+    }
   },
   [54] = {
     ['hamstring:3'] = {
@@ -303,6 +501,27 @@ local WarriorClassSpells = {
       id = 0,
       level = 54,
       cost = 2800
+    },
+    ['bloodthirst:3'] = {
+      name = 'Bloodthirst',
+      rank = 3,
+      id = 0,
+      level = 54,
+      cost = 2800
+    },
+    ['demoralizing_shout:5'] = {
+      name = 'Demoralizing Shout',
+      rank = 5,
+      id = 0,
+      level = 54,
+      cost = 56000
+    },
+    ['slam:4'] = {
+      name = 'Slam',
+      rank = 4,
+      id = 0,
+      level = 54,
+      cost = 56000
     }
   },
   [56] = {
@@ -319,11 +538,25 @@ local WarriorClassSpells = {
       id = 0,
       level = 56,
       cost = 58000
+    },
+    ['execute:5'] = {
+      name = 'Execute',
+      rank = 5,
+      id = 0,
+      level = 56,
+      cost = 58000
     }
   },
   [58] = {
     ['thunder_clap:6'] = {
       name = 'Thunder Clap',
+      rank = 6,
+      id = 0,
+      level = 58,
+      cost = 60000
+    },
+    ['pummel:2'] = {
+      name = 'Pummel',
       rank = 6,
       id = 0,
       level = 58,
@@ -348,6 +581,20 @@ local WarriorClassSpells = {
     ['rend:7'] = {
       name = 'Rend',
       rank = 7,
+      id = 0,
+      level = 60,
+      cost = 62000
+    },
+    ['bloodthirst:4'] = {
+      name = 'Bloodthirst',
+      rank = 4,
+      id = 0,
+      level = 60,
+      cost = 3100
+    },
+    ['cleave:5'] = {
+      name = 'Cleave',
+      rank = 5,
       id = 0,
       level = 60,
       cost = 62000
