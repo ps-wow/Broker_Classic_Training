@@ -65,6 +65,13 @@ local WarriorClassSpells = {
       id = 0,
       level = 10,
       cost = 600
+    },
+    ['bloodrage'] = {
+      name = 'Bloodrage',
+      rank = 0,
+      id = 0,
+      level = 10,
+      cost = 600
     }
   },
   [12] = {
@@ -81,11 +88,25 @@ local WarriorClassSpells = {
       id = 0,
       level = 12,
       cost = 1000
+    },
+    ['shield_bash:1'] = {
+      name = 'Shield Bash',
+      rank = 1,
+      id = 0,
+      level = 12,
+      cost = 1000
     }
   },
   [14] = {
     ['demoralizing_shout:1'] = {
       name = 'Demoralizing Shout',
+      rank = 1,
+      id = 0,
+      level = 14,
+      cost = 1500
+    },
+    ['revenge:1'] = {
+      name = 'Revenge',
       rank = 1,
       id = 0,
       level = 14,
@@ -106,12 +127,26 @@ local WarriorClassSpells = {
       id = 0,
       level = 16,
       cost = 2000
+    },
+    ['shield_block'] = {
+      name = 'Shield Block',
+      rank = 0,
+      id = 0,
+      level = 16,
+      cost = 2000
     }
   },
   [18] = {
     ['thunder_clap:2'] = {
       name = 'Thunder Clap',
       rank = 2,
+      id = 0,
+      level = 18,
+      cost = 3000
+    },
+    ['disarm'] = {
+      name = 'Disarm',
+      rank = 0,
       id = 0,
       level = 18,
       cost = 3000
@@ -154,6 +189,13 @@ local WarriorClassSpells = {
       id = 0,
       level = 22,
       cost = 6000
+    },
+    ['sunder_armor:2'] = {
+      name = 'Sunder Armor',
+      rank = 2,
+      id = 0,
+      level = 22,
+      cost = 6000
     }
   },
   [24] = {
@@ -174,6 +216,13 @@ local WarriorClassSpells = {
     ['execute:1'] = {
       name = 'Execute',
       rank = 1,
+      id = 0,
+      level = 24,
+      cost = 8000
+    },
+    ['revenge:2'] = {
+      name = 'Revenge',
+      rank = 2,
       id = 0,
       level = 24,
       cost = 8000
@@ -212,6 +261,13 @@ local WarriorClassSpells = {
     },
     ['thunder_clap:3'] = {
       name = 'Thunder Clap',
+      rank = 3,
+      id = 0,
+      level = 28,
+      cost = 11000
+    },
+    ['shield_wall'] = {
+      name = 'Shield Wall',
       rank = 3,
       id = 0,
       level = 28,
@@ -276,11 +332,32 @@ local WarriorClassSpells = {
       id = 0,
       level = 32,
       cost = 14000
+    },
+    ['shield_bash:2'] = {
+      name = 'Shield Bash',
+      rank = 2,
+      id = 0,
+      level = 32,
+      cost = 14000
     }
   },
   [34] = {
     ['demoralizing_shout:3'] = {
       name = 'Demoralizing Shout',
+      rank = 3,
+      id = 0,
+      level = 34,
+      cost = 16000
+    },
+    ['revenge:3'] = {
+      name = 'Revenge',
+      rank = 3,
+      id = 0,
+      level = 34,
+      cost = 16000
+    },
+    ['sunder_armor:3'] = {
+      name = 'Sunder Armor',
       rank = 3,
       id = 0,
       level = 34,
@@ -386,6 +463,13 @@ local WarriorClassSpells = {
       id = 0,
       level = 44,
       cost = 34000
+    },
+    ['revenge:4'] = {
+      name = 'Revenge',
+      rank = 4,
+      id = 0,
+      level = 44,
+      cost = 34000
     }
   },
   [46] = {
@@ -406,6 +490,13 @@ local WarriorClassSpells = {
     ['slam:3'] = {
       name = 'Slam',
       rank = 3,
+      id = 0,
+      level = 46,
+      cost = 36000
+    },
+    ['sunder_armor:4'] = {
+      name = 'Sunder Armor',
+      rank = 4,
       id = 0,
       level = 46,
       cost = 36000
@@ -446,6 +537,13 @@ local WarriorClassSpells = {
       id = 0,
       level = 48,
       cost = 40000
+    },
+    ['shield_slam:2'] = {
+      name = 'Shield Slam',
+      rank = 2,
+      id = 0,
+      level = 48,
+      cost = 200
     }
   },
   [50] = {
@@ -481,6 +579,13 @@ local WarriorClassSpells = {
     },
     ['intercept:3'] = {
       name = 'Intercept',
+      rank = 3,
+      id = 0,
+      level = 52,
+      cost = 54000
+    },
+    ['shield_bash:3'] = {
+      name = 'Shield Bash',
       rank = 3,
       id = 0,
       level = 52,
@@ -522,6 +627,20 @@ local WarriorClassSpells = {
       id = 0,
       level = 54,
       cost = 56000
+    },
+    ['revenge:5'] = {
+      name = 'Revenge',
+      rank = 5,
+      id = 0,
+      level = 54,
+      cost = 56000
+    },
+    ['shield_slam:3'] = {
+      name = 'Shield Slam',
+      rank = 3,
+      id = 0,
+      level = 54,
+      cost = 2800
     }
   },
   [56] = {
@@ -558,6 +677,13 @@ local WarriorClassSpells = {
     ['pummel:2'] = {
       name = 'Pummel',
       rank = 6,
+      id = 0,
+      level = 58,
+      cost = 60000
+    },
+    ['sunder_armor:5'] = {
+      name = 'Sunder Armor',
+      rank = 5,
       id = 0,
       level = 58,
       cost = 60000
@@ -598,6 +724,13 @@ local WarriorClassSpells = {
       id = 0,
       level = 60,
       cost = 62000
+    },
+    ['shield_slam:4'] = {
+      name = 'Shield Slam',
+      rank = 4,
+      id = 0,
+      level = 60,
+      cost = 3100
     }
   }
 }
