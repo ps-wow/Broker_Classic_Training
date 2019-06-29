@@ -48,7 +48,8 @@ classes.each do |c|
     talent_count: 0,
     tome_count: 0,
     zero_id_spells: 0,
-    rankless_spells: 0
+    rankless_spells: 0,
+    spell_costs: 0
   }
 end
 
@@ -60,7 +61,10 @@ classes.each do |c|
     # id = 0
 
     if spell_type == 'spell'
-      if line.include?('id = 0')
+      if line.include?('cost =')
+        cost = line.gsub('cost = ', '').delete("\n").delete(',')
+        class_audit[c][:spell_costs] = class_audit[c][:spell_costs] + cost.to_i if (cost != 'unknown' && cost != 'quest')
+      elsif line.include?('id = 0')
         class_audit[c][:zero_id_spells] = class_audit[c][:zero_id_spells] + 1
       else
         class_audit[c][:spell_count] = class_audit[c][:spell_count] + 1 if line.include?('id = ')
@@ -106,6 +110,21 @@ def output_rated_value(value, zero_is_good = true)
   value.to_s.green
 end
 
+def format_currency(value)
+  string = value.to_s
+  if string.length > 4 then
+    copper = string.slice!(string.length - 2, string.length)
+    silver = string.slice!(string.length - 2, string.length)
+    return string + 'g ' + silver + 's ' + copper + 'c'
+  elsif string.length > 2 then
+    copper = string.slice!(string.length - 2, string.length)
+    return string + 's ' + copper + 'c'
+  else
+    return string + 's'
+  end
+  return value
+end
+
 # By Class
 classes.each do |c|
   audit = class_audit[c]
@@ -130,12 +149,15 @@ classes.each do |c|
   (c.length - 1).times { print "-" }
   puts "-"
 
+  spell_cost = format_currency(audit[:spell_costs]).blue
+
   sep = " | "
   output = ""
   output << "Spells: #{output_rated_value(audit[:spell_count], false)}" << sep
   output << "Zero ID: #{output_rated_value(audit[:zero_id_spells])}" << sep
   output << "Talents: #{output_rated_value(audit[:talent_count], false)}" << sep
-  output << "Tomes: #{output_rated_value(audit[:tome_count], false)}"
+  output << "Tomes: #{output_rated_value(audit[:tome_count], false)}" << sep
+  output << "Spell Costs: #{spell_cost}"
   print output
   puts " "
   puts " "

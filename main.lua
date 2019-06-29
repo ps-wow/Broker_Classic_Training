@@ -4,7 +4,7 @@ local UPDATEPERIOD, elapsed = 2, 0
 BrokerClassicTraining.kbDEBUG = true
 
 BrokerClassicTraining.constants = {
-  newTrainingAlert = 'badge',
+  newTrainingAlert = 'badge'
 }
 
 -- The data feed
@@ -28,8 +28,8 @@ end)
 
 -- Addon Debug
 function BrokerClassicTraining:Dump(str, obj)
-  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then 
-      ViragDevTool_AddData(obj, str) 
+  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then
+      ViragDevTool_AddData(obj, str)
   end
 end
 
@@ -90,7 +90,7 @@ end
 
 function BrokerClassicTraining:BuildTrainingData(self, level)
   level = level or nil
-  local WhiteRGBA = '|cFFFFFFFF'
+  level = 60 -- TODO: Remove
 
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
@@ -139,10 +139,9 @@ function BrokerClassicTraining:FilterSpells(spells, level)
     local levelSpells = spells[i]
     if (levelSpells ~= nil) then
       for key,spell in pairs(levelSpells) do
-        -- Spell = v
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
           local isKnown = IsSpellKnown(spell.id)
-          --local isKnown = false -- Debug remove once done
+          --local isKnown = false
           if (isKnown == false) then
             BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
             table.insert(spellsLearnable, spell)
@@ -162,7 +161,7 @@ function BrokerClassicTraining:FormatSpells(self, hex)
     local totalCost = 0
     local EscapeColour = '|cFF'..hex
 
-    local title = string.format("%sSpells", WhiteRGBA)
+    local title = string.format("%sSpells", '|cFFFFFFFF')
     self:AddLine(title)
 
     for _,spell in pairs(BrokerClassicTraining.Feed.spells) do
@@ -173,6 +172,8 @@ function BrokerClassicTraining:FormatSpells(self, hex)
         cost = 'Quest'
       elseif (spell.cost == 'free' or spell.cost == nil) then
         cost = 'free'
+      elseif (spell.cost == 'unknown') then
+        -- if you find one, please raise a PR
       else
         totalCost = totalCost + spell.cost
         cost = GetCoinTextureString(spell.cost)
@@ -187,7 +188,7 @@ function BrokerClassicTraining:FormatSpells(self, hex)
       if spell.rank == 0 then
         spellOutput = string.format('%d %s', spell.level, spell.name)
       else
-        spellOutput = string.format('%d %s %s', spell.level, spell.name, 'Rank ' .. spell.rank)
+        spellOutput = string.format('%d %s (%s)', spell.level, spell.name, 'Rank ' .. spell.rank)
       end
 
       self:AddDoubleLine(spellOutput, cost)
@@ -238,10 +239,6 @@ function BrokerClassicTraining:FormatSpellBooks(self, hex)
       self:AddDoubleLine(book.name, book.source)
 
       -- Add drop source
-
-      -- source = 'drop',
-      -- source_drop = 'dungeon',
-      -- source_drop_dungeon = 'ubrs',
       local difficulty = ''
       local leftText = ''
       local rightText = ''
