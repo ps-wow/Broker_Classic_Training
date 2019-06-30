@@ -50,7 +50,7 @@ local WarlockClassSpells = {
       name = 'Shadow Bolt',
       rank = 2,
       level = 6,
-      id = 0,
+      id = 695,
       cost = 100
     }
   },
@@ -66,7 +66,7 @@ local WarlockClassSpells = {
       name = 'Fear',
       rank = 1,
       level = 8,
-      id = 0,
+      id = 5782,
       cost = 200
     }
   },
@@ -75,28 +75,28 @@ local WarlockClassSpells = {
       name = 'Drain Soul',
       rank = 1,
       level = 10,
-      id = 0,
+      id = 1120,
       cost = 300
     },
     ['create_healthstone_minor:1'] = {
       name = 'Create Healthstone (Minor)',
       rank = 1,
       level = 10,
-      id = 0,
+      id = 6201,
       cost = 300
     },
     ['demon_skin:2'] = {
       name = 'Demon Skin',
       rank = 2,
       level = 10,
-      id = 0,
+      id = 696,
       cost = 300
     },
     ['immolate:2'] = {
       name = 'Immolate',
       rank = 2,
       level = 10,
-      id = 0,
+      id = 707,
       cost = 300
     }
   },
@@ -112,14 +112,14 @@ local WarlockClassSpells = {
       name = 'Health Funnel',
       rank = 1,
       level = 12,
-      id = 0,
+      id = 755,
       cost = 600
     },
     ['shadow_bolt:3'] = {
       name = 'Shadow Bolt',
       rank = 3,
       level = 12,
-      id = 0,
+      id = 705,
       cost = 600
     }
   },
@@ -135,14 +135,14 @@ local WarlockClassSpells = {
       name = 'Curse of Recklessness',
       rank = 1,
       level = 14,
-      id = 0,
+      id = 704,
       cost = 900
     },
     ['drain_life:1'] = {
       name = 'Drain Life',
       rank = 1,
       level = 14,
-      id = 0,
+      id = 689,
       cost = 900
     }
   },
@@ -151,14 +151,14 @@ local WarlockClassSpells = {
       name = 'Life Tap',
       rank = 2,
       level = 16,
-      id = 0,
+      id = 1455,
       cost = 1200
     },
     ['unending_beath'] = {
       name = 'Unending Breath',
       rank = 0,
       level = 16,
-      id = 0,
+      id = 5697,
       cost = 1200
     }
   },
@@ -174,7 +174,7 @@ local WarlockClassSpells = {
       name = 'Create Soulstone (Minor)',
       rank = 0,
       level = 18,
-      id = 0,
+      id = 693,
       cost = 1500
     },
     ['searing_pain:1'] = {
@@ -186,32 +186,32 @@ local WarlockClassSpells = {
     }
   },
   [20] = {
-    ['demon_armor'] = {
+    ['demon_armor:1'] = {
       name = 'Demon Armor',
       rank = 1,
       level = 20,
-      id = 0,
+      id = 706,
       cost = 2000
     },
     ['health_funnel:2'] = {
       name = 'Health Funnel',
       rank = 2,
       level = 20,
-      id = 0,
+      id = 3698,
       cost = 2000
     },
     ['ritual_of_summoning'] = {
       name = 'Ritual of Summoning',
       rank = 0,
       level = 20,
-      id = 0,
+      id = 698,
       cost = 2000
     },
     ['immolate:3'] = {
       name = 'Immolate',
       rank = 3,
       level = 20,
-      id = 0,
+      id = 1094,
       cost = 2000
     },
     ['rain_of_fire:1'] = {
@@ -225,7 +225,7 @@ local WarlockClassSpells = {
       name = 'Shadow Bolt',
       rank = 4,
       level = 20,
-      id = 0,
+      id = 1088,
       cost = 2000
     }
   },
@@ -241,21 +241,21 @@ local WarlockClassSpells = {
       name = 'Drain Life',
       rank = 2,
       level = 22,
-      id = 0,
+      id = 699,
       cost = 2500
     },
     ['create_healthstone_lesser'] = {
       name = 'Create Healthstone (Lesser)',
       rank = 0,
       level = 22,
-      id = 0,
+      id = 6202,
       cost = 2500
     },
     ['eye_of_kilrogg'] = {
       name = 'Eye of Kilrogg',
       rank = 0,
       level = 22,
-      id = 0,
+      id = 126,
       cost = 2500
     }
   },
@@ -271,29 +271,30 @@ local WarlockClassSpells = {
       name = 'Drain Mana',
       rank = 1,
       level = 24,
-      id = 0,
+      id = 5138,
       cost = 3000
     },
     ['drain_soul:2'] = {
       name = 'Drain Soul',
       rank = 2,
       level = 24,
-      id = 0,
+      id = 8288,
       cost = 3000
     },
     ['sense_demons'] = {
       name = 'Sense Demons',
       rank = 0,
       level = 24,
-      id = 0,
+      id = 5500,
       cost = 3000
     },
     ['shadowburn:2'] = {
       name = 'Shadowburn',
       rank = 2,
       level = 24,
-      id = 0,
-      cost = 150
+      id = 18868,
+      cost = 150,
+      talent = 'shadowburn:1'
     }
   },
   [26] = {
@@ -301,21 +302,21 @@ local WarlockClassSpells = {
       name = 'Curse of Tongues',
       rank = 1,
       level = 26,
-      id = 0,
+      id = 1714,
       cost = 4000
     },
     ['life_tap:3'] = {
       name = 'Life Tap',
       rank = 3,
       level = 26,
-      id = 0,
+      id = 1456,
       cost = 4000
     },
     ['detect_lesser_invisibilty'] = {
       name = 'Detect Lesser Invisibility',
       rank = 0,
       level = 26,
-      id = 0,
+      id = 132,
       cost = 4000
     },
     ['searing_pain:2'] = {
@@ -338,35 +339,35 @@ local WarlockClassSpells = {
       name = 'Curse of Recklessness',
       rank = 2,
       level = 28,
-      id = 0,
+      id = 7658,
       cost = 5000
     },
-    ['banish'] = {
+    ['banish:1'] = {
       name = 'Banish',
-      rank = 0,
+      rank = 1,
       level = 28,
-      id = 0,
+      id = 710,
       cost = 5000
     },
     ['create_firestone_lesser'] = {
       name = 'Create Firestone (Lesser)',
       rank = 0,
       level = 28,
-      id = 0,
+      id = 6366,
       cost = 5000
     },
     ['health_funnel:3'] = {
       name = 'Health Funnel',
       rank = 3,
       level = 28,
-      id = 0,
+      id = 3699,
       cost = 5000
     },
     ['shadow_bolt:5'] = {
       name = 'Shadow Bolt',
       rank = 5,
       level = 28,
-      id = 0,
+      id = 1106,
       cost = 5000
     }
   },
@@ -375,21 +376,21 @@ local WarlockClassSpells = {
       name = 'Drain Life',
       rank = 3,
       level = 30,
-      id = 0,
+      id = 709,
       cost = 6000
     },
     ['create_soulstone_lesser'] = {
       name = 'Create Soulstone (Lesser)',
       rank = 0,
       level = 30,
-      id = 0,
+      id = 20752,
       cost = 6000
     },
     ['demon_armor:2'] = {
       name = 'Demon Armor',
       rank = 2,
       level = 30,
-      id = 0,
+      id = 1086,
       cost = 6000
     },
     ['enslave_demon:1'] = {
@@ -403,14 +404,14 @@ local WarlockClassSpells = {
       name = 'Hellfire',
       rank = 1,
       level = 30,
-      id = 0,
+      id = 1949,
       cost = 6000
     },
     ['immolate:4'] = {
       name = 'Immolate',
       rank = 4,
       level = 30,
-      id = 0,
+      id = 2941,
       cost = 6000
     }
   },
@@ -426,29 +427,30 @@ local WarlockClassSpells = {
       name = 'Curse of the Elements',
       rank = 1,
       level = 32,
-      id = 0,
+      id = 1490,
       cost = 7000
     },
     ['fear:2'] = {
       name = 'Fear',
       rank = 2,
       level = 32,
-      id = 0,
+      id = 6213,
       cost = 7000
     },
     ['shadow_ward:1'] = {
       name = 'Shadow Ward',
       rank = 1,
       level = 32,
-      id = 0,
+      id = 6229,
       cost = 7000
     },
     ['shadowburn:3'] = {
       name = 'Shadowburn',
       rank = 3,
       level = 32,
-      id = 0,
-      cost = 350
+      id = 18868,
+      cost = 350,
+      talent = 'shadowburn:1'
     }
   },
   [34] = {
@@ -463,14 +465,14 @@ local WarlockClassSpells = {
       name = 'Drain Mana',
       rank = 2,
       level = 34,
-      id = 0,
+      id = 6226,
       cost = 8000
     },
     ['create_healthstone'] = {
       name = 'Create Healthstone',
       rank = 0,
       level = 34,
-      id = 0,
+      id = 5699,
       cost = 8000
     },
     ['rain_of_fire:2'] = {
@@ -493,35 +495,35 @@ local WarlockClassSpells = {
       name = 'Life Tap',
       rank = 4,
       level = 36,
-      id = 0,
+      id = 11687,
       cost = 9000
     },
     ['create_firestone'] = {
       name = 'Create Firestone',
       rank = 0,
       level = 36,
-      id = 0,
+      id = 17951,
       cost = 9000
     },
     ['create_spellstone'] = {
       name = 'Create Spellstone',
       rank = 0,
       level = 36,
-      id = 0,
+      id = 2362,
       cost = 9000
     },
     ['health_funnel:4'] = {
       name = 'Health Funnel',
       rank = 4,
       level = 36,
-      id = 0,
+      id = 3700,
       cost = 9000
     },
     ['shadow_bolt:6'] = {
       name = 'Shadow Bolt',
       rank = 6,
       level = 36,
-      id = 0,
+      id = 7641,
       cost = 9000
     }
   },
@@ -537,14 +539,14 @@ local WarlockClassSpells = {
       name = 'Drain Life',
       rank = 4,
       level = 38,
-      id = 0,
+      id = 7651,
       cost = 10000
     },
     ['drain_soul:3'] = {
       name = 'Drain Soul',
       rank = 3,
       level = 38,
-      id = 0,
+      id = 8289,
       cost = 10000
     },
     ['siphon_life:2'] = {
@@ -559,7 +561,7 @@ local WarlockClassSpells = {
       name = 'Detect Invisibility',
       rank = 0,
       level = 38,
-      id = 0,
+      id = 2970,
       cost = 10000
     }
   },
@@ -568,36 +570,37 @@ local WarlockClassSpells = {
       name = 'Howl of Terror',
       rank = 1,
       level = 40,
-      id = 0,
+      id = 5484,
       cost = 11000
     },
     ['create_soulstone'] = {
       name = 'Create Soulstone',
       rank = 0,
       level = 40,
-      id = 0,
+      id = 20755,
       cost = 11000
     },
     ['demon_armor:3'] = {
       name = 'Demon Armor',
       rank = 3,
       level = 40,
-      id = 0,
+      id = 11733,
       cost = 11000
     },
     ['immolate:5'] = {
       name = 'Immolate',
       rank = 5,
       level = 40,
-      id = 0,
+      id = 11665,
       cost = 11000
     },
     ['shadowburn:4'] = {
       name = 'Shadowburn',
       rank = 4,
       level = 40,
-      id = 0,
-      cost = 550
+      id = 18869,
+      cost = 550,
+      talent = 'shadowburn:1'
     }
   },
   [42] = {
@@ -605,7 +608,7 @@ local WarlockClassSpells = {
       name = 'Curse of Recklessness',
       rank = 3,
       level = 42,
-      id = 0,
+      id = 7659,
       cost = 11000
     },
     ['curse_of_weakness:5'] = {
@@ -626,14 +629,14 @@ local WarlockClassSpells = {
       name = 'Shadow Ward',
       rank = 2,
       level = 42,
-      id = 0,
+      id = 11739,
       cost = 11000
     },
     ['hellfire:2'] = {
       name = 'Hellfire',
       rank = 2,
       level = 42,
-      id = 0,
+      id = 11683,
       cost = 9900
     },
     ['searing_pain:4'] = {
@@ -663,7 +666,7 @@ local WarlockClassSpells = {
       name = 'Drain Mana',
       rank = 3,
       level = 44,
-      id = 0,
+      id = 11703,
       cost = 12000
     },
     ['enslave_demon:2'] = {
@@ -677,14 +680,14 @@ local WarlockClassSpells = {
       name = 'Health Funnel',
       rank = 5,
       level = 44,
-      id = 0,
+      id = 11693,
       cost = 12000
     },
     ['shadow_bolt:7'] = {
       name = 'Shadow Bolt',
       rank = 7,
       level = 44,
-      id = 0,
+      id = 11659,
       cost = 12000
     }
   },
@@ -693,42 +696,42 @@ local WarlockClassSpells = {
       name = 'Curse of the Elements',
       rank = 2,
       level = 46,
-      id = 0,
+      id = 11721,
       cost = 13000
     },
     ['drain_life:5'] = {
       name = 'Drain Life',
       rank = 5,
       level = 46,
-      id = 0,
+      id = 11699,
       cost = 13000
     },
     ['life_tap:5'] = {
       name = 'Life Tap',
       rank = 5,
       level = 46,
-      id = 0,
+      id = 11688,
       cost = 13000
     },
     ['banish:2'] = {
       name = 'Banish',
       rank = 2,
       level = 46,
-      id = 0,
+      id = 18647,
       cost = 13000
     },
     ['create_firestone_greater'] = {
       name = 'Create Firestone (Greater)',
       rank = 0,
       level = 46,
-      id = 0,
+      id = 17952,
       cost = 13000
     },
     ['create_healthstone_greater'] = {
       name = 'Create Healthstone (Greater)',
       rank = 0,
       level = 46,
-      id = 0,
+      id = 11729,
       cost = 13000
     },
     ['rain_of_fire:3'] = {
@@ -759,44 +762,46 @@ local WarlockClassSpells = {
       name = 'Create Spellstone (Greater)',
       rank = 0,
       level = 48,
-      id = 0,
+      id = 17727,
       cost = 14000
     },
     ['conflagrate:2'] = {
       name = 'Conflagrate',
       rank = 2,
       level = 48,
-      id = 0,
-      cost = 700
+      id = 18930,
+      cost = 700,
+      talent = 'conflagrate:1'
     },
     ['shadowburn:5'] = {
       name = 'Shadowburn',
       rank = 5,
       level = 48,
-      id = 0,
-      cost = 700
+      id = 18870,
+      cost = 700,
+      talent = 'shadowburn:1'
     },
     ['soul_fire:1'] = {
       name = 'Soul Fire',
       rank = 1,
       level = 48,
-      id = 0,
+      id = 6353,
       cost = 14000
     }
   },
   [50] = {
-    ['curse_of_rongues:2'] = {
+    ['curse_of_tongues:2'] = {
       name = 'Curse of Tongues',
       rank = 2,
       level = 50,
-      id = 0,
+      id = 11719,
       cost = 15000
     },
     ['dark_pact:2'] = {
       name = 'Dark Pact',
       rank = 2,
       level = 50,
-      id = 0,
+      id = 18937,
       cost = 750
     },
     ['death_coil:2'] = {
@@ -810,28 +815,28 @@ local WarlockClassSpells = {
       name = 'Create Soulstone (Greater)',
       rank = 0,
       level = 50,
-      id = 0,
+      id = 20756,
       cost = 15000
     },
     ['demon_armor:4'] = {
       name = 'Demon Armor',
       rank = 4,
       level = 50,
-      id = 0,
+      id = 11734,
       cost = 15000
     },
     ['detect_greater_invisibility'] = {
       name = 'Detect Greater Invisibility',
       rank = 0,
       level = 50,
-      id = 0,
+      id = 11743,
       cost = 15000
     },
     ['immolate:6'] = {
       name = 'Immolate',
       rank = 6,
       level = 50,
-      id = 0,
+      id = 11667,
       cost = 15000
     },
     ['searing_pain:5'] = {
@@ -854,28 +859,28 @@ local WarlockClassSpells = {
       name = 'Drain Soul',
       rank = 4,
       level = 52,
-      id = 0,
+      id = 11675,
       cost = 18000
     },
     ['health_funnel:6'] = {
       name = 'Health Funnel',
       rank = 6,
       level = 52,
-      id = 0,
+      id = 11694,
       cost = 18000
     },
     ['shadow_ward:3'] = {
       name = 'Shadow Ward',
       rank = 3,
       level = 52,
-      id = 0,
+      id = 11740,
       cost = 18000
     },
     ['shadow_bolt:8'] = {
       name = 'Shadow Bolt',
       rank = 8,
       level = 52,
-      id = 0,
+      id = 11660,
       cost = 18000
     }
   },
@@ -891,35 +896,36 @@ local WarlockClassSpells = {
       name = 'Drain Life',
       rank = 6,
       level = 54,
-      id = 0,
+      id = 11700,
       cost = 20000
     },
     ['drain_mana:4'] = {
       name = 'Drain Mana',
       rank = 4,
       level = 54,
-      id = 0,
+      id = 11704,
       cost = 20000
     },
     ['howl_of_terror:2'] = {
       name = 'Howl of Terror',
       rank = 2,
       level = 54,
-      id = 0,
+      id = 17928,
       cost = 20000
     },
     ['conflagrate:3'] = {
       name = 'Conflagrate',
       rank = 3,
       level = 54,
-      id = 0,
-      cost = 1000
+      id = 18931,
+      cost = 1000,
+      talent = 'conflagrate:1'
     },
     ['hellfire:3'] = {
       name = 'Hellfire',
       rank = 3,
       level = 54,
-      id = 0,
+      id = 11684,
       cost = 18000
     }
   },
@@ -928,42 +934,43 @@ local WarlockClassSpells = {
       name = 'Curse of Recklessness',
       rank = 4,
       level = 56,
-      id = 0,
+      id = 11717,
       cost = 22000
     },
     ['fear:3'] = {
       name = 'Fear',
       rank = 3,
       level = 56,
-      id = 0,
+      id = 6215,
       cost = 22000
     },
     ['life_tap:6'] = {
       name = 'Life Tap',
       rank = 6,
       level = 56,
-      id = 0,
+      id = 11689,
       cost = 22000
     },
     ['create_firestone_major'] = {
       name = 'Create Firestone (Major)',
       rank = 0,
       level = 56,
-      id = 0,
+      id = 17953,
       cost = 22000
     },
     ['shadowburn:6'] = {
       name = 'Shadowburn',
       rank = 6,
       level = 56,
-      id = 0,
-      cost = 22000
+      id = 18871,
+      cost = 22000,
+      talent = 'shadowburn:1'
     },
     ['soul_fire:2'] = {
       name = 'Soul Fire',
       rank = 2,
       level = 56,
-      id = 0,
+      id = 17924,
       cost = 22000
     }
   },
@@ -1038,63 +1045,64 @@ local WarlockClassSpells = {
       name = 'Curse of the Elements',
       rank = 3,
       level = 60,
-      id = 0,
+      id = 11722,
       cost = 26000
     },
     ['dark_pact:3'] = {
       name = 'Dark Pact',
       rank = 3,
       level = 60,
-      id = 0,
+      id = 18938,
       cost = 1300
     },
     ['create_soulstone_major'] = {
       name = 'Create Soulstone (Major)',
       rank = 0,
       level = 60,
-      id = 0,
+      id = 20757,
       cost = 26000
     },
     ['create_spellstone_major'] = {
       name = 'Create Spellstone (Major)',
       rank = 0,
       level = 60,
-      id = 0,
+      id = 17728,
       cost = 26000
     },
     ['demon_armor:5'] = {
       name = 'Demon Armor',
       rank = 5,
       level = 60,
-      id = 0,
+      id = 11735,
       cost = 26000
     },
     ['health_funnel:7'] = {
       name = 'Health Funnel',
       rank = 7,
       level = 60,
-      id = 0,
+      id = 11695,
       cost = 26000
     },
     ['conflagrate:4'] = {
       name = 'Conflagrate',
       rank = 4,
       level = 60,
-      id = 0,
-      cost = 1300
+      id = 18932,
+      cost = 1300,
+      talent = 'conflagrate:1'
     },
     ['immolate:7'] = {
       name = 'Immolate',
       rank = 7,
       level = 60,
-      id = 0,
+      id = 11668,
       cost = 26000
     },
     ['shadow_bolt:9'] = {
       name = 'Shadow Bolt',
       rank = 9,
       level = 60,
-      id = 0,
+      id = 11661,
       cost = 26000
     }
   }
@@ -1108,6 +1116,39 @@ local WarlockClassTomes = {
     spell = 'Corruption',
     spell_id = 25311,
     rank = 7,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20',
+    level = 60
+  },
+  ['shadow_bolt_x'] = {
+    item_id = 21281,
+    name = 'Grimoire of Shadow Bolt X',
+    spell = 'Shadow Bolt',
+    spell_id = 25307,
+    rank = 10,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20',
+    level = 60
+  },
+  ['immolate_viii'] = {
+    item_id = 21282,
+    name = 'Grimoire of Immolate VIII',
+    spell = 'Immolate',
+    spell_id = 25309,
+    rank = 8,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20',
+    level = 60
+  },
+  ['shadow_ward_iv'] = {
+    item_id = 22891,
+    name = 'Grimoire of Shadow Ward IV',
+    spell = 'Shadow Ward',
+    spell_id = 28610,
+    rank = 4,
     source = 'drop',
     source_drop = 'raid',
     source_drop_raid = 'AQ20',
@@ -1130,6 +1171,22 @@ local WarlockTalentSpells = {
     points_prereq = 30,
     name = 'Dark Pact',
     spell_id = 18220,
+    rank = 1
+  },
+  ['conflagrate:1'] = {
+    tree = 'destruction',
+    points = 1,
+    points_prereq = 30,
+    name = 'Conflagrate',
+    spell_id = 17962,
+    rank = 1
+  },
+  ['shadowburn:1'] = {
+    tree = 'destruction',
+    points = 1,
+    points_prereq = 10,
+    name = 'Shadowburn',
+    spell_id = 17877,
     rank = 1
   }
 }
