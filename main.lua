@@ -105,6 +105,8 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   local classKey = 'Broker_Classic_Training_'..englishClass
   local spells = _G[classKey]
 
+  -- TODO: If PRIEST, then also get the racial class abilities.
+
   -- Filter and format spells
   if (spells ~= nil) then
     BrokerClassicTraining:FilterSpells(spells, level)

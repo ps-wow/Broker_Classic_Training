@@ -29,11 +29,11 @@ local WarlockClassSpells = {
       id = 702,
       cost = 100
     },
-    ['summon_imp:1'] = {
+    ['summon_imp'] = {
       name = 'Summon Imp',
       rank = 0,
       level = 4,
-      id = 0,
+      id = 688,
       cost = 'quest',
       quest = 'Piercing the Veil'
     }
@@ -59,7 +59,7 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 1,
       level = 8,
-      id = 0,
+      id = 980,
       cost = 200
     },
     ['fear:1'] = {
@@ -105,7 +105,7 @@ local WarlockClassSpells = {
       name = 'Curse of Weakness',
       rank = 2,
       level = 12,
-      id = 0,
+      id = 1108,
       cost = 600
     },
     ['health_funnel:1'] = {
@@ -128,7 +128,7 @@ local WarlockClassSpells = {
       name = 'Corruption',
       rank = 2,
       level = 14,
-      id = 0,
+      id = 6222,
       cost = 900
     },
     ['curse_of_recklessness:1'] = {
@@ -167,7 +167,7 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 2,
       level = 18,
-      id = 0,
+      id = 1014,
       cost = 1500
     },
     ['create_soulstone_minor'] = {
@@ -181,7 +181,7 @@ local WarlockClassSpells = {
       name = 'Searing Pain',
       rank = 1,
       level = 18,
-      id = 0,
+      id = 5676,
       cost = 1500
     }
   },
@@ -218,7 +218,7 @@ local WarlockClassSpells = {
       name = 'Rain of Fire',
       rank = 1,
       level = 20,
-      id = 0,
+      id = 5740,
       cost = 2000
     },
     ['shadow_bolt:4'] = {
@@ -234,7 +234,7 @@ local WarlockClassSpells = {
       name = 'Curse of Weakness',
       rank = 3,
       level = 22,
-      id = 0,
+      id = 6205,
       cost = 2500
     },
     ['drain_life:2'] = {
@@ -264,7 +264,7 @@ local WarlockClassSpells = {
       name = 'Corruption',
       rank = 3,
       level = 24,
-      id = 0,
+      id = 6223,
       cost = 3000
     },
     ['drain_mana:1'] = {
@@ -322,7 +322,7 @@ local WarlockClassSpells = {
       name = 'Searing Pain',
       rank = 2,
       level = 26,
-      id = 0,
+      id = 17919,
       cost = 4000
     }
   },
@@ -331,7 +331,7 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 3,
       level = 28,
-      id = 0,
+      id = 6217,
       cost = 5000
     },
     ['curse_of_recklessness:2'] = {
@@ -396,7 +396,7 @@ local WarlockClassSpells = {
       name = 'Enslave Demon',
       rank = 1,
       level = 30,
-      id = 0,
+      id = 1098,
       cost = 6000
     },
     ['hellfire:1'] = {
@@ -419,7 +419,7 @@ local WarlockClassSpells = {
       name = 'Curse of Weakness',
       rank = 4,
       level = 30,
-      id = 0,
+      id = 7646,
       cost = 7000
     },
     ['curse_of_the_elements:1'] = {
@@ -456,7 +456,7 @@ local WarlockClassSpells = {
       name = 'Corruption',
       rank = 4,
       level = 34,
-      id = 0,
+      id = 7648,
       cost = 8000
     },
     ['drain_mana:2'] = {
@@ -477,14 +477,14 @@ local WarlockClassSpells = {
       name = 'Rain of Fire',
       rank = 2,
       level = 34,
-      id = 0,
+      id = 6219,
       cost = 8000
     },
     ['searing_pain:3'] = {
       name = 'Searing Pain',
       rank = 3,
       level = 34,
-      id = 0,
+      id = 17920,
       cost = 8000
     }
   },
@@ -530,7 +530,7 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 4,
       level = 38,
-      id = 0,
+      id = 11711,
       cost = 10000
     },
     ['drain_life:4'] = {
@@ -551,8 +551,9 @@ local WarlockClassSpells = {
       name = 'Siphon Life',
       rank = 2,
       level = 38,
-      id = 0,
-      cost = 500
+      id = 18879,
+      cost = 500,
+      talent = 'siphon_life:1'
     },
     ['detect_invisibility'] = {
       name = 'Detect Invisibility',
@@ -611,14 +612,14 @@ local WarlockClassSpells = {
       name = 'Curse of Weakness',
       rank = 5,
       level = 42,
-      id = 0,
+      id = 11707,
       cost = 11000
     },
     ['death_coil:1'] = {
       name = 'Death Coil',
       rank = 1,
       level = 42,
-      id = 0,
+      id = 6789,
       cost = 11000
     },
     ['shadow_ward:2'] = {
@@ -639,7 +640,7 @@ local WarlockClassSpells = {
       name = 'Searing Pain',
       rank = 4,
       level = 42,
-      id = 0,
+      id = 17921,
       cost = 11000
     }
   },
@@ -648,14 +649,14 @@ local WarlockClassSpells = {
       name = 'Corruption',
       rank = 5,
       level = 44,
-      id = 0,
+      id = 11671,
       cost = 12000
     },
     ['curse_of_shadow:1'] = {
       name = 'Curse of Shadow',
       rank = 1,
       level = 44,
-      id = 0,
+      id = 17862,
       cost = 12000
     },
     ['drain_mana:3'] = {
@@ -669,7 +670,7 @@ local WarlockClassSpells = {
       name = 'Enslave Demon',
       rank = 2,
       level = 44,
-      id = 0,
+      id = 11725,
       cost = 12000
     },
     ['health_funnel:5'] = {
@@ -734,7 +735,7 @@ local WarlockClassSpells = {
       name = 'Rain of Fire',
       rank = 3,
       level = 46,
-      id = 0,
+      id = 11677,
       cost = 13000
     }
   },
@@ -743,15 +744,16 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 5,
       level = 48,
-      id = 0,
+      id = 11712,
       cost = 14000
     },
     ['siphon_life:3'] = {
       name = 'Siphon Life',
       rank = 3,
       level = 48,
-      id = 0,
-      cost = 700
+      id = 18880,
+      cost = 700,
+      talent = 'siphon_life:1'
     },
     ['create_spellstone_greater'] = {
       name = 'Create Spellstone (Greater)',
@@ -801,7 +803,7 @@ local WarlockClassSpells = {
       name = 'Death Coil',
       rank = 2,
       level = 50,
-      id = 0,
+      id = 17925,
       cost = 15000
     },
     ['create_soulstone_greater'] = {
@@ -836,7 +838,7 @@ local WarlockClassSpells = {
       name = 'Searing Pain',
       rank = 5,
       level = 50,
-      id = 0,
+      id = 17922,
       cost = 15000
     }
   },
@@ -845,7 +847,7 @@ local WarlockClassSpells = {
       name = 'Curse of Weakness',
       rank = 6,
       level = 52,
-      id = 0,
+      id = 11708,
       cost = 18000
     },
     ['drain_soul:4'] = {
@@ -882,7 +884,7 @@ local WarlockClassSpells = {
       name = 'Corruption',
       rank = 6,
       level = 54,
-      id = 0,
+      id = 11672,
       cost = 20000
     },
     ['drain_life:6'] = {
@@ -970,49 +972,50 @@ local WarlockClassSpells = {
       name = 'Curse of Agony',
       rank = 6,
       level = 58,
-      id = 0,
+      id = 11713,
       cost = 24000
     },
     ['death_coil:3'] = {
       name = 'Death Coil',
       rank = 3,
       level = 58,
-      id = 0,
+      id = 17926,
       cost = 24000
     },
     ['siphon_life:4'] = {
       name = 'Siphon Life',
       rank = 4,
       level = 58,
-      id = 0,
-      cost = 1200
+      id = 18881,
+      cost = 1200,
+      talent = 'siphon_life:1'
     },
     ['create_healthstone_major'] = {
       name = 'Create Healthstone (Major)',
       rank = 0,
       level = 58,
-      id = 0,
+      id = 11730,
       cost = 24000
     },
     ['enslave_demon:3'] = {
       name = 'Enslave Demon',
       rank = 3,
       level = 58,
-      id = 0,
+      id = 11726,
       cost = 24000
     },
     ['rain_of_fire:4'] = {
       name = 'Rain of Fire',
       rank = 4,
       level = 58,
-      id = 0,
+      id = 11678,
       cost = 24000
     },
-    ['searing_pain:4'] = {
+    ['searing_pain:6'] = {
       name = 'Searing Pain',
-      rank = 4,
+      rank = 6,
       level = 58,
-      id = 0,
+      id = 17923,
       cost = 24000
     }
   },
@@ -1021,14 +1024,14 @@ local WarlockClassSpells = {
       name = 'Curse of Doom',
       rank = 0,
       level = 60,
-      id = 0,
+      id = 603,
       cost = 26000
     },
     ['curse_of_shadow:2'] = {
       name = 'Curse of Shadow',
       rank = 2,
       level = 60,
-      id = 0,
+      id = 17937,
       cost = 10000
     },
     ['curse_of_the_elements:3'] = {
@@ -1099,17 +1102,17 @@ local WarlockClassSpells = {
 
 -- @see https://classic.wowhead.com/items/min-req-level:60/max-req-level:60/class:11/quality:3?filter=168;1;0
 local WarlockClassTomes = {
-  -- ['heroic_strike_ix'] = {
-  --   item_id = 21297,
-  --   name = 'Manual of Heroic Strike IX',
-  --   spell = 'Heroic Strike',
-  --   spell_id = 25286,
-  --   rank = 9,
-  --   source = 'drop',
-  --   source_drop = 'raid',
-  --   source_drop_raid = 'AQ20',
-  --   level = 60
-  -- }
+  ['corruption_vii'] = {
+    item_id = 21283,
+    name = 'Grimoire of Corruption VII',
+    spell = 'Corruption',
+    spell_id = 25311,
+    rank = 7,
+    source = 'drop',
+    source_drop = 'raid',
+    source_drop_raid = 'AQ20',
+    level = 60
+  }
 }
 
 local WarlockTalentSpells = {
