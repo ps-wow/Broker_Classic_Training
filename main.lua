@@ -4,7 +4,7 @@ local UPDATEPERIOD, elapsed = 2, 0
 BrokerClassicTraining.kbDEBUG = true
 
 BrokerClassicTraining.constants = {
-  newTrainingAlert = 'badge'
+  newTrainingAlert = 'badge',
 }
 
 -- The data feed
@@ -28,8 +28,8 @@ end)
 
 -- Addon Debug
 function BrokerClassicTraining:Dump(str, obj)
-  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then
-      ViragDevTool_AddData(obj, str)
+  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then 
+      ViragDevTool_AddData(obj, str) 
   end
 end
 
@@ -90,7 +90,6 @@ end
 
 function BrokerClassicTraining:BuildTrainingData(self, level)
   level = level or nil
-  level = 60 -- TODO: Remove
 
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
@@ -104,8 +103,6 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   -- -- Get the spells for the class
   local classKey = 'Broker_Classic_Training_'..englishClass
   local spells = _G[classKey]
-
-  -- TODO: If PRIEST, then also get the racial class abilities.
 
   -- Filter and format spells
   if (spells ~= nil) then
@@ -141,9 +138,10 @@ function BrokerClassicTraining:FilterSpells(spells, level)
     local levelSpells = spells[i]
     if (levelSpells ~= nil) then
       for key,spell in pairs(levelSpells) do
+        -- Spell = v
         if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
           local isKnown = IsSpellKnown(spell.id)
-          --local isKnown = false
+          --local isKnown = false -- Debug remove once done
           if (isKnown == false) then
             BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
             table.insert(spellsLearnable, spell)
@@ -190,7 +188,7 @@ function BrokerClassicTraining:FormatSpells(self, hex)
       if spell.rank == 0 then
         spellOutput = string.format('%d %s', spell.level, spell.name)
       else
-        spellOutput = string.format('%d %s (%s)', spell.level, spell.name, 'Rank ' .. spell.rank)
+        spellOutput = string.format('%d %s %s', spell.level, spell.name, 'Rank ' .. spell.rank)
       end
 
       self:AddDoubleLine(spellOutput, cost)
