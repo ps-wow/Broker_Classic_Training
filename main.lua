@@ -28,8 +28,8 @@ end)
 
 -- Addon Debug
 function BrokerClassicTraining:Dump(str, obj)
-  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then 
-      ViragDevTool_AddData(obj, str) 
+  if ViragDevTool_AddData and BrokerClassicTraining.kbDEBUG then
+      ViragDevTool_AddData(obj, str)
   end
 end
 
@@ -131,21 +131,25 @@ function BrokerClassicTraining:FilterSpells(spells, level)
   -- new table to hold learnable spells
   local spellsLearnable = {}
   local new = 0
+
   level = level or UnitLevel("player")
+
   BrokerClassicTraining.Feed.newSpells = 0
 
-  for i=1,level do
-    local levelSpells = spells[i]
-    if (levelSpells ~= nil) then
-      for key,spell in pairs(levelSpells) do
-        -- Spell = v
-        if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
-          local isKnown = IsSpellKnown(spell.id)
-          --local isKnown = false -- Debug remove once done
-          if (isKnown == false) then
-            BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
-            table.insert(spellsLearnable, spell)
-            new = new + 1
+  if (level > 1) then
+    for i=1,level do
+      local levelSpells = spells[i]
+      if (levelSpells ~= nil) then
+        for key,spell in pairs(levelSpells) do
+          -- Spell = v
+          if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
+            local isKnown = IsSpellKnown(spell.id)
+            --local isKnown = false -- Debug remove once done
+            if (isKnown == false) then
+              BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
+              table.insert(spellsLearnable, spell)
+              new = new + 1
+            end
           end
         end
       end
@@ -210,6 +214,7 @@ function BrokerClassicTraining:FilterSpellBooks(books, level)
   local booksLearnable = {}
   local new = 0
   level = level or UnitLevel("player")
+
   BrokerClassicTraining.Feed.newBooks = 0
 
   for _,book in pairs(books) do
@@ -299,7 +304,7 @@ function BrokerClassicTraining:PLAYER_ENTERING_WORLD()
   dataObj.text = BrokerClassicTraining:UpdateLabel()
 end
 
-function BrokerClassicTraining:PLAYER_LEVEL_UP(newLevel, ...)
+function BrokerClassicTraining:PLAYER_LEVEL_UP(event, newLevel, ...)
   BrokerClassicTraining:BuildTrainingData(self, newLevel)
   dataObj.text = BrokerClassicTraining:UpdateLabel()
 end
