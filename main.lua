@@ -89,7 +89,7 @@ function BrokerClassicTraining:GetLabels()
 end
 
 function BrokerClassicTraining:BuildTrainingData(self, level)
-  level = level or nil
+  level = level or UnitLevel("player")
 
   -- Get the list of player learnable spells
   local localizedClass, englishClass, classIndex = UnitClass("player")
@@ -136,7 +136,7 @@ function BrokerClassicTraining:FilterSpells(spells, level)
 
   BrokerClassicTraining.Feed.newSpells = 0
 
-  if (level > 1) then
+  if (level > 0) then
     for i=1,level do
       local levelSpells = spells[i]
       if (levelSpells ~= nil) then
@@ -309,7 +309,7 @@ function BrokerClassicTraining:PLAYER_LEVEL_UP(event, newLevel, ...)
   dataObj.text = BrokerClassicTraining:UpdateLabel()
 end
 
-function BrokerClassicTraining:SPELLS_CHANGED()
+function BrokerClassicTraining:SPELLS_CHANGED(event, ...)
   BrokerClassicTraining:BuildTrainingData(self)
   dataObj.text = BrokerClassicTraining:UpdateLabel()
 end
