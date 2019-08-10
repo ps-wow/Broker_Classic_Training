@@ -1102,7 +1102,8 @@ local PaladinClassTomes = {
     spell_id = 25291,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['holy_light_ix'] = {
     item_id = 21290,
@@ -1112,7 +1113,8 @@ local PaladinClassTomes = {
     rank = 9,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   },
   ['blessing_of_wisdom_vi'] = {
     item_id = 21288,
@@ -1122,7 +1124,8 @@ local PaladinClassTomes = {
     rank = 6,
     source = 'drop',
     source_drop = 'raid',
-    source_drop_raid = 'AQ20'
+    source_drop_raid = 'AQ20',
+    level = 60
   }
 }
 
