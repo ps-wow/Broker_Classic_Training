@@ -309,7 +309,13 @@ function BrokerClassicTraining:PLAYER_LEVEL_UP(event, newLevel, ...)
   dataObj.text = BrokerClassicTraining:UpdateLabel()
 end
 
+function BrokerClassicTraining:SPELLS_CHANGED()
+  BrokerClassicTraining:BuildTrainingData(self)
+  dataObj.text = BrokerClassicTraining:UpdateLabel()
+end
+
 BrokerClassicTraining:RegisterEvent('PLAYER_ENTERING_WORLD')
 BrokerClassicTraining:RegisterEvent('PLAYER_LEVEL_UP')
+BrokerClassicTraining:RegisterEvent('SPELLS_CHANGED')
 
 _G['BrokerClassicTraining'] = BrokerClassicTraining
