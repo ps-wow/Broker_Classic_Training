@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2019-08-10
+### Fixed
+ - Paladin: Fix error caused by levels not being present against class tomes.
+ - General: Fix spells not showing up at character level 1
+
 ## [1.0.2] - 2019-08-09
 ### Fixed
  - Fix level up issue
