@@ -1268,7 +1268,7 @@ PriestRacialClassSpells = {
         id = 2651,
         level = 20,
         cost = 'quest',
-        quest = "Elune's Grace"
+        quest_name = "Elune's Grace"
       }
     },
     [28] = {

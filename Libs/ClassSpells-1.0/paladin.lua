@@ -129,7 +129,7 @@ local PaladinClassSpells = {
       id = 7328,
       level = 13,
       cost = 'quest',
-      quest = 'The Tome of Divinity'
+      quest_name = 'The Tome of Divinity'
     }
   },
   [14] = {

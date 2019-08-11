@@ -936,7 +936,12 @@ local DruidTalentSpells = {
     rank = 1
   },
   ['faerie_fire_feral:1'] = {
-    
+    tree = 'feral',
+    points = 20,
+    points_prereq = 0,
+    name = "Faerie Fire (Feral)",
+    spell_id = 16857,
+    rank = 1
   },
   ['insect_swarm:1'] = {
     tree = '????',

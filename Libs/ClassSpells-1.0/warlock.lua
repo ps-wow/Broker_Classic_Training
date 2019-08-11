@@ -35,7 +35,7 @@ local WarlockClassSpells = {
       level = 4,
       id = 688,
       cost = 'quest',
-      quest = 'Piercing the Veil'
+      quest_name = 'Piercing the Veil'
     }
   },
   [6] = {
