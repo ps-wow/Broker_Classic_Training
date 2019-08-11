@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2019-08-11
+### Fixed
+ - Fix additional quest with quest_name = nil (Issue #14) issue.
+
 ## [1.0.4] - 2019-08-11
 ### Fixed
  - Fix issue with quest_name = nil (Issue #14)
