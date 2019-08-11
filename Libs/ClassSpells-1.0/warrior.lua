@@ -78,7 +78,16 @@ local WarriorClassSpells = {
       rank = 1,
       id = 7386,
       level = 10,
-      cost = 'quest'
+      cost = 'quest',
+      quest_name = 'Unknown'
+    },
+    ['defensive_stance'] = {
+      name = 'Defensive Stance',
+      rank = 1,
+      id = 71,
+      level = 10,
+      cost = 'quest',
+      quest_name = 'Unknown'
     }
   },
   [12] = {
@@ -308,7 +317,8 @@ local WarriorClassSpells = {
       rank = 1,
       id = 20252,
       level = 30,
-      cost = 'quest'
+      cost = 'quest',
+      quest_name = 'Unknown'
     }
   },
   [32] = {

@@ -188,7 +188,7 @@ function BrokerClassicTraining:FormatSpells(self, hex)
         return
       end
 
-      local spellOutput = '' 
+      local spellOutput = ''
       if spell.rank == 0 then
         spellOutput = string.format('%d %s', spell.level, spell.name)
       else
@@ -264,7 +264,6 @@ function BrokerClassicTraining:FormatSpellBooks(self, hex)
     end
   end
 end
-
 
 --------------------------------------
 -- Register the LDB plugin launcher --
