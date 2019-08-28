@@ -196,7 +196,7 @@ function BrokerClassicTraining:FormatSpells(self, hex)
       end
 
       self:AddDoubleLine(spellOutput, cost)
-      if (spell.cost == 'quest') then
+      if (spell.cost == 'quest' and spell.quest_name ~= nil) then
         self:AddLine('- ' ..spell.quest_name)
       end
     end
