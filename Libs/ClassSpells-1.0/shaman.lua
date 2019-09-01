@@ -110,7 +110,8 @@ local ShamanClassSpells = {
       rank = 1,
       id = 3599,
       level = 10,
-      cost = 'quest'
+      cost = 'quest',
+      quest_name = 'Call of Fire'
     }
   },
   [12] = {
