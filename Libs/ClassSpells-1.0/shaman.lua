@@ -165,13 +165,6 @@ local ShamanClassSpells = {
       id = 8154,
       level = 14,
       cost = 900
-    },
-    ['cure_disease'] = {
-      name = 'Cure Disease',
-      rank = 0,
-      id = 2870,
-      level = 14,
-      cost = 900
     }
   },
   [16] = {
@@ -305,6 +298,13 @@ local ShamanClassSpells = {
       name = 'Poison Cleansing Totem',
       rank = 0,
       id = 8166,
+      level = 22,
+      cost = 3000
+    },
+    ['cure_disease'] = {
+      name = 'Cure Disease',
+      rank = 0,
+      id = 2870,
       level = 22,
       cost = 3000
     }
