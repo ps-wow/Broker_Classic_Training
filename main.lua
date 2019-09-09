@@ -144,11 +144,23 @@ function BrokerClassicTraining:FilterSpells(spells, level)
           -- Spell = v
           if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
             local isKnown = IsSpellKnown(spell.id)
-            --local isKnown = false -- Debug remove once done
+
             if (isKnown == false) then
-              BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
-              table.insert(spellsLearnable, spell)
-              new = new + 1
+              local addSpell = true
+
+              if (spell.replaced_by ~= nil) then
+                for i, id in ipairs(spell.replaced_by) do
+                  if (IsSpellKnown(id)) then
+                    addSpell = false
+                  end
+                end
+              end
+
+              if (addSpell == true) then
+                BrokerClassicTraining.Feed.newSpells = BrokerClassicTraining.Feed.newSpells + 1
+                table.insert(spellsLearnable, spell)
+                new = new + 1
+              end
             end
           end
         end

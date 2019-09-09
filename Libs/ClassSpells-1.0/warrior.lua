@@ -16,14 +16,16 @@ local WarriorClassSpells = {
       rank = 1,
       id = 100,
       cost = 100,
-      level = 4
+      level = 4,
+      replaced_by = { 6178, 11578 }
     },
     ['rend:1'] = {
       name = 'Rend',
       rank = 1,
       id = 772,
       level = 4,
-      cost = 100
+      cost = 100,
+      replaced_by = { 6546, 6547 }
     }
   },
   [6] = {
