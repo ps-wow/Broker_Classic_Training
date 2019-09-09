@@ -252,7 +252,8 @@ local WarriorClassSpells = {
       rank = 2,
       id = 6178,
       level = 26,
-      cost = 10000
+      cost = 10000,
+      replaced_by = { 11578 }
     },
     ['mocking_blow:2'] = {
       name = 'Mocking Blow',
