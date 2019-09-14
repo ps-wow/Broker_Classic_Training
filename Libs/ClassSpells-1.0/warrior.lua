@@ -87,7 +87,7 @@ local WarriorClassSpells = {
       level = 10,
       cost = 'quest',
       replaced_by = { 7405, 8380, 11596, 11597 },
-      quest_name = 'Unknown'
+      quest_name = 'Path of Defense'
     },
     ['defensive_stance'] = {
       name = 'Defensive Stance',
@@ -95,7 +95,15 @@ local WarriorClassSpells = {
       id = 71,
       level = 10,
       cost = 'quest',
-      quest_name = 'Unknown'
+      quest_name = 'Path of Defense'
+    },
+    ['taunt'] = {
+      name = 'Taunt',
+      rank = 1,
+      id = 355,
+      level = 10,
+      cost = 'quest',
+      quest_name = 'Path of Defense'
     }
   },
   [12] = {
