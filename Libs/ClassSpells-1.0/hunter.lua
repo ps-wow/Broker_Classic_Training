@@ -50,7 +50,7 @@ local HunterClassSpells = {
     ['parry'] = {
       name = "Parry",
       rank = 0,
-      id = 16268,
+      id = 3127,
       level = 8,
       cost = 200
     },
