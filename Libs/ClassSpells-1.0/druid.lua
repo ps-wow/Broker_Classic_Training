@@ -131,6 +131,13 @@ local DruidClassSpells = {
       id = 1430,
       level = 16,
       cost = 1800
+    },
+    ['swipe:1'] = {
+      name = 'Swipe',
+      rank = 1,
+      id = 779,
+      level = 16,
+      cost = 1800
     }
   },
   [18] = {
