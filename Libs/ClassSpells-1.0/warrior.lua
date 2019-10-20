@@ -26,7 +26,7 @@ local WarriorClassSpells = {
       id = 772,
       level = 4,
       cost = 100,
-      replaced_by = { 6546, 6547, 6548, 11572, 11573 }
+      replaced_by = { 6546, 6547, 6548, 11572, 11573, 11574 }
     }
   },
   [6] = {
@@ -36,7 +36,7 @@ local WarriorClassSpells = {
       id = 6343,
       level = 6,
       cost = 100,
-      replaced_by = { 8198, 8204, 8205, 11580 }
+      replaced_by = { 8198, 8204, 8205, 11580, 11581 }
     },
     ['parry'] = {
       name = 'Parry',
@@ -71,7 +71,7 @@ local WarriorClassSpells = {
       id = 6546,
       level = 10,
       cost = 600,
-      replaced_by = { 6547, 6548, 11572, 11573 }
+      replaced_by = { 6547, 6548, 11572, 11573, 11574 }
     },
     ['bloodrage'] = {
       name = 'Bloodrage',
@@ -182,7 +182,7 @@ local WarriorClassSpells = {
       id = 8198,
       level = 18,
       cost = 3000,
-      replaced_by = { 8204, 8205, 11580 }
+      replaced_by = { 8204, 8205, 11580, 11581 }
     },
     ['disarm'] = {
       name = 'Disarm',
@@ -199,7 +199,7 @@ local WarriorClassSpells = {
       id = 6547,
       level = 20,
       cost = 4000,
-      replaced_by = { 6548, 11572, 11573 }
+      replaced_by = { 6548, 11572, 11573, 11574 }
     },
     ['retaliation'] = {
       name = 'Retaliation',
@@ -316,7 +316,7 @@ local WarriorClassSpells = {
       id = 8204,
       level = 28,
       cost = 11000,
-      replaced_by = { 8205, 11580 }
+      replaced_by = { 8205, 11580, 11581 }
     },
     ['shield_wall'] = {
       name = 'Shield Wall',
@@ -333,7 +333,7 @@ local WarriorClassSpells = {
       id = 6548,
       level = 30,
       cost = 12000,
-      replaced_by = { 11572, 11573 }
+      replaced_by = { 11572, 11573, 11574 }
     },
     ['cleave:2'] = {
       name = 'Cleave',
@@ -460,7 +460,7 @@ local WarriorClassSpells = {
       id = 8205,
       level = 38,
       cost = 20000,
-      replaced_by = { 11580 }
+      replaced_by = { 11580, 11581 }
     },
     ['pummel:1'] = {
       name = 'Pummel',
@@ -494,7 +494,7 @@ local WarriorClassSpells = {
       id = 11572,
       level = 40,
       cost = 22000,
-      replaced_by = { 11573 }
+      replaced_by = { 11573, 11574 }
     },
     ['cleave:3'] = {
       name = 'Cleave',
@@ -613,7 +613,8 @@ local WarriorClassSpells = {
       rank = 5,
       id = 11580,
       level = 48,
-      cost = 40000
+      cost = 40000,
+      replaced_by = { 11581 }
     },
     ['bloodthirst:2'] = {
       name = 'Bloodthirst',
@@ -648,7 +649,8 @@ local WarriorClassSpells = {
       rank = 6,
       id = 11573,
       level = 50,
-      cost = 42000
+      cost = 42000,
+      replaced_by = { 11574 }
     },
     ['cleave:4'] = {
       name = 'Cleave',
@@ -842,7 +844,7 @@ local WarriorClassSpells = {
   }
 }
 
--- @see https://classic.wowhead.com/items/min-req-level:60/max-req-level:60/class:11/quality:3?filter=168;1;0
+--- @see https://classic.wowhead.com/items/min-req-level:60/max-req-level:60/class:11/quality:3?filter=168;1;0
 local WarriorClassTomes = {
   ['heroic_strike_ix'] = {
     item_id = 21297,
