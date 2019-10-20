@@ -1048,7 +1048,7 @@ local PriestClassSpells = {
   }
 }
 
-PriestRacialClassSpells = {
+local PriestRacialClassSpells = {
   ['dwarf'] = {
     [10] = {
       ['desperate_prayer:1'] = {
