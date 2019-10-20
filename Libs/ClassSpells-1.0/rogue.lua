@@ -83,6 +83,13 @@ local RogueClassSpells = {
       id = 2983,
       level = 10,
       cost = 300
+    },
+    ['dual_wield'] = {
+      name = 'Dual Wield',
+      rank = 0,
+      id = 674,
+      level = 10,
+      cost = 200
     }
   },
   [12] = {
