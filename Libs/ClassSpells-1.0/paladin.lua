@@ -57,7 +57,7 @@ local PaladinClassSpells = {
     ['parry'] = {
       name = 'Parry',
       rank = 0,
-      id = 16268,
+      id = 3127,
       level = 4,
       cost = 100
     },
