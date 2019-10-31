@@ -20,7 +20,8 @@ local RogueClassSpells = {
       rank = 1,
       id = 53,
       level = 4,
-      cost = 100
+      cost = 100,
+      replaced_by = { 2589 }
     },
     ['pick_pocket'] = {
       name = 'Pick Pocket',
@@ -43,7 +44,8 @@ local RogueClassSpells = {
       rank = 2,
       id = 1757,
       level = 6,
-      cost = 100
+      cost = 100,
+      replaced_by = { 1758 }
     }
   },
   [8] = {
