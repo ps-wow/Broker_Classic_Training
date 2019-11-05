@@ -11,7 +11,8 @@ local PaladinClassSpells = {
       rank = 1,
       id = 465,
       level = 1,
-      cost = 10
+      cost = 10,
+      replaced_by = { 10290 }
     }
   },
   [4] = {
