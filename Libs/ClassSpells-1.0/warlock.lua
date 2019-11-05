@@ -103,7 +103,7 @@ local WarlockClassSpells = {
       name = 'Summon Voidwalker',
       rank = 0,
       level = 10,
-      id = 707,
+      id = 697,
       cost = 'quest',
       quest_name = 'The Binding'
     }
