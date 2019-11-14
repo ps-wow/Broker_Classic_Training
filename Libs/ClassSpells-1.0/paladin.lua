@@ -12,7 +12,7 @@ local PaladinClassSpells = {
       id = 465,
       level = 1,
       cost = 10,
-      replaced_by = { 10290 }
+      replaced_by = { 10290, 643, 10291, 1032, 10292, 10293 }
     }
   },
   [4] = {
@@ -104,7 +104,8 @@ local PaladinClassSpells = {
       rank = 2,
       id = 10290,
       level = 10,
-      cost = 300
+      cost = 300,
+      replaced_by = { 643, 10291, 1032, 10292, 10293 }
     }
   },
   [12] = {
@@ -208,7 +209,8 @@ local PaladinClassSpells = {
       rank = 3,
       id = 643,
       level = 20,
-      cost = 4000
+      cost = 4000,
+      replaced_by = { 10291, 1032, 10292, 10293 }
     }
   },
   [22] = {
@@ -366,7 +368,8 @@ local PaladinClassSpells = {
       rank = 4,
       id = 10291,
       level = 30,
-      cost = 11000
+      cost = 11000,
+      replaced_by = { 1032, 10292, 10293 }
     },
     ['divine_intervention'] = {
       name = 'Divine Intervention',
@@ -533,7 +536,8 @@ local PaladinClassSpells = {
       rank = 5,
       id = 1032,
       level = 40,
-      cost = 20000
+      cost = 20000,
+      replaced_by = { 10292, 10293 }
     },
     ['hammer_of_justice:3'] = {
       name = 'Hammer of Justice',
@@ -742,7 +746,8 @@ local PaladinClassSpells = {
       rank = 6,
       id = 10292,
       level = 50,
-      cost = 28000
+      cost = 28000,
+      replaced_by = { 10293 }
     },
     ['divine_shield:2'] = {
       name = 'Divine Shield',
