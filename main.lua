@@ -103,10 +103,11 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   -- -- Get the spells for the class
   local classKey = 'Broker_Classic_Training_'..englishClass
   local spells = _G[classKey]
+  local talents = _G[classKey .. '_Talents']
 
   -- Filter and format spells
   if (spells ~= nil) then
-    BrokerClassicTraining:FilterSpells(spells, level)
+    BrokerClassicTraining:FilterSpells(spells, level, talents)
     BrokerClassicTraining:FormatSpells(self, hex)
   end
 
@@ -127,7 +128,7 @@ function BrokerClassicTraining:BuildTrainingData(self, level)
   end
 end
 
-function BrokerClassicTraining:FilterSpells(spells, level)
+function BrokerClassicTraining:FilterSpells(spells, level, talents)
   -- new table to hold learnable spells
   local spellsLearnable = {}
   local new = 0
@@ -140,7 +141,7 @@ function BrokerClassicTraining:FilterSpells(spells, level)
     for i=1,level do
       local levelSpells = spells[i]
       if (levelSpells ~= nil) then
-        for key,spell in pairs(levelSpells) do
+        for _,spell in pairs(levelSpells) do
           -- Spell = v
           if spell.id ~= nil and spell.id ~= 0 then -- Abort if spell id is zero or nil
             local isKnown = IsSpellKnown(spell.id)
@@ -148,11 +149,23 @@ function BrokerClassicTraining:FilterSpells(spells, level)
             if (isKnown == false) then
               local addSpell = true
 
+              -- Spells without mana and thus can't downrank use the replaced_by property to defer is known to later ranks.
               if (spell.replaced_by ~= nil) then
-                for i, id in ipairs(spell.replaced_by) do
+                for _,id in ipairs(spell.replaced_by) do
                   if (IsSpellKnown(id)) then
                     addSpell = false
                   end
+                end
+              end
+
+              -- Spells which are ranks of talented abilities need an aditional check if the talent isn't known
+              if (spell.talent ~= nil) then
+                local talent = talents[spell.talent]
+                BrokerClassicTraining:Dump('talent', talent)
+                if (IsSpellKnown(talent.spell_id)) then
+                  -- Do nothing
+                else
+                  addSpell = false
                 end
               end
 

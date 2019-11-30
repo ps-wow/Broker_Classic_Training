@@ -39,6 +39,9 @@ local WarlockPetSpells = {
         cost = 5000
       }
     }
+  },
+  ['Voidwalker'] = {
+    
   }
 }
 
