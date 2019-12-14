@@ -1,7 +1,7 @@
 ## Title: Broker_Classic_Training
 ## Notes: LDB data source for classic class training
 ## Version: v1.0.0
-## Interface: 11302
+## Interface: 11303
 ## Author: PrivateSniper
 ## SavedVariables: Broker_Classic_Training_DB
 ## OptionalDeps: Ace3, LibQTip-1.0, LibDataBroker-1.1
