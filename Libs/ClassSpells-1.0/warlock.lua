@@ -721,13 +721,6 @@ local WarlockClassSpells = {
       id = 11688,
       cost = 13000
     },
-    ['banish:2'] = {
-      name = 'Banish',
-      rank = 2,
-      level = 46,
-      id = 18647,
-      cost = 13000
-    },
     ['create_firestone_greater'] = {
       name = 'Create Firestone (Greater)',
       rank = 0,
@@ -794,6 +787,13 @@ local WarlockClassSpells = {
       rank = 1,
       level = 48,
       id = 6353,
+      cost = 14000
+    },
+    ['banish:2'] = {
+      name = 'Banish',
+      rank = 2,
+      level = 48,
+      id = 18647,
       cost = 14000
     }
   },
