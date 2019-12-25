@@ -1011,7 +1011,7 @@ local HunterTalentSpells = {
 local HunterClassTomes = {
   ['serpent_sting_ix'] = {
     item_id = 21306,
-    name = 'Guilde: Serpent Sting IX',
+    name = 'Guide: Serpent Sting IX',
     spell = 'Serpent Sting',
     rank = 9,
     spell_id = 25295,
@@ -1022,7 +1022,7 @@ local HunterClassTomes = {
   },
   ['aspect_of_the_hawk_vii'] = {
     item_id = 21307,
-    name = 'Guilde: Aspect of the Hawk VII',
+    name = 'Guide: Aspect of the Hawk VII',
     spell = 'Aspect of the Hawk',
     rank = 7,
     spell_id = 25296,
@@ -1033,7 +1033,7 @@ local HunterClassTomes = {
   },
   ['multi_shot_v'] = {
     item_id = 21304,
-    name = 'Guilde: Multi-Shot V',
+    name = 'Guide: Multi-Shot V',
     spell = 'Multi-Shot',
     rank = 5,
     spell_id = 25294,
