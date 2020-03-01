@@ -215,16 +215,16 @@ local WarriorClassSpells = {
       level = 20,
       cost = 4000,
       replaced_by = { 7369, 11608, 11609, 20569 }
-    },
+    }
+  },
+  [22] = {
     ['intimidating_shout'] = {
       name = 'Intimidating Shout',
       rank = 0,
       id = 5246,
-      level = 20,
+      level = 22,
       cost = 6000
     }
-  },
-  [22] = {
     ['battle_shout:3'] = {
       name = 'Battle Shout',
       rank = 3,
