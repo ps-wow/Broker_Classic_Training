@@ -224,7 +224,7 @@ local WarriorClassSpells = {
       id = 5246,
       level = 22,
       cost = 6000
-    }
+    },
     ['battle_shout:3'] = {
       name = 'Battle Shout',
       rank = 3,
