@@ -11,7 +11,8 @@ local RogueClassSpells = {
       rank = 1,
       id = 1784,
       level = 1,
-      cost = 10
+      cost = 10,
+      replaced_by = { 1785 }
     }
   },
   [4] = {
@@ -21,7 +22,7 @@ local RogueClassSpells = {
       id = 53,
       level = 4,
       cost = 100,
-      replaced_by = { 2589 }
+      replaced_by = { 2589, 2590 }
     },
     ['pick_pocket'] = {
       name = 'Pick Pocket',
@@ -37,7 +38,8 @@ local RogueClassSpells = {
       rank = 1,
       id = 1776,
       level = 6,
-      cost = 100
+      cost = 100,
+      replaced_by = { 1777 }
     },
     ['sinister_strike:2'] = {
       name = 'Sinister Strike',
@@ -45,7 +47,7 @@ local RogueClassSpells = {
       id = 1757,
       level = 6,
       cost = 100,
-      replaced_by = { 1758 }
+      replaced_by = { 1758, 1759 }
     }
   },
   [8] = {
@@ -54,7 +56,8 @@ local RogueClassSpells = {
       rank = 2,
       id = 6760,
       level = 8,
-      cost = 200
+      cost = 200,
+      replaced_by = { 6761 }
     },
     ['evasion'] = {
       name = 'Evasion',
@@ -107,7 +110,8 @@ local RogueClassSpells = {
       rank = 2,
       id = 2589,
       level = 12,
-      cost = 800
+      cost = 800,
+      replaced_by = { 2590 }
     },
     ['kick:1'] = {
       name = 'Kick',
@@ -130,14 +134,16 @@ local RogueClassSpells = {
       rank = 1,
       id = 703,
       level = 14,
-      cost = 1200
+      cost = 1200,
+      replaced_by = { 8631 }
     },
     ['sinister_strike:3'] = {
       name = 'Sinister Strike',
       rank = 3,
       id = 1758,
       level = 14,
-      cost = 1200
+      cost = 1200,
+      replaced_by = { 1759 }
     }
   },
   [16] = {
