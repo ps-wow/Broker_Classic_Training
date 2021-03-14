@@ -70,6 +70,13 @@ local DruidClassSpells = {
       level = 10,
       cost = 300
     },
+    ['demoralizing_roar:1'] = {
+      name = 'Demoralizing Roar',
+      rank = 1,
+      id = 99,
+      level = 10,
+      cost = 300
+    },
     ['mark_of_the_wild:2'] = {
       name = 'Mark of the Wild',
       rank = 2,
@@ -90,6 +97,13 @@ local DruidClassSpells = {
       name = 'Regrowth',
       rank = 1,
       id = 8936,
+      level = 12,
+      cost = 800
+    },
+    ['enrage'] = {
+      name = 'Enrage',
+      rank = 1,
+      id = 5229,
       level = 12,
       cost = 800
     }
