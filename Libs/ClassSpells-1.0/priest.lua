@@ -112,8 +112,8 @@ local PriestClassSpells = {
       name = 'Power Word: Shield',
       rank = 2,
       id = 592,
-      level = 18,
-      cost = 'unknown'
+      level = 12,
+      cost = 800
     }
   },
   [14] = {

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+ - [Priest] Fix level requirement for Power Word: Shield (Rank 2) and update cost.
+
 ## [1.0.6] - 2021-03-01
 
 ### Added
