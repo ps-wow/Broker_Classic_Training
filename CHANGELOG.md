@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
  - [Priest] Fix level requirement for Power Word: Shield (Rank 2) and update cost.
+ - [Paladin] Retribution Aura (Rank 1) replaced_by Rank 2.
 
 ### Added
  - [Hunter] Dual Wield (level 20).
