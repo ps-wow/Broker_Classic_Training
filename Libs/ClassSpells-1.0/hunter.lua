@@ -280,6 +280,13 @@ local HunterClassSpells = {
       id = 1499,
       level = 20,
       cost = 2200
+    },
+    ['dual_wield'] = {
+      name = 'Dual Wield',
+      rank = 0,
+      id = 674,
+      level = 20,
+      cost = 2200
     }
   },
   [22] = {
