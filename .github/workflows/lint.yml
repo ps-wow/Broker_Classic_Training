@@ -2,9 +2,9 @@ name: Lint
 # This workflow is triggered on pushes to the repository.
 on:
   push:
-    branches: [ master ]
+    branches: [ classic ]
   pull_request:
-    branches: [ master ]
+    branches: [ classic ]
 
 jobs:
   lint:
